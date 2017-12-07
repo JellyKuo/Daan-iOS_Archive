@@ -1,0 +1,42 @@
+/* Friday */
+"Fri" = "星期五";
+
+/* Monday */
+"Mon" = "星期一";
+
+/* Default action */
+"OK" = "好";
+
+/* Thursday */
+"Thu" = "星期四";
+
+/* Tuesday */
+"Tue" = "星期二";
+
+/* Wednesday */
+"Wed" = "星期三";
+
+/* First */
+"First" = "上";
+
+/* Second */
+"Second" = "下";
+
+
+/* One */
+"One" = "一";
+
+/* Two */
+"Two" = "二";
+
+/* Three */
+"Three" = "三";
+
+/* Semester */
+"Semester" = "學期";
+
+/* Grade */
+"Grade" = "年級";
+
+/* Num */
+"Num" = "第";

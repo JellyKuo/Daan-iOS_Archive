@@ -1,24 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYS-J4-5ah">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Welcome-->
+        <scene sceneID="GUf-eA-kq4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewControllerPlaceholder storyboardName="Welcome" id="ecJ-IE-rrs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20f-UZ-o7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-598" y="422"/>
+        </scene>
+        <!--Daan-->
+        <scene sceneID="MNM-zh-fKU">
+            <objects>
+                <viewController id="cM6-F4-nbP" customClass="MainViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TBu-jz-kqB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LkS-Xh-FCU">
+                                <rect key="frame" x="20" y="84" width="335" height="169"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9T-KE-Yyq">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTZ-2m-sTi">
+                                        <rect key="frame" x="0.0" y="43.5" width="335" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZn-cY-f3I">
+                                        <rect key="frame" x="0.0" y="87" width="335" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1j-fk-RQ9">
+                                        <rect key="frame" x="0.0" y="130.5" width="335" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-bH-6Jc">
+                                <rect key="frame" x="20" y="263" width="335" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8J-LW-1H4">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="Attitude"/>
+                                        <connections>
+                                            <segue destination="9ge-dv-LHt" kind="show" identifier="AttitudeSegue" id="SeU-Qe-IZT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqF-o3-LSP">
+                                        <rect key="frame" x="0.0" y="30" width="49" height="30"/>
+                                        <state key="normal" title="Absent"/>
+                                        <connections>
+                                            <segue destination="wPJ-ub-m2Q" kind="show" identifier="AbsentSegue" id="VRG-y1-nvO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1I-KB-IWb">
+                                        <rect key="frame" x="0.0" y="60" width="149" height="30"/>
+                                        <state key="normal" title="Sectional Exam Score"/>
+                                        <connections>
+                                            <segue destination="PFN-Yq-mgh" kind="show" identifier="SectionalExamSegue" id="aw0-V2-6aN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lW-em-RTX">
+                                        <rect key="frame" x="0.0" y="90" width="93" height="30"/>
+                                        <state key="normal" title="History Score"/>
+                                        <connections>
+                                            <segue destination="DPf-qs-ZpK" kind="show" identifier="HistoryScoreSegue" id="JwX-dR-dhh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-56-i11">
+                                        <rect key="frame" x="0.0" y="120" width="76" height="30"/>
+                                        <state key="normal" title="Curriculum"/>
+                                        <connections>
+                                            <segue destination="cHz-zQ-0RJ" kind="show" identifier="CurriculumSegue" id="lRA-u5-ELM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfq-1h-gA2">
+                                        <rect key="frame" x="0.0" y="150" width="102" height="30"/>
+                                        <state key="normal" title="Clear Keychain">
+                                            <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ClearKeychainTap:" destination="cM6-F4-nbP" eventType="touchUpInside" id="Kvd-xa-euA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y4J-bH-6Jc" firstAttribute="leading" secondItem="EKA-Wg-V5q" secondAttribute="leading" constant="20" id="7bm-o5-FqP"/>
+                            <constraint firstItem="EKA-Wg-V5q" firstAttribute="trailing" secondItem="Y4J-bH-6Jc" secondAttribute="trailing" constant="20" id="J1S-hc-0C1"/>
+                            <constraint firstItem="EKA-Wg-V5q" firstAttribute="trailing" secondItem="LkS-Xh-FCU" secondAttribute="trailing" constant="20" id="Nh5-08-0VS"/>
+                            <constraint firstItem="LkS-Xh-FCU" firstAttribute="leading" secondItem="EKA-Wg-V5q" secondAttribute="leading" constant="20" id="S0N-7E-cco"/>
+                            <constraint firstItem="Y4J-bH-6Jc" firstAttribute="top" secondItem="LkS-Xh-FCU" secondAttribute="bottom" constant="10" id="WB9-N4-Wtj"/>
+                            <constraint firstItem="LkS-Xh-FCU" firstAttribute="top" secondItem="EKA-Wg-V5q" secondAttribute="top" constant="20" id="k2m-Ii-HL5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EKA-Wg-V5q"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Daan" id="7du-gH-YYz">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="Settings" id="UVc-fX-hMX">
+                            <connections>
+                                <segue destination="kLD-kW-xVw" kind="presentation" modalPresentationStyle="formSheet" id="c4G-TP-DKC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clsLab" destination="BTZ-2m-sTi" id="Cdj-YA-KDe"/>
+                        <outlet property="groupLab" destination="g1j-fk-RQ9" id="DVH-DZ-R6Q"/>
+                        <outlet property="nameLab" destination="X9T-KE-Yyq" id="JLm-uY-uHT"/>
+                        <outlet property="nickLab" destination="pZn-cY-f3I" id="86q-q4-t9w"/>
+                        <segue destination="ecJ-IE-rrs" kind="showDetail" identifier="WelcomeSegue" animates="NO" id="vqk-4a-PWM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STm-6o-sKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-597" y="-21"/>
+        </scene>
+        <!--HistoryScore-->
+        <scene sceneID="0I4-jS-pTm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HistoryScore" id="DPf-qs-ZpK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8d-1O-3d5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="46"/>
+        </scene>
+        <!--Curriculum-->
+        <scene sceneID="5ju-4B-FbY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Curriculum" id="cHz-zQ-0RJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nP3-fT-nSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="91"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xK6-Gy-avr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BYS-J4-5ah" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fVC-rD-jVD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cM6-F4-nbP" kind="relationship" relationship="rootViewController" id="IqK-Yk-j9S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reF-Gb-Qbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1388" y="-21"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="OiY-g0-cbu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="kLD-kW-xVw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WhY-9p-Hxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="-134"/>
+        </scene>
+        <!--Attitude-->
+        <scene sceneID="ZbU-0Z-fz4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Attitude" id="9ge-dv-LHt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wc0-1h-mTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40" y="-89"/>
+        </scene>
+        <!--Absent-->
+        <scene sceneID="t4x-zP-AWw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Absent" id="wPJ-ub-m2Q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="an4-k7-G6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="-44"/>
+        </scene>
+        <!--SectionalExam-->
+        <scene sceneID="r8y-EJ-bgt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SectionalExam" id="PFN-Yq-mgh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V68-wU-CV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Settings" width="25" height="25"/>
+    </resources>
 </document>

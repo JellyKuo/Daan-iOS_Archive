@@ -1,0 +1,45 @@
+
+/* Class = "UITextField"; placeholder = "School account"; ObjectID = "3OJ-gW-Lfs"; */
+"3OJ-gW-Lfs.placeholder" = "School account";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "49i-Ci-tS0"; */
+"49i-Ci-tS0.normalTitle" = "Login";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "9ue-1x-Rmy"; */
+"9ue-1x-Rmy.normalTitle" = "SIGN UP";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "DSj-uT-Qtu"; */
+"DSj-uT-Qtu.placeholder" = "Email";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "GWt-JG-JvR"; */
+"GWt-JG-JvR.title" = "Login";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "S1o-iw-dQm"; */
+"S1o-iw-dQm.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "SgH-aT-SJN"; */
+"SgH-aT-SJN.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Nickname"; ObjectID = "WcL-fX-aUc"; */
+"WcL-fX-aUc.placeholder" = "Nickname";
+
+/* Class = "UILabel"; text = "Daan"; ObjectID = "ch4-Tm-vKR"; */
+"ch4-Tm-vKR.text" = "Daan";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "daa-AP-3ce"; */
+"daa-AP-3ce.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Sign up"; ObjectID = "ghI-TA-aZw"; */
+"ghI-TA-aZw.text" = "Sign up";
+
+/* Class = "UITextField"; placeholder = "School password"; ObjectID = "hwa-p3-Kmv"; */
+"hwa-p3-Kmv.placeholder" = "School password";
+
+/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "jDi-z8-Jfw"; */
+"jDi-z8-Jfw.normalTitle" = "Sign up";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "jfK-Z0-MK5"; */
+"jfK-Z0-MK5.normalTitle" = "LOGIN";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "xMh-J5-edf"; */
+"xMh-J5-edf.text" = "Login";

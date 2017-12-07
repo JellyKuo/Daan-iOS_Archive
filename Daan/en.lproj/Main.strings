@@ -1,0 +1,29 @@
+/* Class = "UIButton"; normalTitle = "History Score"; ObjectID = "2lW-em-RTX"; */
+"2lW-em-RTX.normalTitle" = "History Score";
+
+/* Class = "UINavigationItem"; title = "Daan"; ObjectID = "7du-gH-YYz"; */
+"7du-gH-YYz.title" = "Daan";
+
+/* Class = "UIButton"; normalTitle = "Sectional Exam Score"; ObjectID = "A1I-KB-IWb"; */
+"A1I-KB-IWb.normalTitle" = "Sectional Exam Score";
+
+/* Class = "UILabel"; text = "Cls"; ObjectID = "BTZ-2m-sTi"; */
+"BTZ-2m-sTi.text" = "Cls";
+
+/* Class = "UIButton"; normalTitle = "Clear Keychain"; ObjectID = "Pfq-1h-gA2"; */
+"Pfq-1h-gA2.normalTitle" = "Clear Keychain";
+
+/* Class = "UIButton"; normalTitle = "Absent"; ObjectID = "PqF-o3-LSP"; */
+"PqF-o3-LSP.normalTitle" = "Absent";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "X9T-KE-Yyq"; */
+"X9T-KE-Yyq.text" = "Name";
+
+/* Class = "UILabel"; text = "Group"; ObjectID = "g1j-fk-RQ9"; */
+"g1j-fk-RQ9.text" = "Group";
+
+/* Class = "UILabel"; text = "Nick"; ObjectID = "pZn-cY-f3I"; */
+"pZn-cY-f3I.text" = "Nick";
+
+/* Class = "UIButton"; normalTitle = "Attitude"; ObjectID = "t8J-LW-1H4"; */
+"t8J-LW-1H4.normalTitle" = "Attitude";

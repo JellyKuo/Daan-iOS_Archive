@@ -1,0 +1,44 @@
+/* Friday */
+"Fri" = "Friday";
+
+/* Monday */
+"Mon" = "Monday";
+
+/* Default action */
+"OK" = "Ok";
+
+/* Thursday */
+"Thu" = "Thursday";
+
+/* Tuesday */
+"Tue" = "Tuesday";
+
+/* Wednesday */
+"Wed" = "Wednesday";
+
+/* First */
+"First" = "1st";
+
+/* Second */
+"Second" = "2nd";
+
+/* Third */
+"Third" = "3rd";
+
+/* One */
+"One" = "1st";
+
+/* Two */
+"Two" = "2nd";
+
+/* Three */
+"Three" = "3rd";
+
+/* Semester */
+"Semester" = " Semester";
+
+/* Grade */
+"Grade" = " Grade";
+
+/* Num */
+"Num" = "";
