@@ -45,6 +45,7 @@
 		A1C83A801FBFCD69008CF088 /* Absent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C83A821FBFCD69008CF088 /* Absent.storyboard */; };
 		A1C83A851FBFCD72008CF088 /* Attitude.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C83A871FBFCD72008CF088 /* Attitude.storyboard */; };
 		A1C83A8A1FBFCD86008CF088 /* HistoryScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C83A8C1FBFCD86008CF088 /* HistoryScore.storyboard */; };
+		A1D2018D1FDC246300FABA4D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */; };
 		A1DAE8561FB74D48008FF0E2 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */; };
 		A1E10CFA1FB34EDA003C7A30 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */; };
 		A1E904AC1FCEC1BC000E28AE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E904AB1FCEC1BC000E28AE /* Button.swift */; };
@@ -119,6 +120,7 @@
 		A1C83AA01FBFCF70008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		A1C83AA41FBFCF8A008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HistoryScore.strings"; sourceTree = "<group>"; };
 		A1C83AA61FBFCF92008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SectionalExam.strings"; sourceTree = "<group>"; };
+		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A1E904AB1FCEC1BC000E28AE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				A11F02F31FC31521007FA9D9 /* Settings.storyboard */,
+				A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */,
 				A11F02F61FC31AAF007FA9D9 /* UpdateUserDataViewController.swift */,
 			);
 			name = Settings;
@@ -449,6 +452,7 @@
 				A1B0716F1FB850B6006A291A /* Register.swift in Sources */,
 				A1B0716D1FB84BDB006A291A /* SignUpViewController.swift in Sources */,
 				A12F03B41FC0867D004F739F /* CurriculumTableViewController.swift in Sources */,
+				A1D2018D1FDC246300FABA4D /* SettingsTableViewController.swift in Sources */,
 				A11E61761FD8F3BA00E2CA4F /* ViewController.swift in Sources */,
 				A125356B1FBF21DF006CE474 /* HistoryScore.swift in Sources */,
 				A15444B01FBAFF8400A5D88E /* AbsentTableViewController.swift in Sources */,

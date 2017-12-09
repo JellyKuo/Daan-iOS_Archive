@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYS-J4-5ah">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYS-J4-5ah">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -117,9 +117,9 @@
                         <viewLayoutGuide key="safeArea" id="EKA-Wg-V5q"/>
                     </view>
                     <navigationItem key="navigationItem" title="Daan" id="7du-gH-YYz">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="Settings" id="UVc-fX-hMX">
+                        <barButtonItem key="rightBarButtonItem" image="Settings" id="UVc-fX-hMX">
                             <connections>
-                                <segue destination="kLD-kW-xVw" kind="presentation" modalPresentationStyle="formSheet" id="c4G-TP-DKC"/>
+                                <segue destination="kLD-kW-xVw" kind="show" id="c4G-TP-DKC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
