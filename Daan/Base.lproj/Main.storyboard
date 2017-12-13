@@ -119,7 +119,7 @@
                     <navigationItem key="navigationItem" title="Daan" id="7du-gH-YYz">
                         <barButtonItem key="rightBarButtonItem" image="Settings" id="UVc-fX-hMX">
                             <connections>
-                                <segue destination="kLD-kW-xVw" kind="show" id="c4G-TP-DKC"/>
+                                <segue destination="kLD-kW-xVw" kind="show" identifier="SettingsSegue" id="c4G-TP-DKC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

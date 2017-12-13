@@ -11,6 +11,8 @@ import KeychainSwift
 
 class SettingsTableViewController: UITableViewController {
 
+    var token:Token? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -125,5 +127,16 @@ class SettingsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "UpdateUserDataSegue"?:
+            let navC = segue.destination as? UINavigationController
+            let updateUserDataVC = navC?.viewControllers.first as? UpdUsrAuthViewController
+            updateUserDataVC?.token = token
+        default:
+            break
+        }
+    }
 
 }

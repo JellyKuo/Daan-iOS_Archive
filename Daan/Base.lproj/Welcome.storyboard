@@ -216,7 +216,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1552.1739130434785" y="483.42391304347831"/>
+            <point key="canvasLocation" x="1552" y="482"/>
         </scene>
         <!--Second Sign Up View Controller-->
         <scene sceneID="m6v-u6-TkZ">
@@ -356,7 +356,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="MainSegue" storyboardName="Main" id="08x-Qx-8PM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGy-3I-MX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="483"/>
+            <point key="canvasLocation" x="3129" y="482"/>
         </scene>
         <!--First Sign Up View Controller-->
         <scene sceneID="zov-TN-1E5">
@@ -552,6 +552,6 @@
         <image name="DownArrow" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vP2-FJ-AKa"/>
+        <segue reference="arK-El-PaW"/>
     </inferredMetricsTieBreakers>
 </document>
