@@ -19,8 +19,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var nickLab: UILabel!
     @IBOutlet weak var nameLab: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         autoLogin()
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
@@ -28,6 +28,10 @@ class MainViewController: UIViewController {
         } else {
             print("iOS 11 is not present! Ignoring large navbar title")
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
@@ -53,6 +57,10 @@ class MainViewController: UIViewController {
                 self.groupLab.text = self.userInfo?.group
             }
             else if let apiError = apierr{
+                if apiError.code == 103{
+                    self.autoLogin()
+                    return
+                }
                 let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
                     print("Ｍain Error Api alert occured")

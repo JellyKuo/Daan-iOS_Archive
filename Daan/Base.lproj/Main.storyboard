@@ -21,7 +21,7 @@
         <!--Daan-->
         <scene sceneID="MNM-zh-fKU">
             <objects>
-                <viewController id="cM6-F4-nbP" customClass="MainViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="cM6-F4-nbP" customClass="MainViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TBu-jz-kqB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

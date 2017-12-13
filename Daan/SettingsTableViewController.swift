@@ -27,7 +27,15 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        logout()
+        if indexPath.section == 1 {
+            switch indexPath.row {
+            case 0:
+                logout()
+                break;
+            default:
+                break;
+            }
+        }
     }
     
     func logout() {
@@ -36,9 +44,17 @@ class SettingsTableViewController: UITableViewController {
         if(keychain.get("account") == nil&&keychain.get("password") == nil){
             let alert = UIAlertController(title: "登出成功", message: "已將儲存在鑰匙圈的資料清空!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                print("LogoutSuccess occured")
+                print("Logout success! Clearing nav stack")
+                guard let navC = self.navigationController else{
+                    fatalError("Cannot get nav controller")
+                }
+                navC.popToRootViewController(animated: false)
+                if let mainVC = navC.childViewControllers[0] as? MainViewController{
+                    mainVC.autoLogin()
+                }
             }))
             self.present(alert,animated: true,completion:nil)
+            
         }
     }
     

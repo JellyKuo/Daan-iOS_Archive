@@ -21,15 +21,6 @@ class UpdateUserDataViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func SaveBtnTap(_ sender: Any) {
-        //TODO: Perform user data update
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func CancelBtnTap(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     /*
     // MARK: - Navigation
 
