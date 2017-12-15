@@ -56,7 +56,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-bH-6Jc">
-                                <rect key="frame" x="20" y="263" width="335" height="150"/>
+                                <rect key="frame" x="20" y="263" width="335" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8J-LW-1H4">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
@@ -91,6 +91,13 @@
                                         <state key="normal" title="Curriculum"/>
                                         <connections>
                                             <segue destination="cHz-zQ-0RJ" kind="show" identifier="CurriculumSegue" id="lRA-u5-ELM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWJ-tQ-5xZ">
+                                        <rect key="frame" x="0.0" y="150" width="84" height="30"/>
+                                        <state key="normal" title="Study Room"/>
+                                        <connections>
+                                            <segue destination="XKR-81-rep" kind="show" id="AmD-Gc-F47"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -141,6 +148,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nP3-fT-nSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26" y="91"/>
+        </scene>
+        <!--StudyRoom-->
+        <scene sceneID="AhM-eG-S64">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StudyRoom" id="XKR-81-rep" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxZ-eM-tvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xK6-Gy-avr">
