@@ -22,17 +22,19 @@ class MainViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         autoLogin()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
             print("iOS 11 detected! Enabling large navbar title")
         } else {
             print("iOS 11 is not present! Ignoring large navbar title")
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
