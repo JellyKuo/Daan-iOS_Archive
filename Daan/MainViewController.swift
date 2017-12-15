@@ -42,12 +42,6 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func ClearKeychainTap(_ sender: Any) {
-        print("Keychain cleared! Restart application to login")
-        let keychain = KeychainSwift()
-        keychain.clear()
-    }
-    
     func getUserInfo() {
         let req = ApiRequest(path: "actmanage/getUserInfo", method: .get, token: self.token)
         req.request {(res,apierr,alaerr) in
