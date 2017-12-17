@@ -8,7 +8,7 @@
 /* Class = "UITextField"; placeholder = "Nickname"; ObjectID = "Fwb-q7-aau"; */
 "Fwb-q7-aau.placeholder" = "Nickname";
 
-/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Igp-06-GQK"; */
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "Igp-06-GQK"; */
 "Igp-06-GQK.placeholder" = "New Password";
 
 /* Class = "UITextField"; placeholder = "School Password"; ObjectID = "gYS-Jc-Ndu"; */

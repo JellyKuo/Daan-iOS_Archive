@@ -19,7 +19,6 @@
 		A11DC6EC1FB33C3C00A4EC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11DC6EB1FB33C3C00A4EC9A /* Assets.xcassets */; };
 		A11DC6EF1FB33C3C00A4EC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11DC6ED1FB33C3C00A4EC9A /* LaunchScreen.storyboard */; };
 		A11E61761FD8F3BA00E2CA4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E61751FD8F3BA00E2CA4F /* ViewController.swift */; };
-		A11F02F41FC31521007FA9D9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11F02F31FC31521007FA9D9 /* Settings.storyboard */; };
 		A12535651FBF1380006CE474 /* HistoryScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535641FBF1380006CE474 /* HistoryScoreTableViewController.swift */; };
 		A12535671FBF13AC006CE474 /* HistoryScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */; };
 		A12535691FBF13BF006CE474 /* HistoryScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */; };
@@ -34,7 +33,8 @@
 		A15444AE1FBAFF7100A5D88E /* AbsentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */; };
 		A15444B01FBAFF8400A5D88E /* AbsentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */; };
 		A15444B21FBB026900A5D88E /* AbsentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444B11FBB026900A5D88E /* AbsentState.swift */; };
-		A16BB1521FE1673000E7ABE4 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BB1511FE1673000E7ABE4 /* UpdateUserData.storyboard */; };
+		A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5111FE62BC50012F2D8 /* Settings.storyboard */; };
+		A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */; };
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
 		A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1930A881FCEDFF1008344CA /* Welcome.storyboard */; };
@@ -77,7 +77,6 @@
 		A11DC6EE1FB33C3C00A4EC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A11DC6F01FB33C3C00A4EC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11E61751FD8F3BA00E2CA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A11F02F31FC31521007FA9D9 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A12535641FBF1380006CE474 /* HistoryScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreTableViewController.swift; sourceTree = "<group>"; };
 		A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreViewController.swift; sourceTree = "<group>"; };
 		A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -96,7 +95,12 @@
 		A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewCell.swift; sourceTree = "<group>"; };
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
-		A16BB1511FE1673000E7ABE4 /* UpdateUserData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateUserData.storyboard; sourceTree = "<group>"; };
+		A15CD5121FE62BC80012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		A15CD5131FE62BCD0012F2D8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Settings.strings"; sourceTree = "<group>"; };
+		A15CD5141FE62BD10012F2D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
+		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
+		A15CD5191FE62BE20012F2D8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/UpdateUserData.strings"; sourceTree = "<group>"; };
+		A15CD51A1FE62BE90012F2D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UpdateUserData.strings; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
 		A17352B51FE6254C0065FB48 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StudyRoom.strings"; sourceTree = "<group>"; };
@@ -201,9 +205,9 @@
 		A11F02F51FC31946007FA9D9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				A11F02F31FC31521007FA9D9 /* Settings.storyboard */,
+				A15CD5111FE62BC50012F2D8 /* Settings.storyboard */,
 				A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */,
-				A16BB1511FE1673000E7ABE4 /* UpdateUserData.storyboard */,
+				A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */,
 				A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */,
 			);
 			name = Settings;
@@ -372,14 +376,14 @@
 				A115EC2F1FBFB4940027140E /* Main.storyboard in Resources */,
 				A12F03C31FC0A51E004F739F /* Localizable.strings in Resources */,
 				A1C83A851FBFCD72008CF088 /* Attitude.storyboard in Resources */,
-				A16BB1521FE1673000E7ABE4 /* UpdateUserData.storyboard in Resources */,
+				A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */,
 				A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */,
 				A12F03B71FC09BF0004F739F /* Curriculum.storyboard in Resources */,
 				A1C83A801FBFCD69008CF088 /* Absent.storyboard in Resources */,
 				A1C83A8A1FBFCD86008CF088 /* HistoryScore.storyboard in Resources */,
 				A1F8BE121FB3485C00B26D86 /* ApiConfig.plist in Resources */,
 				A11DC6EC1FB33C3C00A4EC9A /* Assets.xcassets in Resources */,
-				A11F02F41FC31521007FA9D9 /* Settings.storyboard in Resources */,
+				A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */,
 				A1C83A7B1FBFCD30008CF088 /* SectionalExam.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +543,26 @@
 				A1930A851FCEDF4F008344CA /* Base */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A15CD5111FE62BC50012F2D8 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A15CD5121FE62BC80012F2D8 /* Base */,
+				A15CD5131FE62BCD0012F2D8 /* zh-Hant */,
+				A15CD5141FE62BD10012F2D8 /* en */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+		A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A15CD5181FE62BDE0012F2D8 /* Base */,
+				A15CD5191FE62BE20012F2D8 /* zh-Hant */,
+				A15CD51A1FE62BE90012F2D8 /* en */,
+			);
+			name = UpdateUserData.storyboard;
 			sourceTree = "<group>";
 		};
 		A17352B31FE625450065FB48 /* StudyRoom.storyboard */ = {

@@ -1,3 +1,4 @@
+
 /* Class = "UITableViewSection"; headerTitle = "Logout"; ObjectID = "Kgt-V7-fVz"; */
 "Kgt-V7-fVz.headerTitle" = "登出";
 
@@ -9,4 +10,3 @@
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
 "vgI-PN-5VI.title" = "設定";
-
