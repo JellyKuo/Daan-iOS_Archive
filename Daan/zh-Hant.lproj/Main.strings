@@ -10,11 +10,11 @@
 /* Class = "UILabel"; text = "Cls"; ObjectID = "BTZ-2m-sTi"; */
 "BTZ-2m-sTi.text" = "班級";
 
-/* Class = "UIButton"; normalTitle = "Clear Keychain"; ObjectID = "Pfq-1h-gA2"; */
-"Pfq-1h-gA2.normalTitle" = "清除鑰匙圈";
-
 /* Class = "UIButton"; normalTitle = "Absent"; ObjectID = "PqF-o3-LSP"; */
 "PqF-o3-LSP.normalTitle" = "出缺勤";
+
+/* Class = "UIButton"; normalTitle = "Study Room"; ObjectID = "WWJ-tQ-5xZ"; */
+"WWJ-tQ-5xZ.normalTitle" = "自修室";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "X9T-KE-Yyq"; */
 "X9T-KE-Yyq.text" = "姓名";

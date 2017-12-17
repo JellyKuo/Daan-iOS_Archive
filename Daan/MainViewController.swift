@@ -19,27 +19,27 @@ class MainViewController: UIViewController {
     @IBOutlet weak var nickLab: UILabel!
     @IBOutlet weak var nameLab: UILabel!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        autoLogin()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        autoLogin()
+        
+        // Do any additional setup after loading the view.
+        
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
             print("iOS 11 detected! Enabling large navbar title")
         } else {
             print("iOS 11 is not present! Ignoring large navbar title")
         }
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func ClearKeychainTap(_ sender: Any) {
-        print("Keychain cleared! Restart application to login")
-        let keychain = KeychainSwift()
-        keychain.clear()
     }
     
     func getUserInfo() {
@@ -53,6 +53,10 @@ class MainViewController: UIViewController {
                 self.groupLab.text = self.userInfo?.group
             }
             else if let apiError = apierr{
+                if apiError.code == 103{
+                    self.autoLogin()
+                    return
+                }
                 let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
                     print("Ｍain Error Api alert occured")
@@ -147,6 +151,11 @@ class MainViewController: UIViewController {
         else if segue.identifier == "CurriculumSegue" {
             print("Preparing CurriculumSegue")
             let destVC = segue.destination as! CurriculumPageViewController
+            destVC.token = self.token
+        }
+        else if segue.identifier == "SettingsSegue" {
+            print("Preparing SettingsSegue")
+            let destVC = segue.destination as! SettingsTableViewController
             destVC.token = self.token
         }
         else if segue.identifier == "WelcomeSegue" {

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYS-J4-5ah">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYS-J4-5ah">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
         <!--Daan-->
         <scene sceneID="MNM-zh-fKU">
             <objects>
-                <viewController id="cM6-F4-nbP" customClass="MainViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="cM6-F4-nbP" customClass="MainViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TBu-jz-kqB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,13 +93,11 @@
                                             <segue destination="cHz-zQ-0RJ" kind="show" identifier="CurriculumSegue" id="lRA-u5-ELM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfq-1h-gA2">
-                                        <rect key="frame" x="0.0" y="150" width="102" height="30"/>
-                                        <state key="normal" title="Clear Keychain">
-                                            <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWJ-tQ-5xZ">
+                                        <rect key="frame" x="0.0" y="150" width="84" height="30"/>
+                                        <state key="normal" title="Study Room"/>
                                         <connections>
-                                            <action selector="ClearKeychainTap:" destination="cM6-F4-nbP" eventType="touchUpInside" id="Kvd-xa-euA"/>
+                                            <segue destination="XKR-81-rep" kind="show" id="AmD-Gc-F47"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -117,9 +115,9 @@
                         <viewLayoutGuide key="safeArea" id="EKA-Wg-V5q"/>
                     </view>
                     <navigationItem key="navigationItem" title="Daan" id="7du-gH-YYz">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="Settings" id="UVc-fX-hMX">
+                        <barButtonItem key="rightBarButtonItem" image="Settings" id="UVc-fX-hMX">
                             <connections>
-                                <segue destination="kLD-kW-xVw" kind="presentation" modalPresentationStyle="formSheet" id="c4G-TP-DKC"/>
+                                <segue destination="kLD-kW-xVw" kind="show" identifier="SettingsSegue" id="c4G-TP-DKC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -150,6 +148,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nP3-fT-nSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26" y="91"/>
+        </scene>
+        <!--StudyRoom-->
+        <scene sceneID="AhM-eG-S64">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StudyRoom" id="XKR-81-rep" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxZ-eM-tvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xK6-Gy-avr">
