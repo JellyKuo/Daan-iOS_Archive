@@ -1,0 +1,12 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Logout"; ObjectID = "Kgt-V7-fVz"; */
+"Kgt-V7-fVz.headerTitle" = "Logout";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "cSk-4h-XuK"; */
+"cSk-4h-XuK.text" = "Logout";
+
+/* Class = "UILabel"; text = "Update User Data"; ObjectID = "rhe-W5-pAS"; */
+"rhe-W5-pAS.text" = "Update User Data";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
+"vgI-PN-5VI.title" = "Settings";

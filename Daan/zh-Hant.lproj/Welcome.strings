@@ -1,12 +1,11 @@
-
-/* Class = "UITextField"; placeholder = "School account"; ObjectID = "3OJ-gW-Lfs"; */
+/* (No Comment) */
 "3OJ-gW-Lfs.placeholder" = "學校帳號";
-
-/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "49i-Ci-tS0"; */
-"49i-Ci-tS0.normalTitle" = "登入";
 
 /* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "9ue-1x-Rmy"; */
 "9ue-1x-Rmy.normalTitle" = "建立新帳號";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "49i-Ci-tS0"; */
+"49i-Ci-tS0.normalTitle" = "登入";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "DSj-uT-Qtu"; */
 "DSj-uT-Qtu.placeholder" = "Email";
@@ -32,14 +31,9 @@
 /* Class = "UILabel"; text = "Sign up"; ObjectID = "ghI-TA-aZw"; */
 "ghI-TA-aZw.text" = "建立新帳號";
 
-/* Class = "UITextField"; placeholder = "School password"; ObjectID = "hwa-p3-Kmv"; */
-"hwa-p3-Kmv.placeholder" = "學校密碼";
-
-/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "jDi-z8-Jfw"; */
-"jDi-z8-Jfw.normalTitle" = "建立新帳號";
-
 /* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "jfK-Z0-MK5"; */
 "jfK-Z0-MK5.normalTitle" = "登入";
 
 /* Class = "UILabel"; text = "Login"; ObjectID = "xMh-J5-edf"; */
 "xMh-J5-edf.text" = "登入";
+

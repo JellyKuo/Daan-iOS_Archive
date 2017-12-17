@@ -1,0 +1,27 @@
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "Bgb-j3-d9o"; */
+"Bgb-j3-d9o.normalTitle" = "更新";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "ERH-hZ-jAH"; */
+"ERH-hZ-jAH.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Nickname"; ObjectID = "Fwb-q7-aau"; */
+"Fwb-q7-aau.placeholder" = "暱稱";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Igp-06-GQK"; */
+"Igp-06-GQK.placeholder" = "新密碼";
+
+/* Class = "UITextField"; placeholder = "School Password"; ObjectID = "gYS-Jc-Ndu"; */
+"gYS-Jc-Ndu.placeholder" = "學校密碼";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "kSQ-dG-BZG"; */
+"kSQ-dG-BZG.normalTitle" = "下一步";
+
+/* Class = "UITextField"; placeholder = "Current Password"; ObjectID = "njJ-57-kXP"; */
+"njJ-57-kXP.placeholder" = "目前密碼";
+
+/* Class = "UILabel"; text = "Authenticate"; ObjectID = "pW7-Wy-fRV"; */
+"pW7-Wy-fRV.text" = "認證";
+
+/* Class = "UILabel"; text = "Updated Data"; ObjectID = "yk1-Dg-7wp"; */
+"yk1-Dg-7wp.text" = "更新資料";
+

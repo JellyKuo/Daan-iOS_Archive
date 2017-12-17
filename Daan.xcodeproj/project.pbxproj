@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		170CB8F1E3E6D59307E480EF /* Pods_Daan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */; };
-		A105F7E51FE3F0FB00777DC6 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A105F7E41FE3F0FB00777DC6 /* StudyRoom.storyboard */; };
 		A105F7E71FE3F2C100777DC6 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */; };
 		A110512A1FBC84B000970878 /* SectionalExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */; };
 		A110512C1FBC85F000970878 /* SectionalScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110512B1FBC85F000970878 /* SectionalScore.swift */; };
@@ -37,6 +36,7 @@
 		A15444B21FBB026900A5D88E /* AbsentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444B11FBB026900A5D88E /* AbsentState.swift */; };
 		A16BB1521FE1673000E7ABE4 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BB1511FE1673000E7ABE4 /* UpdateUserData.storyboard */; };
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
+		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
 		A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1930A881FCEDFF1008344CA /* Welcome.storyboard */; };
 		A1B0716D1FB84BDB006A291A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */; };
 		A1B0716F1FB850B6006A291A /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716E1FB850B6006A291A /* Register.swift */; };
@@ -62,7 +62,6 @@
 /* Begin PBXFileReference section */
 		828118FBE6EC8C2E022567D4 /* Pods-Daan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.debug.xcconfig"; sourceTree = "<group>"; };
 		97090D5A146DDF06092C73C8 /* Pods-Daan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.release.xcconfig"; sourceTree = "<group>"; };
-		A105F7E41FE3F0FB00777DC6 /* StudyRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudyRoom.storyboard; sourceTree = "<group>"; };
 		A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
 		A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewCell.swift; sourceTree = "<group>"; };
 		A110512B1FBC85F000970878 /* SectionalScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalScore.swift; sourceTree = "<group>"; };
@@ -99,6 +98,9 @@
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
 		A16BB1511FE1673000E7ABE4 /* UpdateUserData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateUserData.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
+		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
+		A17352B51FE6254C0065FB48 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StudyRoom.strings"; sourceTree = "<group>"; };
+		A17352B71FE6254D0065FB48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StudyRoom.strings; sourceTree = "<group>"; };
 		A1930A841FCEDF44008344CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A851FCEDF4F008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A941FCEE1EE008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
@@ -226,7 +228,7 @@
 				A115EC311FBFB4940027140E /* Main.storyboard */,
 				A1C83A8C1FBFCD86008CF088 /* HistoryScore.storyboard */,
 				A12F03B91FC09BF0004F739F /* Curriculum.storyboard */,
-				A105F7E41FE3F0FB00777DC6 /* StudyRoom.storyboard */,
+				A17352B31FE625450065FB48 /* StudyRoom.storyboard */,
 				A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */,
 				A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */,
 				A12F03B51FC099B5004F739F /* CurriculumTableViewCell.swift */,
@@ -365,7 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11DC6EF1FB33C3C00A4EC9A /* LaunchScreen.storyboard in Resources */,
-				A105F7E51FE3F0FB00777DC6 /* StudyRoom.storyboard in Resources */,
+				A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */,
 				A12F03C81FC0A51F004F739F /* InfoPlist.strings in Resources */,
 				A115EC2F1FBFB4940027140E /* Main.storyboard in Resources */,
 				A12F03C31FC0A51E004F739F /* Localizable.strings in Resources */,
@@ -537,6 +539,16 @@
 				A1930A851FCEDF4F008344CA /* Base */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A17352B31FE625450065FB48 /* StudyRoom.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17352B21FE625450065FB48 /* Base */,
+				A17352B51FE6254C0065FB48 /* zh-Hant */,
+				A17352B71FE6254D0065FB48 /* en */,
+			);
+			name = StudyRoom.storyboard;
 			sourceTree = "<group>";
 		};
 		A1930A881FCEDFF1008344CA /* Welcome.storyboard */ = {
