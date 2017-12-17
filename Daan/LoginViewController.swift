@@ -87,13 +87,3 @@ class LoginViewController: UIViewController {
      */
     
 }
-/*
-class MainSegue: UIStoryboardSegue {
-    override func perform() {
-        print("MainSegue Performing")
-        self.source.present(self.destination as UIViewController,
-                            animated: true,
-                            completion: nil)
-    }
-}
-*/
