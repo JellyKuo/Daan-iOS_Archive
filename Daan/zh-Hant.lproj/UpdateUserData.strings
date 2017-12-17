@@ -1,4 +1,3 @@
-
 /* Class = "UIButton"; normalTitle = "Update"; ObjectID = "Bgb-j3-d9o"; */
 "Bgb-j3-d9o.normalTitle" = "更新";
 
@@ -8,7 +7,7 @@
 /* Class = "UITextField"; placeholder = "Nickname"; ObjectID = "Fwb-q7-aau"; */
 "Fwb-q7-aau.placeholder" = "暱稱";
 
-/* Class = "UITextField"; placeholder = "NewPassword"; ObjectID = "Igp-06-GQK"; */
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "Igp-06-GQK"; */
 "Igp-06-GQK.placeholder" = "新密碼";
 
 /* Class = "UITextField"; placeholder = "School Password"; ObjectID = "gYS-Jc-Ndu"; */
@@ -25,3 +24,4 @@
 
 /* Class = "UILabel"; text = "Updated Data"; ObjectID = "yk1-Dg-7wp"; */
 "yk1-Dg-7wp.text" = "更新資料";
+

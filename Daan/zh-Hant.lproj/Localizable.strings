@@ -1,3 +1,12 @@
+/* API Error */
+"ApiErr" = "API 錯誤";
+
+/* Authenticate Error */
+"AuthError" = "認證錯誤";
+
+/* Connection Error */
+"ConnErr" = "連線錯誤";
+
 /* First */
 "First" = "上";
 
@@ -18,6 +27,9 @@
 
 /* One */
 "One" = "一";
+
+/* Password does not match */
+"PwdNotMatch" = "密碼不符";
 
 /* Second */
 "Second" = "下";
