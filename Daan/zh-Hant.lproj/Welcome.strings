@@ -41,7 +41,7 @@
 "jTP-Lt-yeV.placeholder" = "學校帳號";
 
 /* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "jaB-YE-EgB"; */
-"jaB-YE-EgB.normalTitle" = "申請新帳號";
+"jaB-YE-EgB.normalTitle" = "建立新帳號";
 
 /* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "jfK-Z0-MK5"; */
 "jfK-Z0-MK5.normalTitle" = "登入";
