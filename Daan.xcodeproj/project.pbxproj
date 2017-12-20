@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		170CB8F1E3E6D59307E480EF /* Pods_Daan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */; };
 		A105F7E71FE3F2C100777DC6 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */; };
+		A10B40D91FEA9D990081B9E9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19A54111FC5BDF10095F858 /* NotificationCenter.framework */; };
+		A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */; };
+		A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */; };
+		A10B40E31FEA9D990081B9E9 /* Today Curriculum.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A110512A1FBC84B000970878 /* SectionalExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */; };
 		A110512C1FBC85F000970878 /* SectionalScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110512B1FBC85F000970878 /* SectionalScore.swift */; };
 		A110512E1FBC877500970878 /* SectionalExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110512D1FBC877500970878 /* SectionalExamViewController.swift */; };
@@ -59,6 +63,16 @@
 		A1F8BE121FB3485C00B26D86 /* ApiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F8BE111FB3485C00B26D86 /* ApiConfig.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A10B40E11FEA9D990081B9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11DC6D91FB33C3B00A4EC9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10B40D71FEA9D990081B9E9;
+			remoteInfo = "Today Curriculum";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		A19494621FEA927B006EF100 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -66,6 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				A10B40E31FEA9D990081B9E9 /* Today Curriculum.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +91,10 @@
 		828118FBE6EC8C2E022567D4 /* Pods-Daan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.debug.xcconfig"; sourceTree = "<group>"; };
 		97090D5A146DDF06092C73C8 /* Pods-Daan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.release.xcconfig"; sourceTree = "<group>"; };
 		A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
+		A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Curriculum.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A10B40DE1FEA9D990081B9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A10B40E01FEA9D990081B9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewCell.swift; sourceTree = "<group>"; };
 		A110512B1FBC85F000970878 /* SectionalScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalScore.swift; sourceTree = "<group>"; };
 		A110512D1FBC877500970878 /* SectionalExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +176,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A10B40D51FEA9D990081B9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B40D91FEA9D990081B9E9 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A11DC6DE1FB33C3B00A4EC9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,10 +204,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A10B40DA1FEA9D990081B9E9 /* Today Curriculum */ = {
+			isa = PBXGroup;
+			children = (
+				A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */,
+				A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */,
+				A10B40E01FEA9D990081B9E9 /* Info.plist */,
+			);
+			path = "Today Curriculum";
+			sourceTree = "<group>";
+		};
 		A11DC6D81FB33C3B00A4EC9A = {
 			isa = PBXGroup;
 			children = (
 				A11DC6E31FB33C3B00A4EC9A /* Daan */,
+				A10B40DA1FEA9D990081B9E9 /* Today Curriculum */,
 				A11DC6E21FB33C3B00A4EC9A /* Products */,
 				198B6901EDE96C27DF8B1CA2 /* Pods */,
 				F40B6FBCDF31956BA264D328 /* Frameworks */,
@@ -191,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				A11DC6E11FB33C3B00A4EC9A /* Daan.app */,
+				A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,6 +352,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A10B40D71FEA9D990081B9E9 /* Today Curriculum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10B40E61FEA9D990081B9E9 /* Build configuration list for PBXNativeTarget "Today Curriculum" */;
+			buildPhases = (
+				A10B40D41FEA9D990081B9E9 /* Sources */,
+				A10B40D51FEA9D990081B9E9 /* Frameworks */,
+				A10B40D61FEA9D990081B9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Today Curriculum";
+			productName = "Today Curriculum";
+			productReference = A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A11DC6E01FB33C3B00A4EC9A /* Daan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A11DC6F31FB33C3C00A4EC9A /* Build configuration list for PBXNativeTarget "Daan" */;
@@ -328,6 +384,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A10B40E21FEA9D990081B9E9 /* PBXTargetDependency */,
 			);
 			name = Daan;
 			productName = Daan;
@@ -348,6 +405,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "郭東岳";
 				TargetAttributes = {
+					A10B40D71FEA9D990081B9E9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					A11DC6E01FB33C3B00A4EC9A = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -377,11 +438,20 @@
 			projectRoot = "";
 			targets = (
 				A11DC6E01FB33C3B00A4EC9A /* Daan */,
+				A10B40D71FEA9D990081B9E9 /* Today Curriculum */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A10B40D61FEA9D990081B9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A11DC6DF1FB33C3B00A4EC9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,6 +537,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A10B40D41FEA9D990081B9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A11DC6DD1FB33C3B00A4EC9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,7 +588,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A10B40E21FEA9D990081B9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10B40D71FEA9D990081B9E9 /* Today Curriculum */;
+			targetProxy = A10B40E11FEA9D990081B9E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A10B40DE1FEA9D990081B9E9 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		A115EC311FBFB4940027140E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -643,6 +737,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A10B40E41FEA9D990081B9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2845NM46VS;
+				INFOPLIST_FILE = "Today Curriculum/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jelly.Daan.Today-Curriculum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10B40E51FEA9D990081B9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2845NM46VS;
+				INFOPLIST_FILE = "Today Curriculum/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jelly.Daan.Today-Curriculum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A11DC6F11FB33C3C00A4EC9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -793,6 +919,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A10B40E61FEA9D990081B9E9 /* Build configuration list for PBXNativeTarget "Today Curriculum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10B40E41FEA9D990081B9E9 /* Debug */,
+				A10B40E51FEA9D990081B9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A11DC6DC1FB33C3B00A4EC9A /* Build configuration list for PBXProject "Daan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
