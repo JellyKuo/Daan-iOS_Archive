@@ -13,6 +13,7 @@
 		A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */; };
 		A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */; };
 		A10B40E31FEA9D990081B9E9 /* Today Curriculum.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A10B40E81FEA9DE50081B9E9 /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B11FC08311004F739F /* Curriculum.swift */; };
 		A110512A1FBC84B000970878 /* SectionalExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */; };
 		A110512C1FBC85F000970878 /* SectionalScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110512B1FBC85F000970878 /* SectionalScore.swift */; };
 		A110512E1FBC877500970878 /* SectionalExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110512D1FBC877500970878 /* SectionalExamViewController.swift */; };
@@ -95,6 +96,7 @@
 		A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		A10B40DE1FEA9D990081B9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A10B40E01FEA9D990081B9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Today Curriculum.entitlements"; sourceTree = "<group>"; };
 		A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewCell.swift; sourceTree = "<group>"; };
 		A110512B1FBC85F000970878 /* SectionalScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalScore.swift; sourceTree = "<group>"; };
 		A110512D1FBC877500970878 /* SectionalExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		A10B40DA1FEA9D990081B9E9 /* Today Curriculum */ = {
 			isa = PBXGroup;
 			children = (
+				A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */,
 				A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */,
 				A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */,
 				A10B40E01FEA9D990081B9E9 /* Info.plist */,
@@ -408,6 +411,11 @@
 					A10B40D71FEA9D990081B9E9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A11DC6E01FB33C3B00A4EC9A = {
 						CreatedOnToolsVersion = 9.1;
@@ -541,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10B40E81FEA9DE50081B9E9 /* Curriculum.swift in Sources */,
 				A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -740,6 +749,7 @@
 		A10B40E41FEA9D990081B9E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Today Curriculum/Today Curriculum.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2845NM46VS;
 				INFOPLIST_FILE = "Today Curriculum/Info.plist";
@@ -756,6 +766,7 @@
 		A10B40E51FEA9D990081B9E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Today Curriculum/Today Curriculum.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2845NM46VS;
 				INFOPLIST_FILE = "Today Curriculum/Info.plist";
