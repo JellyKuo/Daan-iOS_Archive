@@ -11,7 +11,7 @@ import NotificationCenter
 import ObjectMapper
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
@@ -28,6 +28,24 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
+        
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
+            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
+        }
+        if let JSON = userDefaults.string(forKey: "curriculumJSON"), JSON != "" {
+            if let curriculum = CurriculumWeek(JSONString: JSON){
+                print("Got curriculum JSON from UserDefaults and mapped to object")
+                //TODO: Create UI and display curriculum
+            }
+            else{
+                print("Got curriculum JSON but cannot map it to object")
+                //TODO: Prompt to open app
+            }
+        }
+        else {
+            print("Got userDefaults but JSON doesn't exist")
+            //TODO: Prompt to open app
+        }
         
         completionHandler(NCUpdateResult.newData)
     }
