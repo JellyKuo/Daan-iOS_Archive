@@ -60,7 +60,7 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
             if let result = res {
                 self.curriculumWeek = CurriculumWeek(JSON: result)
                 if let JSONStr = self.curriculumWeek?.toJSONString(){
-                    print("Got curriculum from Api, setting userDefaults for key curriculumJSON to \(JSONStr)")
+                    print("Got curriculum from Api, setting userDefaults for key curriculumJSON")
                     userDefaults?.set(JSONStr, forKey: "curriculumJSON")
                 }
                 else{
