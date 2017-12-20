@@ -42,6 +42,7 @@
 		A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5111FE62BC50012F2D8 /* Settings.storyboard */; };
 		A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */; };
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
+		A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
 		A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1930A881FCEDFF1008344CA /* Welcome.storyboard */; };
 		A1B0716D1FB84BDB006A291A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */; };
@@ -591,6 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10B40E81FEA9DE50081B9E9 /* Curriculum.swift in Sources */,
+				A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */,
 				A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
