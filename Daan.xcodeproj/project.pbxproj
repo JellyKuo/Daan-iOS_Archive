@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		170CB8F1E3E6D59307E480EF /* Pods_Daan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */; };
+		3961E347CF631D251FA29A51 /* Pods_Today_Curriculum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54E53AECCA06A39C478B977 /* Pods_Today_Curriculum.framework */; };
 		A105F7E71FE3F2C100777DC6 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */; };
 		A10B40D91FEA9D990081B9E9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19A54111FC5BDF10095F858 /* NotificationCenter.framework */; };
 		A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */; };
@@ -89,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B41BB091A16E23D6999C023 /* Pods-Today Curriculum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today Curriculum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Today Curriculum/Pods-Today Curriculum.debug.xcconfig"; sourceTree = "<group>"; };
 		828118FBE6EC8C2E022567D4 /* Pods-Daan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.debug.xcconfig"; sourceTree = "<group>"; };
 		97090D5A146DDF06092C73C8 /* Pods-Daan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.release.xcconfig"; sourceTree = "<group>"; };
 		A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,8 @@
 		A1F8BE0F1FB3447400B26D86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1F8BE111FB3485C00B26D86 /* ApiConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiConfig.plist; sourceTree = "<group>"; };
 		B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8F828E6D5F52E7BF18D69E /* Pods-Today Curriculum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today Curriculum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Today Curriculum/Pods-Today Curriculum.release.xcconfig"; sourceTree = "<group>"; };
+		C54E53AECCA06A39C478B977 /* Pods_Today_Curriculum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Today_Curriculum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10B40D91FEA9D990081B9E9 /* NotificationCenter.framework in Frameworks */,
+				3961E347CF631D251FA29A51 /* Pods_Today_Curriculum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +207,8 @@
 			children = (
 				828118FBE6EC8C2E022567D4 /* Pods-Daan.debug.xcconfig */,
 				97090D5A146DDF06092C73C8 /* Pods-Daan.release.xcconfig */,
+				2B41BB091A16E23D6999C023 /* Pods-Today Curriculum.debug.xcconfig */,
+				BF8F828E6D5F52E7BF18D69E /* Pods-Today Curriculum.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -348,6 +355,7 @@
 			children = (
 				B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */,
 				A19A54111FC5BDF10095F858 /* NotificationCenter.framework */,
+				C54E53AECCA06A39C478B977 /* Pods_Today_Curriculum.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -359,9 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A10B40E61FEA9D990081B9E9 /* Build configuration list for PBXNativeTarget "Today Curriculum" */;
 			buildPhases = (
+				DB5C297EF2AE39E09E1E00EA /* [CP] Check Pods Manifest.lock */,
 				A10B40D41FEA9D990081B9E9 /* Sources */,
 				A10B40D51FEA9D990081B9E9 /* Frameworks */,
 				A10B40D61FEA9D990081B9E9 /* Resources */,
+				74BAC3918632B1DE832C5AE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -493,20 +503,33 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Daan/Pods-Daan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daan/Pods-Daan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74BAC3918632B1DE832C5AE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Today Curriculum/Pods-Today Curriculum-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A1ED1ABB20F7FA9C220B209A /* [CP] Check Pods Manifest.lock */ = {
@@ -540,6 +563,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daan/Pods-Daan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5C297EF2AE39E09E1E00EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Today Curriculum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -748,6 +789,7 @@
 /* Begin XCBuildConfiguration section */
 		A10B40E41FEA9D990081B9E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B41BB091A16E23D6999C023 /* Pods-Today Curriculum.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Today Curriculum/Today Curriculum.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -765,6 +807,7 @@
 		};
 		A10B40E51FEA9D990081B9E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8F828E6D5F52E7BF18D69E /* Pods-Today Curriculum.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Today Curriculum/Today Curriculum.entitlements";
 				CODE_SIGN_STYLE = Automatic;
