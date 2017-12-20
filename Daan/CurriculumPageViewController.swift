@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     var token:Token? = nil
     var curriculumWeek:CurriculumWeek? = nil
     var tableVCs:[CurriculumTableViewController]? = nil
+    
     @IBOutlet weak var weekNavItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        //TODO: Offline data storing
         GetData()
         
         self.delegate = self
@@ -31,13 +32,41 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
         // Dispose of any resources that can be recreated.
     }
     
-    //TODO: Make this code better
     func GetData() {
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
+            fatalError("Cannot init new UserDefaults with suiteName")
+        }
+        if let JSON = userDefaults.string(forKey: "curriculumJSON"){
+            if JSON != "" , let modelObject = CurriculumWeek(JSONString: JSON){
+                print("Got curriculum from UsersDefault, using that")
+                curriculumWeek = modelObject
+                createPage()
+            }
+            else{
+                print("Got JSON from UsersDefault, but was unable to map it to object. Grabbing from Api")
+                ApiReq()
+            }
+        }
+        else{
+            print("No data stored in UsersDefaults with key curriculumJSON. Grabbing from Api")
+            ApiReq()
+        }
+    }
+    
+    func ApiReq() {
+        let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan")
         let req = ApiRequest(path: "curriculum", method: .get, token: self.token)
         req.request {(res,apierr,alaerr) in
             if let result = res {
                 self.curriculumWeek = CurriculumWeek(JSON: result)
-                self.CreatePages()
+                if let JSONStr = self.curriculumWeek?.toJSONString(){
+                    print("Got curriculum from Api, setting userDefaults for key curriculumJSON to \(JSONStr)")
+                    userDefaults?.set(JSONStr, forKey: "curriculumJSON")
+                }
+                else{
+                    print("Got curriculum from Api, but was unable to get JSON string from object, skip saving")
+                }
+                self.createPage()
             }
             else if let apiError = apierr{
                 let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
@@ -56,7 +85,7 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
         }
     }
     
-    func CreatePages(){
+    func createPage(){
         guard let data = curriculumWeek else{
             let alert = UIAlertController(title: "錯誤", message: "Create page is called but curriculumWeek is nil", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
