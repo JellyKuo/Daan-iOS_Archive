@@ -936,7 +936,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 828118FBE6EC8C2E022567D4 /* Pods-Daan.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Daan/Daan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -955,7 +954,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97090D5A146DDF06092C73C8 /* Pods-Daan.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Daan/Daan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
