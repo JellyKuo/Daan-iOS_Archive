@@ -45,7 +45,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         if let JSON = userDefaults.string(forKey: "curriculumJSON"), JSON != "" {
             if let curriculum = CurriculumWeek(JSONString: JSON){
                 print("Got curriculum JSON from UserDefaults and mapped to object")
-                generateUI(curriculum: curriculum)
+                generateFullUI(curriculum: curriculum)
                 //TODO: Create UI and display curriculum
             }
             else{
@@ -61,7 +61,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
-    func generateUI(curriculum:CurriculumWeek){
+    func generateFullUI(curriculum:CurriculumWeek){
         
         let date = Date()
         let weekday = Calendar.current.component(.weekday, from: date)
