@@ -107,29 +107,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Today Curriculum/TodayViewController.swift"
-            timestampString = "535477375.216785"
+            filePath = "Daan/CurriculumPageViewController.swift"
+            timestampString = "536138074.405716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "generateUI(curriculum:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Today Curriculum/TodayViewController.swift"
-            timestampString = "535477375.217226"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "widgetActiveDisplayModeDidChange(activeDisplayMode:withMaximumSize:)"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "CreatePages()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

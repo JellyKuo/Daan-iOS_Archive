@@ -66,7 +66,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let date = Date()
         let weekday = Calendar.current.component(.weekday, from: date)
         let index:Int
-        if weekday < 5 && weekday != 1{
+        if weekday <= 6 && weekday >= 2 {
             let hour = Calendar.current.component(.hour, from: date)
             if hour < 16{
                 index = weekday - 2
