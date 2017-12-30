@@ -45,8 +45,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         if let JSON = userDefaults.string(forKey: "curriculumJSON"), JSON != "" {
             if let curriculum = CurriculumWeek(JSONString: JSON){
                 print("Got curriculum JSON from UserDefaults and mapped to object")
-                generateFullUI(curriculum: curriculum)
-                //TODO: Create UI and display curriculum
+                if #available(iOSApplicationExtension 10.0, *) {
+                    if(self.extensionContext?.widgetActiveDisplayMode == .expanded){
+                        generateFullUI(currWeek: curriculum)
+                    }
+                    else{
+                        //generateCompactUI(curriculum: curriculum)
+                    }
+                } else {
+                    generateFullUI(currWeek: curriculum)
+                }
             }
             else{
                 print("Got curriculum JSON but cannot map it to object")
@@ -61,8 +69,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
-    func generateFullUI(curriculum:CurriculumWeek){
-        
+    func getCurrDay(currWeek: CurriculumWeek) -> [Curriculum]{
         let date = Date()
         let weekday = Calendar.current.component(.weekday, from: date)
         let index:Int
@@ -87,23 +94,30 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let day:[Curriculum]?
         switch index {
         case 0:
-            day = curriculum.week1
+            day = currWeek.week1
         case 1:
-            day = curriculum.week2
+            day = currWeek.week2
         case 2:
-            day = curriculum.week3
+            day = currWeek.week3
         case 3:
-            day = curriculum.week4
+            day = currWeek.week4
         case 4:
-            day = curriculum.week5
+            day = currWeek.week5
         default:
             fatalError("index for Monday to Friday is out of range! Date: \(date), Index: \(index)")
         }
-        if day == nil {
-            fatalError("Got nil in day index \(index)")
+        if let res = day{
+            return res
         }
+        else{
+            fatalError("The selected week curriculum is nil! Date: \(date), Index: \(index)")
+        }
+    }
+    
+    func generateFullUI(currWeek:CurriculumWeek){
+        let day = getCurrDay(currWeek: currWeek)
         height = 20.0
-        for cls in day!{
+        for cls in day{
             let newEntry = createEntry(cls: cls)
             //newEntry.isHidden = true
             stackView.addArrangedSubview(newEntry)
