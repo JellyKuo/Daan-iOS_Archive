@@ -72,7 +72,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 index = weekday - 2
             }
             else{
-                index = weekday - 1
+                if weekday != 6{
+                    index = weekday - 1
+                }
+                else{
+                    index = 0
+                }
             }
         }
         else{
