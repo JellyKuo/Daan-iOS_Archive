@@ -29,6 +29,15 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0{
+            switch indexPath.row{
+            case 1:
+                clearCurriculum()
+                break;
+            default:
+                break;
+            }
+        }
         if indexPath.section == 1 {
             switch indexPath.row {
             case 0:
@@ -57,6 +66,23 @@ class SettingsTableViewController: UITableViewController {
             }))
             self.present(alert,animated: true,completion:nil)
             
+        }
+    }
+    
+    func clearCurriculum() {
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
+            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
+        }
+        if let JSON = userDefaults.string(forKey: "curriculumJSON"), JSON != "" {
+           userDefaults.setValue("", forKey: "curriculumJSON")
+            let alert = UIAlertController(title: "Clear successful", message: "Curriculum stored locally is cleared successfully", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: nil))
+            self.present(alert,animated: true,completion: nil)
+        }
+        else{
+            let alert = UIAlertController(title: "Failed", message: "No curriculum data stored locally", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: nil))
+            self.present(alert,animated: true,completion: nil)
         }
     }
     
