@@ -46,6 +46,7 @@
                                             <segue destination="MEh-rS-dYA" kind="presentation" identifier="UpdateUserDataSegue" modalPresentationStyle="formSheet" id="A3H-x8-xKG"/>
                                         </connections>
                                     </tableViewCell>
+
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2t9-Yu-xgg">
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -65,6 +66,10 @@
                                                 <constraint firstItem="gZz-xd-tQG" firstAttribute="leading" secondItem="aqt-jo-ota" secondAttribute="leadingMargin" id="f3g-zk-20p"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="gZz-xd-tQG" secondAttribute="bottom" id="hdf-Fp-BEH"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="gZz-xd-tQG" secondAttribute="trailing" id="sSn-oY-JKh"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="o3c-8k-SCU" secondAttribute="trailing" id="6ZB-Xq-S4B"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="o3c-8k-SCU" secondAttribute="bottom" id="a1E-72-Skq"/>
+                                                <constraint firstItem="o3c-8k-SCU" firstAttribute="leading" secondItem="0cb-Rr-dmG" secondAttribute="leadingMargin" id="b5c-gH-abz"/>
+                                                <constraint firstItem="o3c-8k-SCU" firstAttribute="top" secondItem="0cb-Rr-dmG" secondAttribute="topMargin" id="coh-4J-sv4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

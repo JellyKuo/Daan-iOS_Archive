@@ -29,7 +29,7 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0{
+        if indexPath.section == 0 {
             switch indexPath.row{
             case 1:
                 clearCurriculum()
@@ -38,7 +38,8 @@ class SettingsTableViewController: UITableViewController {
                 break;
             }
         }
-        if indexPath.section == 1 {
+
+        else if indexPath.section == 1 {
             switch indexPath.row {
             case 0:
                 logout()
@@ -46,6 +47,20 @@ class SettingsTableViewController: UITableViewController {
             default:
                 break;
             }
+        }
+    }
+    
+    func clearCurriculum(){
+        guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
+            fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
+        }
+        usersDefault.removeObject(forKey: "curriculumJSON")
+        if(usersDefault.object(forKey: "curriculumJSON") == nil){
+            let alert = UIAlertController(title: "Success", message: "Cleared locally stored curriculum data!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                print("Curriculum data cleared alert dismissed!")
+            }))
+            self.present(alert,animated: true,completion: nil)
         }
     }
     
