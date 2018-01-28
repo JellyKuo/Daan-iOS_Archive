@@ -84,23 +84,6 @@ class SettingsTableViewController: UITableViewController {
         }
     }
     
-    func clearCurriculum() {
-        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
-            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
-        }
-        if let JSON = userDefaults.string(forKey: "curriculumJSON"), JSON != "" {
-           userDefaults.setValue("", forKey: "curriculumJSON")
-            let alert = UIAlertController(title: "Clear successful", message: "Curriculum stored locally is cleared successfully", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: nil))
-            self.present(alert,animated: true,completion: nil)
-        }
-        else{
-            let alert = UIAlertController(title: "Failed", message: "No curriculum data stored locally", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: nil))
-            self.present(alert,animated: true,completion: nil)
-        }
-    }
-    
     // MARK: - Table view data source
 /*
     override func numberOfSections(in tableView: UITableView) -> Int {
