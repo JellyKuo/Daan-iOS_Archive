@@ -104,7 +104,6 @@
 		A110512B1FBC85F000970878 /* SectionalScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalScore.swift; sourceTree = "<group>"; };
 		A110512D1FBC877500970878 /* SectionalExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamViewController.swift; sourceTree = "<group>"; };
 		A110512F1FBC895600970878 /* SectionalExamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewController.swift; sourceTree = "<group>"; };
-		A11055091FE64098007DE57E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A113306A1FB9D15D0057C42C /* AttitudeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeTableViewCell.swift; sourceTree = "<group>"; };
 		A115EC301FBFB4940027140E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A11DC6E11FB33C3B00A4EC9A /* Daan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,11 +131,7 @@
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
 		A15CD5121FE62BC80012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
-		A15CD5131FE62BCD0012F2D8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Settings.strings"; sourceTree = "<group>"; };
-		A15CD5141FE62BD10012F2D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
 		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
-		A15CD5191FE62BE20012F2D8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/UpdateUserData.strings"; sourceTree = "<group>"; };
-		A15CD51A1FE62BE90012F2D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UpdateUserData.strings; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
 		A17352B51FE6254C0065FB48 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StudyRoom.strings"; sourceTree = "<group>"; };
@@ -144,8 +139,6 @@
 		A1930A841FCEDF44008344CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A851FCEDF4F008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A941FCEE1EE008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
-		A1930A981FCEE1FC008344CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Welcome.strings; sourceTree = "<group>"; };
-		A1930A991FCEE2F1008344CA /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Welcome.strings"; sourceTree = "<group>"; };
 		A19A54111FC5BDF10095F858 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1B0716E1FB850B6006A291A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -671,7 +664,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A11DC6EE1FB33C3C00A4EC9A /* Base */,
-				A11055091FE64098007DE57E /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -710,8 +702,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A15CD5121FE62BC80012F2D8 /* Base */,
-				A15CD5131FE62BCD0012F2D8 /* zh-Hant */,
-				A15CD5141FE62BD10012F2D8 /* en */,
 			);
 			name = Settings.storyboard;
 			sourceTree = "<group>";
@@ -720,8 +710,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A15CD5181FE62BDE0012F2D8 /* Base */,
-				A15CD5191FE62BE20012F2D8 /* zh-Hant */,
-				A15CD51A1FE62BE90012F2D8 /* en */,
 			);
 			name = UpdateUserData.storyboard;
 			sourceTree = "<group>";
@@ -740,8 +728,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1930A941FCEE1EE008344CA /* Base */,
-				A1930A981FCEE1FC008344CA /* en */,
-				A1930A991FCEE2F1008344CA /* zh-Hant */,
 			);
 			name = Welcome.storyboard;
 			sourceTree = "<group>";
