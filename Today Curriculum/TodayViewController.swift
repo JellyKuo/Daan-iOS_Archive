@@ -13,7 +13,9 @@ import ObjectMapper
 class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var stackView: UIStackView!
-    var height:CGFloat = 20.0
+    var curriculum:CurriculumWeek? = nil
+    var h = 20.0
+    @IBOutlet weak var descLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,17 +45,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
         }
         if let JSON = userDefaults.string(forKey: "curriculumJSON"), JSON != "" {
-            if let curriculum = CurriculumWeek(JSONString: JSON){
+            if let curr = CurriculumWeek(JSONString: JSON){
                 print("Got curriculum JSON from UserDefaults and mapped to object")
                 if #available(iOSApplicationExtension 10.0, *) {
+                    self.curriculum = curr
                     if(self.extensionContext?.widgetActiveDisplayMode == .expanded){
-                        generateFullUI(currWeek: curriculum)
+                        generateFullUI(currWeek: curr)
                     }
                     else{
-                        //generateCompactUI(curriculum: curriculum)
+                        generateCompactUI(currWeek: curr)
                     }
                 } else {
-                    generateFullUI(currWeek: curriculum)
+                    generateFullUI(currWeek: curr)
                 }
             }
             else{
@@ -77,13 +80,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             let hour = Calendar.current.component(.hour, from: date)
             if hour < 16{
                 index = weekday - 2
+                descLabel.text = NSLocalizedString("Today", comment: "Today")
             }
             else{
                 if weekday != 6{
                     index = weekday - 1
+                    descLabel.text = NSLocalizedString("Tomorrow", comment: "Tomorrow")
                 }
                 else{
                     index = 0
+                    descLabel.text = NSLocalizedString("Monday", comment: "Monday")
                 }
             }
         }
@@ -106,29 +112,126 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         default:
             fatalError("index for Monday to Friday is out of range! Date: \(date), Index: \(index)")
         }
-        if let res = day{
-            return res
+        if day != nil{
+            return day!
         }
         else{
             fatalError("The selected week curriculum is nil! Date: \(date), Index: \(index)")
         }
     }
     
+    func getCurr(currWeek:CurriculumWeek) -> Curriculum {
+        let date = Date()
+        let weekday = Calendar.current.component(.weekday, from: date)
+        let index:Int
+        let today:Bool
+        if weekday <= 6 && weekday >= 2 {
+            let hour = Calendar.current.component(.hour, from: date)
+            if hour < 16{
+                let minute = Calendar.current.component(.minute, from: date)
+                if hour == 15 && minute > 10{
+                    today = false
+                    if weekday != 6{
+                        index = weekday - 1
+                    }
+                    else{
+                        index = 0
+                        descLabel.text = NSLocalizedString("Monday", comment: "Monday")
+                        return currWeek.week1![0]
+                    }
+                }
+                else{
+                    index = weekday - 2
+                    today = true
+                }
+            }
+            else{
+                today = false
+                if weekday != 6{
+                    index = weekday - 1
+                }
+                else{
+                    index = 0
+                    descLabel.text = NSLocalizedString("Monday", comment: "Monday")
+                    return currWeek.week1![0]
+                }
+            }
+        }
+        else{
+            today = false
+            index = 0
+        }
+        
+        let res:[Curriculum]?
+        switch index {
+        case 0:
+            res = currWeek.week1
+        case 1:
+            res = currWeek.week2
+        case 2:
+            res = currWeek.week3
+        case 3:
+            res = currWeek.week4
+        case 4:
+            res = currWeek.week5
+        default:
+            fatalError("index for Monday to Friday is out of range! Date: \(date), Index: \(index)")
+        }
+        if let day = res{
+            if today{
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy/MM/dd "
+                let dateStr = dateFormatter.string(from: date)
+                dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+                
+                for cls in day{
+                    let clsTime = dateFormatter.date(from: dateStr + cls.start!)!
+                    if date < clsTime{
+                        descLabel.text = NSLocalizedString("Next", comment: "Next")
+                        return cls
+                    }
+                }
+                fatalError()
+                
+            }
+            else{
+                descLabel.text = NSLocalizedString("Tomorrow", comment: "Tomorrow")
+                return day[0]
+            }
+        }
+        else{
+            fatalError("result is NIL")
+        }
+    }
+    
     func generateFullUI(currWeek:CurriculumWeek){
         let day = getCurrDay(currWeek: currWeek)
-        height = 20.0
+        for subview in stackView.subviews{
+            subview.removeFromSuperview()
+        }
+        h = 15.0 + Double(descLabel.frame.size.height)
         for cls in day{
             let newEntry = createEntry(cls: cls)
             //newEntry.isHidden = true
+            newEntry.sizeToFit()
             stackView.addArrangedSubview(newEntry)
-            height += newEntry.frame.height
+            h += Double(newEntry.frame.size.height) + 10
         }
+        stackView.sizeToFit()
+    }
+    
+    func generateCompactUI(currWeek: CurriculumWeek){
+        for subview in stackView.subviews{
+            subview.removeFromSuperview()
+        }
+        let cls = getCurr(currWeek: currWeek)
+        stackView.addArrangedSubview(createEntry(cls: cls))
     }
     
     func createEntry(cls:Curriculum) -> UILabel {
         let label = UILabel()
         label.backgroundColor = UIColor(hex: "fa9d29")
-        label.text = " " + cls.start! + "\t" + cls.subject!
+        label.text = " " + cls.start! + "  " + cls.subject!
         label.font = UIFont.systemFont(ofSize: 24)
         label.textColor = UIColor.white
         label.layer.masksToBounds = true
@@ -139,11 +242,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     @available(iOSApplicationExtension 10.0, *)
-    func widgetActiveDisplayModeDidChange(activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
-        if activeDisplayMode == .expanded {
-            preferredContentSize = CGSize(width: 0.0, height: height)
-        } else if activeDisplayMode == .compact {
-            preferredContentSize = maxSize
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        if curriculum != nil{
+            if activeDisplayMode == .expanded {
+                generateFullUI(currWeek: curriculum!)
+                preferredContentSize = CGSize(width: 0.0, height: h)
+            }
+            else if activeDisplayMode == .compact {
+                generateCompactUI(currWeek: curriculum!)
+                preferredContentSize = maxSize
+            }
         }
     }
 }
