@@ -29,6 +29,8 @@
 		A12535671FBF13AC006CE474 /* HistoryScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */; };
 		A12535691FBF13BF006CE474 /* HistoryScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */; };
 		A125356B1FBF21DF006CE474 /* HistoryScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125356A1FBF21DF006CE474 /* HistoryScore.swift */; };
+		A1255424201E1F980023D432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1255426201E1F980023D432 /* InfoPlist.strings */; };
+		A1255429201E1F990023D432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A125542B201E1F990023D432 /* Localizable.strings */; };
 		A12F03B01FC081C9004F739F /* CurriculumPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */; };
 		A12F03B21FC08311004F739F /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B11FC08311004F739F /* Curriculum.swift */; };
 		A12F03B41FC0867D004F739F /* CurriculumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */; };
@@ -130,6 +132,8 @@
 		A125541F201E1C8B0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A1255420201E1C8B0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A1255421201E1C8B0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		A1255425201E1F980023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A125542A201E1F990023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumPageViewController.swift; sourceTree = "<group>"; };
 		A12F03B11FC08311004F739F /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
 		A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 		A10B40DA1FEA9D990081B9E9 /* Today Curriculum */ = {
 			isa = PBXGroup;
 			children = (
+				A125542B201E1F990023D432 /* Localizable.strings */,
+				A1255426201E1F980023D432 /* InfoPlist.strings */,
 				A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */,
 				A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */,
 				A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */,
@@ -457,6 +463,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */,
+				A1255429201E1F990023D432 /* Localizable.strings in Resources */,
+				A1255424201E1F980023D432 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +671,22 @@
 				A125541E201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A1255426201E1F980023D432 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1255425201E1F980023D432 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A125542B201E1F990023D432 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A125542A201E1F990023D432 /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		A12F03B91FC09BF0004F739F /* Curriculum.storyboard */ = {

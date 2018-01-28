@@ -1,4 +1,3 @@
-
 /* Class = "UILabel"; text = "0000/00/00"; ObjectID = "MAx-Ev-NLd"; */
 "MAx-Ev-NLd.text" = "0000/00/00";
 
@@ -9,4 +8,5 @@
 "UOY-A0-JhY.text" = "Description";
 
 /* Class = "UINavigationItem"; title = "Attitude"; ObjectID = "wdp-P0-YTN"; */
-"wdp-P0-YTN.title" = "Attitude";
+"wdp-P0-YTN.title" = "獎懲紀錄";
+

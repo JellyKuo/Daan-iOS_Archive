@@ -1,15 +1,15 @@
-
 /* Class = "UITableViewSection"; headerTitle = "Logout"; ObjectID = "Kgt-V7-fVz"; */
-"Kgt-V7-fVz.headerTitle" = "Logout";
+"Kgt-V7-fVz.headerTitle" = "登出";
 
 /* Class = "UILabel"; text = "Logout"; ObjectID = "cSk-4h-XuK"; */
-"cSk-4h-XuK.text" = "Logout";
+"cSk-4h-XuK.text" = "登出";
 
 /* Class = "UILabel"; text = "Clear cached curriculum"; ObjectID = "gZz-xd-tQG"; */
-"gZz-xd-tQG.text" = "Clear cached curriculum";
+"gZz-xd-tQG.text" = "清除課表快取";
 
 /* Class = "UILabel"; text = "Update User Data"; ObjectID = "rhe-W5-pAS"; */
-"rhe-W5-pAS.text" = "Update User Data";
+"rhe-W5-pAS.text" = "更新用戶資料";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
-"vgI-PN-5VI.title" = "Settings";
+"vgI-PN-5VI.title" = "設定";
+

@@ -1,33 +1,33 @@
-
 /* Class = "UIButton"; normalTitle = "History Score"; ObjectID = "2lW-em-RTX"; */
-"2lW-em-RTX.normalTitle" = "History Score";
+"2lW-em-RTX.normalTitle" = "歷年成績";
 
 /* Class = "UINavigationItem"; title = "Daan"; ObjectID = "7du-gH-YYz"; */
-"7du-gH-YYz.title" = "Daan";
+"7du-gH-YYz.title" = "木棉手札";
 
 /* Class = "UIButton"; normalTitle = "Sectional Exam Score"; ObjectID = "A1I-KB-IWb"; */
-"A1I-KB-IWb.normalTitle" = "Sectional Exam Score";
+"A1I-KB-IWb.normalTitle" = "段考成績";
 
 /* Class = "UILabel"; text = "Cls"; ObjectID = "BTZ-2m-sTi"; */
-"BTZ-2m-sTi.text" = "Cls";
+"BTZ-2m-sTi.text" = "班級";
 
 /* Class = "UIButton"; normalTitle = "Absent"; ObjectID = "PqF-o3-LSP"; */
-"PqF-o3-LSP.normalTitle" = "Absent";
+"PqF-o3-LSP.normalTitle" = "出缺勤";
 
 /* Class = "UIButton"; normalTitle = "Study Room"; ObjectID = "WWJ-tQ-5xZ"; */
-"WWJ-tQ-5xZ.normalTitle" = "Study Room";
+"WWJ-tQ-5xZ.normalTitle" = "自修室";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "X9T-KE-Yyq"; */
-"X9T-KE-Yyq.text" = "Name";
+"X9T-KE-Yyq.text" = "姓名";
 
 /* Class = "UILabel"; text = "Group"; ObjectID = "g1j-fk-RQ9"; */
-"g1j-fk-RQ9.text" = "Group";
+"g1j-fk-RQ9.text" = "群組";
 
 /* Class = "UIButton"; normalTitle = "Curriculum"; ObjectID = "lAW-56-i11"; */
-"lAW-56-i11.normalTitle" = "Curriculum";
+"lAW-56-i11.normalTitle" = "班級課表";
 
 /* Class = "UILabel"; text = "Nick"; ObjectID = "pZn-cY-f3I"; */
-"pZn-cY-f3I.text" = "Nick";
+"pZn-cY-f3I.text" = "暱稱";
 
 /* Class = "UIButton"; normalTitle = "Attitude"; ObjectID = "t8J-LW-1H4"; */
-"t8J-LW-1H4.normalTitle" = "Attitude";
+"t8J-LW-1H4.normalTitle" = "獎懲紀錄";
+

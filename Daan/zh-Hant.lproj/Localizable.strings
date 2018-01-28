@@ -1,1 +1,51 @@
-/* No Localized Strings */
+/* API Error */
+"ApiErr" = "API 錯誤";
+
+/* Authenticate Error */
+"AuthError" = "認證錯誤";
+
+/* Connection Error */
+"ConnErr" = "連線錯誤";
+
+/* First */
+"First" = "第一";
+
+/* Friday */
+"Fri" = "星期五";
+
+/* Grade */
+"Grade" = "年級";
+
+/* Monday */
+"Mon" = "星期一";
+
+/* Default action */
+"OK" = "好";
+
+/* One */
+"One" = "一";
+
+/* Password does not match */
+"PwdNotMatch" = "密碼不正確";
+
+/* Second */
+"Second" = "第二";
+
+/* Semester */
+"Semester" = "學期";
+
+/* Three */
+"Three" = "三";
+
+/* Thursday */
+"Thu" = "星期四";
+
+/* Tuesday */
+"Tue" = "星期二";
+
+/* Two */
+"Two" = "二";
+
+/* Wednesday */
+"Wed" = "星期三";
+

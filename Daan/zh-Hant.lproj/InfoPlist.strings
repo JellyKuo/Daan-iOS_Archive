@@ -1,1 +1,3 @@
-/* No Localized Strings */
+/* Application name */
+"CFBundleDisplayName" = "木棉手札";
+"CFBundleName" = "木棉手札";
