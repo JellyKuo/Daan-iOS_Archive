@@ -22,6 +22,7 @@ class SectionalExamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        semesterLab.text = NSLocalizedString("First", comment: "First") + NSLocalizedString("Semester", comment: "Semester")
         // Do any additional setup after loading the view.
     }
     

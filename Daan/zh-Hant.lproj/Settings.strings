@@ -4,6 +4,9 @@
 /* Class = "UILabel"; text = "Logout"; ObjectID = "cSk-4h-XuK"; */
 "cSk-4h-XuK.text" = "登出";
 
+/* Class = "UILabel"; text = "Clear cached curriculum"; ObjectID = "gZz-xd-tQG"; */
+"gZz-xd-tQG.text" = "清除課表快取";
+
 /* Class = "UILabel"; text = "Update User Data"; ObjectID = "rhe-W5-pAS"; */
 "rhe-W5-pAS.text" = "更新用戶資料";
 

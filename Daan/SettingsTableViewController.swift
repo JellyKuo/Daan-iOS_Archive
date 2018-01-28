@@ -38,6 +38,7 @@ class SettingsTableViewController: UITableViewController {
                 break;
             }
         }
+
         else if indexPath.section == 1 {
             switch indexPath.row {
             case 0:

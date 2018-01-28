@@ -46,14 +46,15 @@
                                             <segue destination="MEh-rS-dYA" kind="presentation" identifier="UpdateUserDataSegue" modalPresentationStyle="formSheet" id="A3H-x8-xKG"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ky5-1K-awY">
+
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2t9-Yu-xgg">
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ky5-1K-awY" id="0cb-Rr-dmG">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2t9-Yu-xgg" id="aqt-jo-ota">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset cached curriculum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3c-8k-SCU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear cached curriculum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-xd-tQG">
                                                     <rect key="frame" x="16" y="11" width="343" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -61,6 +62,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="gZz-xd-tQG" firstAttribute="top" secondItem="aqt-jo-ota" secondAttribute="topMargin" id="V0c-Ro-Nau"/>
+                                                <constraint firstItem="gZz-xd-tQG" firstAttribute="leading" secondItem="aqt-jo-ota" secondAttribute="leadingMargin" id="f3g-zk-20p"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gZz-xd-tQG" secondAttribute="bottom" id="hdf-Fp-BEH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gZz-xd-tQG" secondAttribute="trailing" id="sSn-oY-JKh"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="o3c-8k-SCU" secondAttribute="trailing" id="6ZB-Xq-S4B"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="o3c-8k-SCU" secondAttribute="bottom" id="a1E-72-Skq"/>
                                                 <constraint firstItem="o3c-8k-SCU" firstAttribute="leading" secondItem="0cb-Rr-dmG" secondAttribute="leadingMargin" id="b5c-gH-abz"/>

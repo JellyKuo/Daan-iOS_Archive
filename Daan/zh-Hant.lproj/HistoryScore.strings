@@ -8,13 +8,13 @@
 "EXL-9u-6XP.text" = "100";
 
 /* Class = "UINavigationItem"; title = "History Score"; ObjectID = "PdR-jI-Ai6"; */
-"PdR-jI-Ai6.title" = "學期成績";
+"PdR-jI-Ai6.title" = "歷年成績";
 
 /* Class = "UILabel"; text = "Cr"; ObjectID = "SlY-85-Vhu"; */
 "SlY-85-Vhu.text" = "Cr";
 
 /* Class = "UILabel"; text = " Grade"; ObjectID = "TX9-xA-20X"; */
-"TX9-xA-20X.text" = " 年級";
+"TX9-xA-20X.text" = " Grade";
 
 /* Class = "UILabel"; text = "Subject"; ObjectID = "UFP-dd-A9V"; */
 "UFP-dd-A9V.text" = "Subject";
