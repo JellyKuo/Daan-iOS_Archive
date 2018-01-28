@@ -8,7 +8,7 @@
 "GSO-RI-QNV.text" = "End";
 
 /* Class = "UINavigationItem"; title = "Weekday"; ObjectID = "HMZ-J5-zrW"; */
-"HMZ-J5-zrW.title" = "Weekday";
+"HMZ-J5-zrW.title" = "星期";
 
 /* Class = "UILabel"; text = "Subject"; ObjectID = "w6m-hs-aFg"; */
 "w6m-hs-aFg.text" = "Subject";

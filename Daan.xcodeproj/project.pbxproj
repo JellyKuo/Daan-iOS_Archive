@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		170CB8F1E3E6D59307E480EF /* Pods_Daan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */; };
+		3961E347CF631D251FA29A51 /* Pods_Today_Curriculum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54E53AECCA06A39C478B977 /* Pods_Today_Curriculum.framework */; };
 		A105F7E71FE3F2C100777DC6 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */; };
+		A10B40D91FEA9D990081B9E9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19A54111FC5BDF10095F858 /* NotificationCenter.framework */; };
+		A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */; };
+		A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */; };
+		A10B40E31FEA9D990081B9E9 /* Today Curriculum.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A10B40E81FEA9DE50081B9E9 /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B11FC08311004F739F /* Curriculum.swift */; };
 		A110512A1FBC84B000970878 /* SectionalExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */; };
 		A110512C1FBC85F000970878 /* SectionalScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110512B1FBC85F000970878 /* SectionalScore.swift */; };
 		A110512E1FBC877500970878 /* SectionalExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110512D1FBC877500970878 /* SectionalExamViewController.swift */; };
@@ -23,6 +29,8 @@
 		A12535671FBF13AC006CE474 /* HistoryScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */; };
 		A12535691FBF13BF006CE474 /* HistoryScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */; };
 		A125356B1FBF21DF006CE474 /* HistoryScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125356A1FBF21DF006CE474 /* HistoryScore.swift */; };
+		A1255424201E1F980023D432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1255426201E1F980023D432 /* InfoPlist.strings */; };
+		A1255429201E1F990023D432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A125542B201E1F990023D432 /* Localizable.strings */; };
 		A12F03B01FC081C9004F739F /* CurriculumPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */; };
 		A12F03B21FC08311004F739F /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B11FC08311004F739F /* Curriculum.swift */; };
 		A12F03B41FC0867D004F739F /* CurriculumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */; };
@@ -36,6 +44,7 @@
 		A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5111FE62BC50012F2D8 /* Settings.storyboard */; };
 		A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */; };
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
+		A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
 		A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1930A881FCEDFF1008344CA /* Welcome.storyboard */; };
 		A1B0716D1FB84BDB006A291A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */; };
@@ -59,15 +68,44 @@
 		A1F8BE121FB3485C00B26D86 /* ApiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F8BE111FB3485C00B26D86 /* ApiConfig.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A10B40E11FEA9D990081B9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11DC6D91FB33C3B00A4EC9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10B40D71FEA9D990081B9E9;
+			remoteInfo = "Today Curriculum";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A19494621FEA927B006EF100 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10B40E31FEA9D990081B9E9 /* Today Curriculum.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2B41BB091A16E23D6999C023 /* Pods-Today Curriculum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today Curriculum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Today Curriculum/Pods-Today Curriculum.debug.xcconfig"; sourceTree = "<group>"; };
 		828118FBE6EC8C2E022567D4 /* Pods-Daan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.debug.xcconfig"; sourceTree = "<group>"; };
 		97090D5A146DDF06092C73C8 /* Pods-Daan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daan/Pods-Daan.release.xcconfig"; sourceTree = "<group>"; };
 		A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
+		A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Curriculum.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A10B40DE1FEA9D990081B9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A10B40E01FEA9D990081B9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Today Curriculum.entitlements"; sourceTree = "<group>"; };
 		A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewCell.swift; sourceTree = "<group>"; };
 		A110512B1FBC85F000970878 /* SectionalScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalScore.swift; sourceTree = "<group>"; };
 		A110512D1FBC877500970878 /* SectionalExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamViewController.swift; sourceTree = "<group>"; };
 		A110512F1FBC895600970878 /* SectionalExamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewController.swift; sourceTree = "<group>"; };
-		A11055091FE64098007DE57E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A113306A1FB9D15D0057C42C /* AttitudeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeTableViewCell.swift; sourceTree = "<group>"; };
 		A115EC301FBFB4940027140E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A11DC6E11FB33C3B00A4EC9A /* Daan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,35 +118,37 @@
 		A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreViewController.swift; sourceTree = "<group>"; };
 		A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreTableViewCell.swift; sourceTree = "<group>"; };
 		A125356A1FBF21DF006CE474 /* HistoryScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScore.swift; sourceTree = "<group>"; };
+		A1255414201E1C890023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Settings.strings"; sourceTree = "<group>"; };
+		A1255415201E1C890023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/UpdateUserData.strings"; sourceTree = "<group>"; };
+		A1255416201E1C890023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SectionalExam.strings"; sourceTree = "<group>"; };
+		A1255417201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Absent.strings"; sourceTree = "<group>"; };
+		A1255418201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Attitude.strings"; sourceTree = "<group>"; };
+		A1255419201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		A125541A201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HistoryScore.strings"; sourceTree = "<group>"; };
+		A125541B201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Curriculum.strings"; sourceTree = "<group>"; };
+		A125541C201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StudyRoom.strings"; sourceTree = "<group>"; };
+		A125541D201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Welcome.strings"; sourceTree = "<group>"; };
+		A125541E201E1C8A0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A125541F201E1C8B0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A1255420201E1C8B0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A1255421201E1C8B0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		A1255425201E1F980023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A125542A201E1F990023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumPageViewController.swift; sourceTree = "<group>"; };
 		A12F03B11FC08311004F739F /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
 		A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewController.swift; sourceTree = "<group>"; };
 		A12F03B51FC099B5004F739F /* CurriculumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewCell.swift; sourceTree = "<group>"; };
 		A12F03B81FC09BF0004F739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Curriculum.storyboard; sourceTree = "<group>"; };
-		A12F03BB1FC09E3E004F739F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Curriculum.strings"; sourceTree = "<group>"; };
-		A12F03BD1FC09E43004F739F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Curriculum.strings; sourceTree = "<group>"; };
-		A12F03C41FC0A51E004F739F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		A12F03C91FC0A51F004F739F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		A12F03CB1FC0A526004F739F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A12F03CC1FC0A54A004F739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewCell.swift; sourceTree = "<group>"; };
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
 		A15CD5121FE62BC80012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
-		A15CD5131FE62BCD0012F2D8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Settings.strings"; sourceTree = "<group>"; };
-		A15CD5141FE62BD10012F2D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
 		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
-		A15CD5191FE62BE20012F2D8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/UpdateUserData.strings"; sourceTree = "<group>"; };
-		A15CD51A1FE62BE90012F2D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UpdateUserData.strings; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
-		A17352B51FE6254C0065FB48 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StudyRoom.strings"; sourceTree = "<group>"; };
-		A17352B71FE6254D0065FB48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StudyRoom.strings; sourceTree = "<group>"; };
-		A1930A841FCEDF44008344CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A851FCEDF4F008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A941FCEE1EE008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
-		A1930A981FCEE1FC008344CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Welcome.strings; sourceTree = "<group>"; };
-		A1930A991FCEE2F1008344CA /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Welcome.strings"; sourceTree = "<group>"; };
 		A19A54111FC5BDF10095F858 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1B0716E1FB850B6006A291A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -121,16 +161,6 @@
 		A1C83A811FBFCD69008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Absent.storyboard; sourceTree = "<group>"; };
 		A1C83A861FBFCD72008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Attitude.storyboard; sourceTree = "<group>"; };
 		A1C83A8B1FBFCD86008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HistoryScore.storyboard; sourceTree = "<group>"; };
-		A1C83A901FBFCDAE008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SectionalExam.strings; sourceTree = "<group>"; };
-		A1C83A921FBFCDBE008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Absent.strings; sourceTree = "<group>"; };
-		A1C83A941FBFCDC1008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Attitude.strings; sourceTree = "<group>"; };
-		A1C83A961FBFCDC4008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		A1C83A981FBFCDDA008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HistoryScore.strings; sourceTree = "<group>"; };
-		A1C83A9C1FBFCF60008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Absent.strings"; sourceTree = "<group>"; };
-		A1C83A9E1FBFCF62008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Attitude.strings"; sourceTree = "<group>"; };
-		A1C83AA01FBFCF70008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		A1C83AA41FBFCF8A008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HistoryScore.strings"; sourceTree = "<group>"; };
-		A1C83AA61FBFCF92008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SectionalExam.strings"; sourceTree = "<group>"; };
 		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -141,9 +171,20 @@
 		A1F8BE0F1FB3447400B26D86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1F8BE111FB3485C00B26D86 /* ApiConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiConfig.plist; sourceTree = "<group>"; };
 		B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8F828E6D5F52E7BF18D69E /* Pods-Today Curriculum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today Curriculum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Today Curriculum/Pods-Today Curriculum.release.xcconfig"; sourceTree = "<group>"; };
+		C54E53AECCA06A39C478B977 /* Pods_Today_Curriculum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Today_Curriculum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A10B40D51FEA9D990081B9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B40D91FEA9D990081B9E9 /* NotificationCenter.framework in Frameworks */,
+				3961E347CF631D251FA29A51 /* Pods_Today_Curriculum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A11DC6DE1FB33C3B00A4EC9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,14 +201,30 @@
 			children = (
 				828118FBE6EC8C2E022567D4 /* Pods-Daan.debug.xcconfig */,
 				97090D5A146DDF06092C73C8 /* Pods-Daan.release.xcconfig */,
+				2B41BB091A16E23D6999C023 /* Pods-Today Curriculum.debug.xcconfig */,
+				BF8F828E6D5F52E7BF18D69E /* Pods-Today Curriculum.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A10B40DA1FEA9D990081B9E9 /* Today Curriculum */ = {
+			isa = PBXGroup;
+			children = (
+				A125542B201E1F990023D432 /* Localizable.strings */,
+				A1255426201E1F980023D432 /* InfoPlist.strings */,
+				A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */,
+				A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */,
+				A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */,
+				A10B40E01FEA9D990081B9E9 /* Info.plist */,
+			);
+			path = "Today Curriculum";
 			sourceTree = "<group>";
 		};
 		A11DC6D81FB33C3B00A4EC9A = {
 			isa = PBXGroup;
 			children = (
 				A11DC6E31FB33C3B00A4EC9A /* Daan */,
+				A10B40DA1FEA9D990081B9E9 /* Today Curriculum */,
 				A11DC6E21FB33C3B00A4EC9A /* Products */,
 				198B6901EDE96C27DF8B1CA2 /* Pods */,
 				F40B6FBCDF31956BA264D328 /* Frameworks */,
@@ -178,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				A11DC6E11FB33C3B00A4EC9A /* Daan.app */,
+				A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,6 +351,7 @@
 			children = (
 				B842F16731FA0F14A70ADFC9 /* Pods_Daan.framework */,
 				A19A54111FC5BDF10095F858 /* NotificationCenter.framework */,
+				C54E53AECCA06A39C478B977 /* Pods_Today_Curriculum.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -300,6 +359,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A10B40D71FEA9D990081B9E9 /* Today Curriculum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10B40E61FEA9D990081B9E9 /* Build configuration list for PBXNativeTarget "Today Curriculum" */;
+			buildPhases = (
+				DB5C297EF2AE39E09E1E00EA /* [CP] Check Pods Manifest.lock */,
+				A10B40D41FEA9D990081B9E9 /* Sources */,
+				A10B40D51FEA9D990081B9E9 /* Frameworks */,
+				A10B40D61FEA9D990081B9E9 /* Resources */,
+				74BAC3918632B1DE832C5AE1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Today Curriculum";
+			productName = "Today Curriculum";
+			productReference = A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A11DC6E01FB33C3B00A4EC9A /* Daan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A11DC6F31FB33C3C00A4EC9A /* Build configuration list for PBXNativeTarget "Daan" */;
@@ -310,10 +388,12 @@
 				A11DC6DF1FB33C3B00A4EC9A /* Resources */,
 				1F3FA917DD276C7882CA3740 /* [CP] Embed Pods Frameworks */,
 				AED7CEF420F8FBE77F2D0D18 /* [CP] Copy Pods Resources */,
+				A19494621FEA927B006EF100 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A10B40E21FEA9D990081B9E9 /* PBXTargetDependency */,
 			);
 			name = Daan;
 			productName = Daan;
@@ -330,14 +410,26 @@
 					0,
 					1,
 				);
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "郭東岳";
 				TargetAttributes = {
+					A10B40D71FEA9D990081B9E9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					A11DC6E01FB33C3B00A4EC9A = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -351,8 +443,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
-				"zh-Hant",
 				en,
+				"zh-Hant",
 			);
 			mainGroup = A11DC6D81FB33C3B00A4EC9A;
 			productRefGroup = A11DC6E21FB33C3B00A4EC9A /* Products */;
@@ -360,11 +452,22 @@
 			projectRoot = "";
 			targets = (
 				A11DC6E01FB33C3B00A4EC9A /* Daan */,
+				A10B40D71FEA9D990081B9E9 /* Today Curriculum */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A10B40D61FEA9D990081B9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */,
+				A1255429201E1F990023D432 /* Localizable.strings in Resources */,
+				A1255424201E1F980023D432 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A11DC6DF1FB33C3B00A4EC9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,20 +501,33 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Daan/Pods-Daan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daan/Pods-Daan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74BAC3918632B1DE832C5AE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Today Curriculum/Pods-Today Curriculum-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A1ED1ABB20F7FA9C220B209A /* [CP] Check Pods Manifest.lock */ = {
@@ -447,9 +563,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daan/Pods-Daan-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB5C297EF2AE39E09E1E00EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Today Curriculum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A10B40D41FEA9D990081B9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B40E81FEA9DE50081B9E9 /* Curriculum.swift in Sources */,
+				A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */,
+				A10B40DC1FEA9D990081B9E9 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A11DC6DD1FB33C3B00A4EC9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -493,13 +637,29 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A10B40E21FEA9D990081B9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10B40D71FEA9D990081B9E9 /* Today Curriculum */;
+			targetProxy = A10B40E11FEA9D990081B9E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A10B40DE1FEA9D990081B9E9 /* Base */,
+				A1255421201E1C8B0023D432 /* zh-Hant */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		A115EC311FBFB4940027140E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A115EC301FBFB4940027140E /* Base */,
-				A1C83A961FBFCDC4008CF088 /* en */,
-				A1C83AA01FBFCF70008CF088 /* zh-Hant */,
+				A1255419201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -508,17 +668,32 @@
 			isa = PBXVariantGroup;
 			children = (
 				A11DC6EE1FB33C3C00A4EC9A /* Base */,
-				A11055091FE64098007DE57E /* zh-Hant */,
+				A125541E201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A1255426201E1F980023D432 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1255425201E1F980023D432 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A125542B201E1F990023D432 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A125542A201E1F990023D432 /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		A12F03B91FC09BF0004F739F /* Curriculum.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A12F03B81FC09BF0004F739F /* Base */,
-				A12F03BB1FC09E3E004F739F /* zh-Hant */,
-				A12F03BD1FC09E43004F739F /* en */,
+				A125541B201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = Curriculum.storyboard;
 			sourceTree = "<group>";
@@ -526,9 +701,8 @@
 		A12F03C51FC0A51E004F739F /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A12F03C41FC0A51E004F739F /* zh-Hant */,
-				A12F03CB1FC0A526004F739F /* en */,
 				A12F03CC1FC0A54A004F739F /* Base */,
+				A1255420201E1C8B0023D432 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -536,9 +710,8 @@
 		A12F03CA1FC0A51F004F739F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A12F03C91FC0A51F004F739F /* zh-Hant */,
-				A1930A841FCEDF44008344CA /* en */,
 				A1930A851FCEDF4F008344CA /* Base */,
+				A125541F201E1C8B0023D432 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -547,8 +720,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A15CD5121FE62BC80012F2D8 /* Base */,
-				A15CD5131FE62BCD0012F2D8 /* zh-Hant */,
-				A15CD5141FE62BD10012F2D8 /* en */,
+				A1255414201E1C890023D432 /* zh-Hant */,
 			);
 			name = Settings.storyboard;
 			sourceTree = "<group>";
@@ -557,8 +729,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A15CD5181FE62BDE0012F2D8 /* Base */,
-				A15CD5191FE62BE20012F2D8 /* zh-Hant */,
-				A15CD51A1FE62BE90012F2D8 /* en */,
+				A1255415201E1C890023D432 /* zh-Hant */,
 			);
 			name = UpdateUserData.storyboard;
 			sourceTree = "<group>";
@@ -567,8 +738,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A17352B21FE625450065FB48 /* Base */,
-				A17352B51FE6254C0065FB48 /* zh-Hant */,
-				A17352B71FE6254D0065FB48 /* en */,
+				A125541C201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = StudyRoom.storyboard;
 			sourceTree = "<group>";
@@ -577,8 +747,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1930A941FCEE1EE008344CA /* Base */,
-				A1930A981FCEE1FC008344CA /* en */,
-				A1930A991FCEE2F1008344CA /* zh-Hant */,
+				A125541D201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = Welcome.storyboard;
 			sourceTree = "<group>";
@@ -587,8 +756,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A7C1FBFCD30008CF088 /* Base */,
-				A1C83A901FBFCDAE008CF088 /* en */,
-				A1C83AA61FBFCF92008CF088 /* zh-Hant */,
+				A1255416201E1C890023D432 /* zh-Hant */,
 			);
 			name = SectionalExam.storyboard;
 			sourceTree = "<group>";
@@ -597,8 +765,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A811FBFCD69008CF088 /* Base */,
-				A1C83A921FBFCDBE008CF088 /* en */,
-				A1C83A9C1FBFCF60008CF088 /* zh-Hant */,
+				A1255417201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = Absent.storyboard;
 			sourceTree = "<group>";
@@ -607,8 +774,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A861FBFCD72008CF088 /* Base */,
-				A1C83A941FBFCDC1008CF088 /* en */,
-				A1C83A9E1FBFCF62008CF088 /* zh-Hant */,
+				A1255418201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = Attitude.storyboard;
 			sourceTree = "<group>";
@@ -617,8 +783,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A8B1FBFCD86008CF088 /* Base */,
-				A1C83A981FBFCDDA008CF088 /* en */,
-				A1C83AA41FBFCF8A008CF088 /* zh-Hant */,
+				A125541A201E1C8A0023D432 /* zh-Hant */,
 			);
 			name = HistoryScore.storyboard;
 			sourceTree = "<group>";
@@ -626,6 +791,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A10B40E41FEA9D990081B9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B41BB091A16E23D6999C023 /* Pods-Today Curriculum.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Today Curriculum/Today Curriculum.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2845NM46VS;
+				INFOPLIST_FILE = "Today Curriculum/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jelly.Daan.Today-Curriculum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10B40E51FEA9D990081B9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8F828E6D5F52E7BF18D69E /* Pods-Today Curriculum.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Today Curriculum/Today Curriculum.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2845NM46VS;
+				INFOPLIST_FILE = "Today Curriculum/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jelly.Daan.Today-Curriculum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A11DC6F11FB33C3C00A4EC9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -675,7 +876,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -727,7 +928,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -774,6 +975,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A10B40E61FEA9D990081B9E9 /* Build configuration list for PBXNativeTarget "Today Curriculum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10B40E41FEA9D990081B9E9 /* Debug */,
+				A10B40E51FEA9D990081B9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A11DC6DC1FB33C3B00A4EC9A /* Build configuration list for PBXProject "Daan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

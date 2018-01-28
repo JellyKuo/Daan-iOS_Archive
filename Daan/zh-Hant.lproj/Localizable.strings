@@ -8,7 +8,7 @@
 "ConnErr" = "連線錯誤";
 
 /* First */
-"First" = "上";
+"First" = "第一";
 
 /* Friday */
 "Fri" = "星期五";
@@ -19,9 +19,6 @@
 /* Monday */
 "Mon" = "星期一";
 
-/* (No Comment) */
-"Num" = "第";
-
 /* Default action */
 "OK" = "好";
 
@@ -29,10 +26,10 @@
 "One" = "一";
 
 /* Password does not match */
-"PwdNotMatch" = "密碼不符";
+"PwdNotMatch" = "密碼不正確";
 
 /* Second */
-"Second" = "下";
+"Second" = "第二";
 
 /* Semester */
 "Semester" = "學期";

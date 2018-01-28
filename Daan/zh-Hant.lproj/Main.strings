@@ -1,5 +1,5 @@
 /* Class = "UIButton"; normalTitle = "History Score"; ObjectID = "2lW-em-RTX"; */
-"2lW-em-RTX.normalTitle" = "學期成績";
+"2lW-em-RTX.normalTitle" = "歷年成績";
 
 /* Class = "UINavigationItem"; title = "Daan"; ObjectID = "7du-gH-YYz"; */
 "7du-gH-YYz.title" = "木棉手札";
@@ -20,7 +20,7 @@
 "X9T-KE-Yyq.text" = "姓名";
 
 /* Class = "UILabel"; text = "Group"; ObjectID = "g1j-fk-RQ9"; */
-"g1j-fk-RQ9.text" = "用戶組";
+"g1j-fk-RQ9.text" = "群組";
 
 /* Class = "UIButton"; normalTitle = "Curriculum"; ObjectID = "lAW-56-i11"; */
 "lAW-56-i11.normalTitle" = "班級課表";

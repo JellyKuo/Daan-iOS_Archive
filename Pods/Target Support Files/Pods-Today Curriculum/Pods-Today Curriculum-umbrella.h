@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double JTAppleCalendarVersionNumber;
-FOUNDATION_EXPORT const unsigned char JTAppleCalendarVersionString[];
+FOUNDATION_EXPORT double Pods_Today_CurriculumVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Today_CurriculumVersionString[];
 
