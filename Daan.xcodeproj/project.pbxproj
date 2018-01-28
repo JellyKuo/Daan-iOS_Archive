@@ -121,8 +121,6 @@
 		A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewController.swift; sourceTree = "<group>"; };
 		A12F03B51FC099B5004F739F /* CurriculumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewCell.swift; sourceTree = "<group>"; };
 		A12F03B81FC09BF0004F739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Curriculum.storyboard; sourceTree = "<group>"; };
-		A12F03BB1FC09E3E004F739F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Curriculum.strings"; sourceTree = "<group>"; };
-		A12F03BD1FC09E43004F739F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Curriculum.strings; sourceTree = "<group>"; };
 		A12F03CC1FC0A54A004F739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewCell.swift; sourceTree = "<group>"; };
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
@@ -131,8 +129,6 @@
 		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
-		A17352B51FE6254C0065FB48 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StudyRoom.strings"; sourceTree = "<group>"; };
-		A17352B71FE6254D0065FB48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StudyRoom.strings; sourceTree = "<group>"; };
 		A1930A851FCEDF4F008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A941FCEE1EE008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		A19A54111FC5BDF10095F858 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -147,16 +143,6 @@
 		A1C83A811FBFCD69008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Absent.storyboard; sourceTree = "<group>"; };
 		A1C83A861FBFCD72008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Attitude.storyboard; sourceTree = "<group>"; };
 		A1C83A8B1FBFCD86008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HistoryScore.storyboard; sourceTree = "<group>"; };
-		A1C83A901FBFCDAE008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SectionalExam.strings; sourceTree = "<group>"; };
-		A1C83A921FBFCDBE008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Absent.strings; sourceTree = "<group>"; };
-		A1C83A941FBFCDC1008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Attitude.strings; sourceTree = "<group>"; };
-		A1C83A961FBFCDC4008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		A1C83A981FBFCDDA008CF088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HistoryScore.strings; sourceTree = "<group>"; };
-		A1C83A9C1FBFCF60008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Absent.strings"; sourceTree = "<group>"; };
-		A1C83A9E1FBFCF62008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Attitude.strings"; sourceTree = "<group>"; };
-		A1C83AA01FBFCF70008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		A1C83AA41FBFCF8A008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HistoryScore.strings"; sourceTree = "<group>"; };
-		A1C83AA61FBFCF92008CF088 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SectionalExam.strings"; sourceTree = "<group>"; };
 		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -650,8 +636,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A115EC301FBFB4940027140E /* Base */,
-				A1C83A961FBFCDC4008CF088 /* en */,
-				A1C83AA01FBFCF70008CF088 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -668,8 +652,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A12F03B81FC09BF0004F739F /* Base */,
-				A12F03BB1FC09E3E004F739F /* zh-Hant */,
-				A12F03BD1FC09E43004F739F /* en */,
 			);
 			name = Curriculum.storyboard;
 			sourceTree = "<group>";
@@ -710,8 +692,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A17352B21FE625450065FB48 /* Base */,
-				A17352B51FE6254C0065FB48 /* zh-Hant */,
-				A17352B71FE6254D0065FB48 /* en */,
 			);
 			name = StudyRoom.storyboard;
 			sourceTree = "<group>";
@@ -728,8 +708,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A7C1FBFCD30008CF088 /* Base */,
-				A1C83A901FBFCDAE008CF088 /* en */,
-				A1C83AA61FBFCF92008CF088 /* zh-Hant */,
 			);
 			name = SectionalExam.storyboard;
 			sourceTree = "<group>";
@@ -738,8 +716,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A811FBFCD69008CF088 /* Base */,
-				A1C83A921FBFCDBE008CF088 /* en */,
-				A1C83A9C1FBFCF60008CF088 /* zh-Hant */,
 			);
 			name = Absent.storyboard;
 			sourceTree = "<group>";
@@ -748,8 +724,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A861FBFCD72008CF088 /* Base */,
-				A1C83A941FBFCDC1008CF088 /* en */,
-				A1C83A9E1FBFCF62008CF088 /* zh-Hant */,
 			);
 			name = Attitude.storyboard;
 			sourceTree = "<group>";
@@ -758,8 +732,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1C83A8B1FBFCD86008CF088 /* Base */,
-				A1C83A981FBFCDDA008CF088 /* en */,
-				A1C83AA41FBFCF8A008CF088 /* zh-Hant */,
 			);
 			name = HistoryScore.storyboard;
 			sourceTree = "<group>";
