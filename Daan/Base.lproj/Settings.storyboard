@@ -94,6 +94,28 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="FyK-DK-WZG">
+                                        <rect key="frame" x="0.0" y="178" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FyK-DK-WZG" id="6Zk-CR-REi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset and clear all content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYb-Bn-5n3">
+                                                    <rect key="frame" x="16" y="11" width="343" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kYb-Bn-5n3" firstAttribute="leading" secondItem="6Zk-CR-REi" secondAttribute="leadingMargin" id="RYi-J7-RDe"/>
+                                                <constraint firstItem="kYb-Bn-5n3" firstAttribute="top" secondItem="6Zk-CR-REi" secondAttribute="topMargin" id="Va2-CJ-OqG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kYb-Bn-5n3" secondAttribute="bottom" id="YLW-Gu-hYw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kYb-Bn-5n3" secondAttribute="trailing" id="g6U-9Z-5df"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>

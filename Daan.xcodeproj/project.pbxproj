@@ -41,6 +41,7 @@
 		A15444AE1FBAFF7100A5D88E /* AbsentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */; };
 		A15444B01FBAFF8400A5D88E /* AbsentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */; };
 		A15444B21FBB026900A5D88E /* AbsentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444B11FBB026900A5D88E /* AbsentState.swift */; };
+		A154B56D2020BE3F004AF50C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154B56C2020BE3F004AF50C /* SplashViewController.swift */; };
 		A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5111FE62BC50012F2D8 /* Settings.storyboard */; };
 		A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */; };
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
@@ -143,6 +144,7 @@
 		A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewCell.swift; sourceTree = "<group>"; };
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
+		A154B56C2020BE3F004AF50C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A15CD5121FE62BC80012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				A1C83A821FBFCD69008CF088 /* Absent.storyboard */,
 				A1C83A871FBFCD72008CF088 /* Attitude.storyboard */,
 				A115EC311FBFB4940027140E /* Main.storyboard */,
+				A154B56C2020BE3F004AF50C /* SplashViewController.swift */,
 				A1C83A8C1FBFCD86008CF088 /* HistoryScore.storyboard */,
 				A12F03B91FC09BF0004F739F /* Curriculum.storyboard */,
 				A17352B31FE625450065FB48 /* StudyRoom.storyboard */,
@@ -617,6 +620,7 @@
 				A1D2018D1FDC246300FABA4D /* SettingsTableViewController.swift in Sources */,
 				A11E61761FD8F3BA00E2CA4F /* ViewController.swift in Sources */,
 				A125356B1FBF21DF006CE474 /* HistoryScore.swift in Sources */,
+				A154B56D2020BE3F004AF50C /* SplashViewController.swift in Sources */,
 				A15444B01FBAFF8400A5D88E /* AbsentTableViewController.swift in Sources */,
 				A1BDF3E11FB882B4009F9F72 /* AttitudeTableViewController.swift in Sources */,
 				A15444AE1FBAFF7100A5D88E /* AbsentTableViewCell.swift in Sources */,

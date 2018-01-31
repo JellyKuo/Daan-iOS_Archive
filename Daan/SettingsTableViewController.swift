@@ -32,7 +32,7 @@ class SettingsTableViewController: UITableViewController {
         if indexPath.section == 0 {
             switch indexPath.row{
             case 1:
-                clearCurriculum()
+                clearCurriculum(supressAlert: false)
                 break;
             default:
                 break;
@@ -42,20 +42,30 @@ class SettingsTableViewController: UITableViewController {
         else if indexPath.section == 1 {
             switch indexPath.row {
             case 0:
-                logout()
+                logout(supressAlert: false)
                 break;
+            case 1:
+                let domain = Bundle.main.bundleIdentifier!
+                UserDefaults.standard.removePersistentDomain(forName: domain)
+                guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
+                    fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
+                }
+                usersDefault.removePersistentDomain(forName: "group.com.Jelly.Daan")
+                UserDefaults.standard.synchronize()
+                logout(supressAlert: true)
+                exit(0)
             default:
                 break;
             }
         }
     }
     
-    func clearCurriculum(){
+    func clearCurriculum(supressAlert:Bool){
         guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
             fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
         }
         usersDefault.removeObject(forKey: "curriculumJSON")
-        if(usersDefault.object(forKey: "curriculumJSON") == nil){
+        if(usersDefault.object(forKey: "curriculumJSON") == nil && !supressAlert){
             let alert = UIAlertController(title: "Success", message: "Cleared locally stored curriculum data!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
                 print("Curriculum data cleared alert dismissed!")
@@ -64,10 +74,10 @@ class SettingsTableViewController: UITableViewController {
         }
     }
     
-    func logout() {
+    func logout(supressAlert:Bool) {
         let keychain = KeychainSwift()
         keychain.clear()
-        if(keychain.get("account") == nil&&keychain.get("password") == nil){
+        if(keychain.get("account") == nil&&keychain.get("password") == nil && !supressAlert){
             let alert = UIAlertController(title: "登出成功", message: "已將儲存在鑰匙圈的資料清空!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
                 print("Logout success! Clearing nav stack")
@@ -80,7 +90,6 @@ class SettingsTableViewController: UITableViewController {
                 }
             }))
             self.present(alert,animated: true,completion:nil)
-            
         }
     }
     

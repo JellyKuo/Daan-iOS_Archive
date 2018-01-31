@@ -35,6 +35,8 @@ class MainViewController: UIViewController {
         } else {
             print("iOS 11 is not present! Ignoring large navbar title")
         }
+        
+        WelcomeSplash()
     }
     
     override func didReceiveMemoryWarning() {
@@ -117,6 +119,18 @@ class MainViewController: UIViewController {
         
     }
     
+    func WelcomeSplash() {
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
+            fatalError("Cannot init new UserDefaults with suiteName")
+        }
+        if userDefaults.bool(forKey: "SplashDismiss"){
+            print("SplashDismiss is true, skipping WelcomeSplash")
+            return
+        }
+        print("Splash hasn't displayed before, displaying...")
+        performSegue(withIdentifier: "SplashSegue", sender: self)
+    }
+    
     /*
      // MARK: - Navigation
      
@@ -160,6 +174,9 @@ class MainViewController: UIViewController {
         }
         else if segue.identifier == "WelcomeSegue" {
             print("Preparing WelcomeSegue")
+        }
+        else if segue.identifier == "SplashSegue" {
+            print("Preparing SplashSegue")
         }
     }
 }
