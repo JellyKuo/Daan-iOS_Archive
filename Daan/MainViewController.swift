@@ -19,6 +19,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var nickLab: UILabel!
     @IBOutlet weak var nameLab: UILabel!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        autoLogin()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,9 +36,7 @@ class MainViewController: UIViewController {
             print("iOS 11 is not present! Ignoring large navbar title")
         }
         
-        if(!autoLogin()){
-            WelcomeSplash()
-        }
+        WelcomeSplash()
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,7 +56,7 @@ class MainViewController: UIViewController {
             }
             else if let apiError = apierr{
                 if apiError.code == 103{
-                    _ = self.autoLogin()
+                    self.autoLogin()
                     return
                 }
                 let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
@@ -72,18 +75,19 @@ class MainViewController: UIViewController {
         }
     }
     
-    func autoLogin() -> Bool{
+    func autoLogin(){
         let keychain = KeychainSwift()
         guard let account = keychain.get("account"),let password = keychain.get("password") else{
             print("Account and password does not exist in keychain, perform welcome segue")
-        
+            DispatchQueue.main.async(){
                 self.performSegue(withIdentifier: "WelcomeSegue", sender: self)
-            return false
+            }
+            return
         }
         //TODO: Split this to another class or something
         if(token != nil){
             getUserInfo()
-            return true
+            return
         }
         let req = ApiRequest(path: "actmanage/login", method: .post, params: ["account":account,"password":password])
         req.request {(res,apierr,alaerr) in
@@ -112,7 +116,7 @@ class MainViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }
-        return true
+        
     }
     
     func WelcomeSplash() {
