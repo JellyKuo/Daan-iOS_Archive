@@ -64,15 +64,24 @@ class HistoryScoreTableViewController: UITableViewController, HistoryScoreViewCo
             return cell
         }
         //TODO: Handling mismatched list
+        if upHistoryScore == nil || upHistoryScore!.count == 0{
+            print("There's no item inside upScore, exiting without any content in cell")
+            return cell
+        }
         
         let uScore = upHistoryScore![indexPath.row - 1]
-        let dScore = downHistoryScore![indexPath.row - 1]
-        
         cell.subjectLab.text = uScore.subject
         cell.typeLab.text = uScore.type
         
         cell.creditLab.text = uScore.credit
         cell.upLab.text = uScore.score != nil ? String(uScore.score!) : "X"
+        
+        if downHistoryScore == nil || downHistoryScore!.count == 0{
+            print("Got a upScore, but down seems to be empty or nil, skipping with ?")
+            cell.downLab.text = "?"
+            return cell
+        }
+        let dScore = downHistoryScore![indexPath.row - 1]
         cell.downLab.text = dScore.score != nil ? String(dScore.score!) : "X"
         return cell
     }
