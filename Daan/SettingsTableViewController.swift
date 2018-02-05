@@ -45,15 +45,7 @@ class SettingsTableViewController: UITableViewController {
                 logout(supressAlert: false)
                 break;
             case 1:
-                let domain = Bundle.main.bundleIdentifier!
-                UserDefaults.standard.removePersistentDomain(forName: domain)
-                guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
-                    fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
-                }
-                usersDefault.removePersistentDomain(forName: "group.com.Jelly.Daan")
-                UserDefaults.standard.synchronize()
-                logout(supressAlert: true)
-                exit(0)
+                resetApp()
             default:
                 break;
             }
@@ -91,6 +83,29 @@ class SettingsTableViewController: UITableViewController {
             }))
             self.present(alert,animated: true,completion:nil)
         }
+    }
+    
+    func resetApp() {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
+            fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
+        }
+        usersDefault.removePersistentDomain(forName: "group.com.Jelly.Daan")
+        UserDefaults.standard.synchronize()
+        logout(supressAlert: true)
+        let alert = UIAlertController(title: "Reset successful", message: "Cleared all cache and configuration for this application", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+            print("Reset success! Clearing nav stack")
+            guard let navC = self.navigationController else{
+                fatalError("Cannot get nav controller")
+            }
+            navC.popToRootViewController(animated: false)
+            if let mainVC = navC.childViewControllers[0] as? MainViewController{
+                mainVC.autoLogin()
+            }
+        }))
+        self.present(alert,animated: true,completion:nil)
     }
     
     // MARK: - Table view data source
