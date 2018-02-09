@@ -50,6 +50,29 @@ class SettingsTableViewController: UITableViewController {
                 break;
             }
         }
+        
+        else if indexPath.section == 2 {
+            switch indexPath.row{
+            case 0:
+                guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
+                    fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
+                }
+                usersDefault.removeObject(forKey: "SplashDismiss")
+                break;
+            default:
+                guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
+                    fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
+                }
+                if let JSON = usersDefault.string(forKey: "curriculumJSON"){
+                    let alert = UIAlertController(title: "Cached curriculum", message: JSON, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                        UIPasteboard.general.string = JSON
+                    }))
+                    self.present(alert,animated: true,completion: nil)
+                }
+                break;
+            }
+        }
     }
     
     func clearCurriculum(supressAlert:Bool){
