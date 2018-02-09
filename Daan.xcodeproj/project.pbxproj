@@ -32,6 +32,8 @@
 		A1255424201E1F980023D432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1255426201E1F980023D432 /* InfoPlist.strings */; };
 		A1255429201E1F990023D432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A125542B201E1F990023D432 /* Localizable.strings */; };
 		A12B28EE202E03F3003B01D3 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12B28F0202E03F3003B01D3 /* SplashScreen.storyboard */; };
+		A12B28F4202E0D6E003B01D3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B28F3202E0D6E003B01D3 /* MainTableViewController.swift */; };
+		A12B28F6202E1639003B01D3 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B28F5202E1639003B01D3 /* Label.swift */; };
 		A12F03B01FC081C9004F739F /* CurriculumPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */; };
 		A12F03B21FC08311004F739F /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B11FC08311004F739F /* Curriculum.swift */; };
 		A12F03B41FC0867D004F739F /* CurriculumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */; };
@@ -138,6 +140,8 @@
 		A125542A201E1F990023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A12B28EF202E03F3003B01D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
 		A12B28F2202E03FD003B01D3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SplashScreen.strings"; sourceTree = "<group>"; };
+		A12B28F3202E0D6E003B01D3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		A12B28F5202E1639003B01D3 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumPageViewController.swift; sourceTree = "<group>"; };
 		A12F03B11FC08311004F739F /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
 		A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +312,7 @@
 				A110512D1FBC877500970878 /* SectionalExamViewController.swift */,
 				A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */,
 				A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */,
+				A12B28F3202E0D6E003B01D3 /* MainTableViewController.swift */,
 				A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */,
 				A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */,
 				A113306A1FB9D15D0057C42C /* AttitudeTableViewCell.swift */,
@@ -333,6 +338,7 @@
 				A1E904AB1FCEC1BC000E28AE /* Button.swift */,
 				A1BD40071FD19BD200B5C079 /* UIColor.swift */,
 				A11E61751FD8F3BA00E2CA4F /* ViewController.swift */,
+				A12B28F5202E1639003B01D3 /* Label.swift */,
 			);
 			name = "Custom UI Classes";
 			sourceTree = "<group>";
@@ -610,11 +616,13 @@
 				A12535651FBF1380006CE474 /* HistoryScoreTableViewController.swift in Sources */,
 				A110512C1FBC85F000970878 /* SectionalScore.swift in Sources */,
 				A113306B1FB9D15D0057C42C /* AttitudeTableViewCell.swift in Sources */,
+				A12B28F4202E0D6E003B01D3 /* MainTableViewController.swift in Sources */,
 				A12535671FBF13AC006CE474 /* HistoryScoreViewController.swift in Sources */,
 				A15444B21FBB026900A5D88E /* AbsentState.swift in Sources */,
 				A110512E1FBC877500970878 /* SectionalExamViewController.swift in Sources */,
 				A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */,
 				A11DC6E51FB33C3C00A4EC9A /* AppDelegate.swift in Sources */,
+				A12B28F6202E1639003B01D3 /* Label.swift in Sources */,
 				A11051301FBC895600970878 /* SectionalExamTableViewController.swift in Sources */,
 				A1DAE8561FB74D48008FF0E2 /* ApiRequest.swift in Sources */,
 				A1E904AE1FCEC7D9000E28AE /* TextField.swift in Sources */,
