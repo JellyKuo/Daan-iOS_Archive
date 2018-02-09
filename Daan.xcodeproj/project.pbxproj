@@ -31,6 +31,7 @@
 		A125356B1FBF21DF006CE474 /* HistoryScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125356A1FBF21DF006CE474 /* HistoryScore.swift */; };
 		A1255424201E1F980023D432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1255426201E1F980023D432 /* InfoPlist.strings */; };
 		A1255429201E1F990023D432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A125542B201E1F990023D432 /* Localizable.strings */; };
+		A12B28ED202E01D3003B01D3 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12B28EC202E01D3003B01D3 /* SplashScreen.storyboard */; };
 		A12F03B01FC081C9004F739F /* CurriculumPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */; };
 		A12F03B21FC08311004F739F /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B11FC08311004F739F /* Curriculum.swift */; };
 		A12F03B41FC0867D004F739F /* CurriculumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */; };
@@ -135,6 +136,7 @@
 		A1255421201E1C8B0023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		A1255425201E1F980023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A125542A201E1F990023D432 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A12B28EC202E01D3003B01D3 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumPageViewController.swift; sourceTree = "<group>"; };
 		A12F03B11FC08311004F739F /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
 		A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				A1C83A821FBFCD69008CF088 /* Absent.storyboard */,
 				A1C83A871FBFCD72008CF088 /* Attitude.storyboard */,
 				A115EC311FBFB4940027140E /* Main.storyboard */,
+				A12B28EC202E01D3003B01D3 /* SplashScreen.storyboard */,
 				A154B56C2020BE3F004AF50C /* SplashViewController.swift */,
 				A1C83A8C1FBFCD86008CF088 /* HistoryScore.storyboard */,
 				A12F03B91FC09BF0004F739F /* Curriculum.storyboard */,
@@ -484,6 +487,7 @@
 				A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */,
 				A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */,
 				A12F03B71FC09BF0004F739F /* Curriculum.storyboard in Resources */,
+				A12B28ED202E01D3003B01D3 /* SplashScreen.storyboard in Resources */,
 				A1C83A801FBFCD69008CF088 /* Absent.storyboard in Resources */,
 				A1C83A8A1FBFCD86008CF088 /* HistoryScore.storyboard in Resources */,
 				A1F8BE121FB3485C00B26D86 /* ApiConfig.plist in Resources */,
