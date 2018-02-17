@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,7 +44,6 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.98039215690000003" green="0.61568627450000002" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="MHZ-NX-BZV" firstAttribute="centerX" secondItem="3nu-J1-XoR" secondAttribute="centerX" id="Q8x-zw-2Vb"/>
                                         <constraint firstItem="MHZ-NX-BZV" firstAttribute="centerY" secondItem="3nu-J1-XoR" secondAttribute="centerY" id="cQ5-1H-NtV"/>
@@ -71,7 +70,6 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="AiS-v2-lW6" firstAttribute="centerX" secondItem="1z2-5a-idw" secondAttribute="centerX" id="LDk-aF-fiM"/>
                                         <constraint firstItem="AiS-v2-lW6" firstAttribute="centerY" secondItem="1z2-5a-idw" secondAttribute="centerY" id="XkV-nZ-cSW"/>
@@ -98,7 +96,6 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="QZY-xC-kSJ" firstAttribute="centerY" secondItem="eKN-bm-BZ1" secondAttribute="centerY" id="3Ez-6B-ZmJ"/>
                                         <constraint firstItem="QZY-xC-kSJ" firstAttribute="centerX" secondItem="eKN-bm-BZ1" secondAttribute="centerX" id="9Ux-0c-zvf"/>
@@ -125,7 +122,6 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="wBg-Yk-uBO" firstAttribute="centerY" secondItem="49W-kX-mqO" secondAttribute="centerY" id="HU9-uV-gNR"/>
                                         <constraint firstItem="wBg-Yk-uBO" firstAttribute="centerX" secondItem="49W-kX-mqO" secondAttribute="centerX" id="KfO-zt-iZb"/>
@@ -152,7 +148,6 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="FNS-dJ-7jX" firstAttribute="centerX" secondItem="kft-WY-9GW" secondAttribute="centerX" id="0nT-Sd-QWD"/>
                                         <constraint firstItem="FNS-dJ-7jX" firstAttribute="centerY" secondItem="kft-WY-9GW" secondAttribute="centerY" id="wgA-WR-iqx"/>
@@ -179,7 +174,6 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="9W7-mH-oU1" firstAttribute="centerY" secondItem="5bT-1B-xdV" secondAttribute="centerY" id="uGc-fw-MWz"/>
                                         <constraint firstItem="9W7-mH-oU1" firstAttribute="centerX" secondItem="5bT-1B-xdV" secondAttribute="centerX" id="y3R-aH-ZPM"/>
