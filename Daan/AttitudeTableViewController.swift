@@ -13,6 +13,13 @@ class AttitudeTableViewController: UITableViewController {
     var token:Token? = nil
     var attitudeStatus:AttitudeStatus? = nil
     
+    @IBOutlet weak var SmallCiteLab: UILabel!
+    @IBOutlet weak var MiddleCiteLab: UILabel!
+    @IBOutlet weak var BigCiteLab: UILabel!
+    @IBOutlet weak var SmallFaultLab: UILabel!
+    @IBOutlet weak var MiddleFaultLab: UILabel!
+    @IBOutlet weak var BigFaultLab: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         GetData()
@@ -114,6 +121,7 @@ class AttitudeTableViewController: UITableViewController {
         req.request {(res,apierr,alaerr) in
             if let result = res {
                 self.attitudeStatus = AttitudeStatus(JSON: result)
+                self.reloadCount()
                 self.tableView.reloadData()
             }
             else if let apiError = apierr{
@@ -131,6 +139,19 @@ class AttitudeTableViewController: UITableViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }
+    }
+    
+    func reloadCount() {
+        guard let count = attitudeStatus?.count else{
+            fatalError("Called reloadCount but count is null")
+        }
+        SmallCiteLab.text = count.smallcite != nil ? String(count.smallcite!) : "?"
+        MiddleCiteLab.text = count.middlecite != nil ? String(count.middlecite!) : "?"
+        BigCiteLab.text = count.bigcite != nil ? String(count.bigcite!) : "?"
+        SmallFaultLab.text = count.smallfault != nil ? String(count.smallfault!) : "?"
+        MiddleFaultLab.text = count.middlefault != nil ? String(count.middlefault!) : "?"
+        BigFaultLab.text = count.bigfault != nil ? String(count.bigfault!) : "?"
+        
     }
     
     /*
