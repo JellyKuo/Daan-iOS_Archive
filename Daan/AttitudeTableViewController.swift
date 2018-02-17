@@ -71,7 +71,7 @@ class AttitudeTableViewController: UITableViewController {
                 cell.statusLab.textColor = UIColor(hex:"5cb85c")
             }
             else if(status.range(of: "警告") != nil){
-                cell.statusLab.textColor = UIColor.yellow
+                cell.statusLab.textColor = UIColor(hex:"cc9933")
             }
             else if(status.range(of: "小過") != nil ||
                 status.range(of: "大過") != nil ){
