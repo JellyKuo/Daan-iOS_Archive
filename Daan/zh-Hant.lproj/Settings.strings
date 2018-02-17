@@ -1,14 +1,26 @@
 /* Class = "UITableViewSection"; headerTitle = "Logout"; ObjectID = "Kgt-V7-fVz"; */
 "Kgt-V7-fVz.headerTitle" = "登出";
 
+/* Class = "UITableViewSection"; headerTitle = "DEV"; ObjectID = "PQD-0c-tR8"; */
+"PQD-0c-tR8.headerTitle" = "開發";
+
 /* Class = "UILabel"; text = "Logout"; ObjectID = "cSk-4h-XuK"; */
 "cSk-4h-XuK.text" = "登出";
 
 /* Class = "UILabel"; text = "Clear cached curriculum"; ObjectID = "gZz-xd-tQG"; */
 "gZz-xd-tQG.text" = "清除課表快取";
 
+/* Class = "UILabel"; text = "Reset and clear all content"; ObjectID = "kYb-Bn-5n3"; */
+"kYb-Bn-5n3.text" = "清除所有內容和設定";
+
 /* Class = "UILabel"; text = "Update User Data"; ObjectID = "rhe-W5-pAS"; */
 "rhe-W5-pAS.text" = "更新用戶資料";
+
+/* Class = "UILabel"; text = "Cached curriculum data"; ObjectID = "sqc-r1-PJm"; */
+"sqc-r1-PJm.text" = "課表快取資料";
+
+/* Class = "UILabel"; text = "Reset splash dismiss status"; ObjectID = "v2g-bV-m8C"; */
+"v2g-bV-m8C.text" = "重置開始畫面";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
 "vgI-PN-5VI.title" = "設定";
