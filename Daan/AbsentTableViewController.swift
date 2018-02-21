@@ -22,7 +22,6 @@ class AbsentTableViewController: UITableViewController {
     @IBOutlet weak var OfficialLab: UILabel!
     @IBOutlet weak var BereavementLab: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         GetData()
@@ -62,8 +61,7 @@ class AbsentTableViewController: UITableViewController {
         }
         let state = absentState![indexPath.row]
         cell.dateLab.text = state.date
-        cell.classLab.text = state.cls
-        
+        cell.classLab.text = "第" + state.cls! + "節"
         
         if let type = state.type
         {
@@ -172,7 +170,7 @@ class AbsentTableViewController: UITableViewController {
                         self.count[5] += 1
                         break
                     default:
-                        print("I cant find \(state.type!) in the list")
+                        print("I cant find \(state.type!) in the list, not counting")
                         break;
                     }
                 }
