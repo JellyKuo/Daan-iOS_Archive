@@ -13,6 +13,15 @@ class AbsentTableViewController: UITableViewController {
     
     var token:Token? = nil
     var absentState:[AbsentState]? = nil
+    var count = [0,0,0,0,0,0]
+    
+    @IBOutlet weak var SickLab: UILabel!
+    @IBOutlet weak var PersonalLab: UILabel!
+    @IBOutlet weak var LateLab: UILabel!
+    @IBOutlet weak var AbsentLab: UILabel!
+    @IBOutlet weak var OfficialLab: UILabel!
+    @IBOutlet weak var BereavementLab: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,25 +63,47 @@ class AbsentTableViewController: UITableViewController {
         let state = absentState![indexPath.row]
         cell.dateLab.text = state.date
         cell.classLab.text = state.cls
-        cell.typeLab.text = state.type
-        /*
-        if let type = state?.type
+        
+        
+        if let type = state.type
         {
-            if(type.range(of: "公假") != nil){
-                cell.typeLab.textColor = UIColor.green
+            if(type.range(of: "遲") != nil){
+                cell.typeLab.textColor = UIColor(hex:"cc9933")
+                cell.typeLab.text = NSLocalizedString("Late", comment: "Late")
+                
             }
-            else if(type.range(of: "警告") != nil){
-                cell.typeLab.textColor = UIColor.yellow
+            else if(type.range(of: "病") != nil){
+                cell.typeLab.textColor = UIColor(hex:"3333cc")
+                cell.typeLab.text = NSLocalizedString("SickLeave", comment: "Sick Leave")
             }
-            else if(type.range(of: "小過") != nil ||
-                status.range(of: "大過") != nil ){
+            else if(type.range(of: "事") != nil){
+                cell.typeLab.text = NSLocalizedString("PersonalLeave", comment: "Personal Leave")
+            }
+            else if(type.range(of: "曠") != nil ||
+                type.range(of: "缺") != nil ){
                 cell.typeLab.textColor = UIColor.red
+                cell.typeLab.text = NSLocalizedString("Absent", comment: "Absent")
+            }
+            else if(type.range(of: "公") != nil){
+                cell.typeLab.textColor = UIColor.blue
+                cell.typeLab.text = NSLocalizedString("OfficialLeave", comment: "Official Leave")
+            }
+            else if(type.range(of: "喪") != nil){
+                cell.typeLab.textColor = UIColor.green
+                cell.typeLab.text = NSLocalizedString("BereavementLeave", comment: "Bereavement Leave")
             }
             else{
-                cell.typeLab.textColor = UIColor.blue
+                cell.typeLab.text = state.type
             }
         }
-        */
+        
+        LateLab.text = String(count[0])
+        SickLab.text = String(count[1])
+        PersonalLab.text = String(count[2])
+        OfficialLab.text = String(count[3])
+        AbsentLab.text = String(count[4])
+        BereavementLab.text = String(count[5])
+        
         return cell
     }
     
@@ -117,6 +148,34 @@ class AbsentTableViewController: UITableViewController {
         req.requestArr {(res,apierr,alaerr) in
             if let result = res {
                 self.absentState = Mapper<AbsentState>().mapArray(JSONArray: result)
+                for state in self.absentState!{
+                    switch state.type!{
+                    case "遲":
+                        self.count[0] += 1
+                        break
+                    case "病":
+                        self.count[1] += 1
+                        break
+                    case "事":
+                        self.count[2] += 1
+                        break
+                    case "公":
+                        self.count[3] += 1
+                        break
+                    case "缺":
+                        self.count[4] += 1
+                        break
+                    case "曠":
+                        self.count[4] += 1
+                        break
+                    case "喪":
+                        self.count[5] += 1
+                        break
+                    default:
+                        print("I cant find \(state.type!) in the list")
+                        break;
+                    }
+                }
                 self.tableView.reloadData()
             }
             else if let apiError = apierr{
