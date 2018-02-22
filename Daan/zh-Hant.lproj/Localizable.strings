@@ -1,8 +1,14 @@
+/* Absent */
+"Absent" = "缺曠";
+
 /* API Error */
 "ApiErr" = "API 錯誤";
 
 /* Authenticate Error */
 "AuthError" = "認證錯誤";
+
+/* Bereavement Leave */
+"BereavementLeave" = "喪假";
 
 /* Connection Error */
 "ConnErr" = "連線錯誤";
@@ -16,14 +22,23 @@
 /* Grade */
 "Grade" = "年級";
 
+/* Late */
+"Late" = "遲到";
+
 /* Monday */
 "Mon" = "星期一";
 
 /* Default action */
 "OK" = "好";
 
+/* Official Leave */
+"OfficialLeave" = "公假";
+
 /* One */
 "One" = "一";
+
+/* Personal Leave */
+"PersonalLeave" = "事假";
 
 /* Password does not match */
 "PwdNotMatch" = "密碼不正確";
@@ -33,6 +48,9 @@
 
 /* Semester */
 "Semester" = "學期";
+
+/* Sick Leave */
+"SickLeave" = "病假";
 
 /* Three */
 "Three" = "三";
