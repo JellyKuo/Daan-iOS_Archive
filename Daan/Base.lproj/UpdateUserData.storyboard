@@ -239,7 +239,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPz-za-8GM">
-                                <rect key="frame" x="122.5" y="30" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="30" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="8Zy-Hf-ufV"/>
                                     <constraint firstAttribute="width" secondItem="cPz-za-8GM" secondAttribute="height" multiplier="1:1" id="wZP-sd-Z9q"/>
@@ -270,17 +270,6 @@
                                     <action selector="UpdateTap" destination="iHh-vM-8B1" eventType="touchUpInside" id="mTb-pw-YV9"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-id-NXV">
-                                <rect key="frame" x="222.5" y="30" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="ByQ-xo-O2q"/>
-                                    <constraint firstAttribute="width" secondItem="Xfk-id-NXV" secondAttribute="height" multiplier="1:1" id="n7w-Cu-zZu"/>
-                                </constraints>
-                                <state key="normal" image="DownArrow"/>
-                                <connections>
-                                    <action selector="Dismiss" destination="iHh-vM-8B1" eventType="touchUpInside" id="7id-mn-uyo"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -288,9 +277,7 @@
                             <constraint firstItem="yk1-Dg-7wp" firstAttribute="leading" secondItem="7nd-08-i5G" secondAttribute="leading" constant="20" id="0hq-xO-m7F"/>
                             <constraint firstItem="Bgb-j3-d9o" firstAttribute="leading" secondItem="7nd-08-i5G" secondAttribute="leading" constant="20" id="Bz9-7J-B7e"/>
                             <constraint firstItem="xuE-YH-Wpt" firstAttribute="leading" secondItem="ymm-vT-Jmi" secondAttribute="leading" constant="20" id="FfR-TR-Dey"/>
-                            <constraint firstItem="Xfk-id-NXV" firstAttribute="top" secondItem="ymm-vT-Jmi" secondAttribute="top" constant="10" id="NQl-l1-VfU"/>
-                            <constraint firstItem="Xfk-id-NXV" firstAttribute="centerX" secondItem="7nd-08-i5G" secondAttribute="centerX" constant="50" id="Rli-mc-UYz"/>
-                            <constraint firstItem="cPz-za-8GM" firstAttribute="centerX" secondItem="7nd-08-i5G" secondAttribute="centerX" constant="-50" id="Sak-iw-f0d"/>
+                            <constraint firstItem="cPz-za-8GM" firstAttribute="centerX" secondItem="7nd-08-i5G" secondAttribute="centerX" id="Sak-iw-f0d"/>
                             <constraint firstItem="ymm-vT-Jmi" firstAttribute="trailing" secondItem="Bgb-j3-d9o" secondAttribute="trailing" constant="20" id="WCa-E5-Qvj"/>
                             <constraint firstItem="xuE-YH-Wpt" firstAttribute="top" secondItem="yk1-Dg-7wp" secondAttribute="bottom" constant="20" id="XDo-13-QUx"/>
                             <constraint firstItem="ymm-vT-Jmi" firstAttribute="bottom" secondItem="Bgb-j3-d9o" secondAttribute="bottom" constant="20" id="bVW-iN-9Zw"/>
