@@ -4,6 +4,9 @@
 /* API Error */
 "ApiErr" = "API 錯誤";
 
+/* Application Reset Successful Message */
+"AppRstSuccMsg" = "重設成功";
+
 /* Authenticate Error */
 "AuthError" = "認證錯誤";
 
@@ -12,6 +15,9 @@
 
 /* Connection Error */
 "ConnErr" = "連線錯誤";
+
+/* Curriculum Cache Cleared Successful Message */
+"CurrCacheClearSucc" = "清除成功";
 
 /* First */
 "First" = "第一";
@@ -24,6 +30,9 @@
 
 /* Late */
 "Late" = "遲到";
+
+/* Logout successful message */
+"LogoutSuccMsg" = "登出成功";
 
 /* Monday */
 "Mon" = "星期一";
@@ -51,6 +60,9 @@
 
 /* Sick Leave */
 "SickLeave" = "病假";
+
+/* Success */
+"Success" = "成功";
 
 /* Three */
 "Three" = "三";
