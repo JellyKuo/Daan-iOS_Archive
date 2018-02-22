@@ -81,7 +81,7 @@ class SettingsTableViewController: UITableViewController {
         }
         usersDefault.removeObject(forKey: "curriculumJSON")
         if(usersDefault.object(forKey: "curriculumJSON") == nil && !supressAlert){
-            let alert = UIAlertController(title: "Success", message: "Cleared locally stored curriculum data!", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("Success", comment: "Success"), message: NSLocalizedString("CurrCacheClearSucc", comment: "Curriculum Cache Cleared Successful Message"), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
                 print("Curriculum data cleared alert dismissed!")
             }))
@@ -93,7 +93,7 @@ class SettingsTableViewController: UITableViewController {
         let keychain = KeychainSwift()
         keychain.clear()
         if(keychain.get("account") == nil&&keychain.get("password") == nil && !supressAlert){
-            let alert = UIAlertController(title: "登出成功", message: "已將儲存在鑰匙圈的資料清空!", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("Success", comment: "Success"), message: NSLocalizedString("LogoutSuccMsg", comment: "Logout successful message"), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
                 print("Logout success! Clearing nav stack")
                 guard let navC = self.navigationController else{
@@ -117,7 +117,7 @@ class SettingsTableViewController: UITableViewController {
         usersDefault.removePersistentDomain(forName: "group.com.Jelly.Daan")
         UserDefaults.standard.synchronize()
         logout(supressAlert: true)
-        let alert = UIAlertController(title: "Reset successful", message: "Cleared all cache and configuration for this application", preferredStyle: .alert)
+        let alert = UIAlertController(title: NSLocalizedString("Success", comment: "Success"), message: NSLocalizedString("AppRstSuccMsg", comment: "Application Reset Successful Message"), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
             print("Reset success! Clearing nav stack")
             guard let navC = self.navigationController else{

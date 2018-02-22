@@ -61,12 +61,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
             else{
                 print("Got curriculum JSON but cannot map it to object")
-                //TODO: Prompt to open app
+                PromptOpenApp()
+                completionHandler(NCUpdateResult.noData)
+                return
             }
         }
         else {
             print("Got userDefaults but JSON doesn't exist")
-            //TODO: Prompt to open app
+            PromptOpenApp()
+            completionHandler(NCUpdateResult.noData)
+            return
         }
         
         completionHandler(NCUpdateResult.newData)
@@ -239,6 +243,23 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         label.layer.borderWidth = 2.5
         label.layer.borderColor = label.backgroundColor!.cgColor
         return label
+    }
+    
+    func PromptOpenApp() {
+        for subview in stackView.subviews{
+            subview.removeFromSuperview()
+        }
+        descLabel.isHidden = true
+        let label = UILabel()
+        label.backgroundColor = UIColor(hex: "fa9d29")
+        label.text = " " + NSLocalizedString("OpenApp", comment: "Open app")
+        label.font = UIFont.systemFont(ofSize: 24)
+        label.textColor = UIColor.white
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 5
+        label.layer.borderWidth = 2.5
+        label.layer.borderColor = label.backgroundColor!.cgColor
+        stackView.addArrangedSubview(label)
     }
     
     @available(iOSApplicationExtension 10.0, *)
