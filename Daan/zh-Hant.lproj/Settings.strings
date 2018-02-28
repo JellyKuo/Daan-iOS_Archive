@@ -1,0 +1,30 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Logout"; ObjectID = "Kgt-V7-fVz"; */
+"Kgt-V7-fVz.headerTitle" = "Logout";
+
+/* Class = "UITableViewSection"; headerTitle = "DEV"; ObjectID = "PQD-0c-tR8"; */
+"PQD-0c-tR8.headerTitle" = "DEV";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "cSk-4h-XuK"; */
+"cSk-4h-XuK.text" = "Logout";
+
+/* Class = "UILabel"; text = "License"; ObjectID = "evD-yy-do8"; */
+"evD-yy-do8.text" = "License";
+
+/* Class = "UILabel"; text = "Clear cached curriculum"; ObjectID = "gZz-xd-tQG"; */
+"gZz-xd-tQG.text" = "Clear cached curriculum";
+
+/* Class = "UILabel"; text = "Reset and clear all content"; ObjectID = "kYb-Bn-5n3"; */
+"kYb-Bn-5n3.text" = "Reset and clear all content";
+
+/* Class = "UILabel"; text = "Update User Data"; ObjectID = "rhe-W5-pAS"; */
+"rhe-W5-pAS.text" = "Update User Data";
+
+/* Class = "UILabel"; text = "Cached curriculum data"; ObjectID = "sqc-r1-PJm"; */
+"sqc-r1-PJm.text" = "Cached curriculum data";
+
+/* Class = "UILabel"; text = "Reset splash dismiss status"; ObjectID = "v2g-bV-m8C"; */
+"v2g-bV-m8C.text" = "Reset splash dismiss status";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
+"vgI-PN-5VI.title" = "Settings";
