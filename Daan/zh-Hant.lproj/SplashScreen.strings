@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Look up your score and performance in school"; ObjectID = "0St-3K-4dz"; */
+"0St-3K-4dz.text" = "查詢在學校的表現及成績";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "AGd-AF-z4D"; */
+"AGd-AF-z4D.normalTitle" = "開始";
+
+/* Class = "UILabel"; text = "Check your attendance"; ObjectID = "FMl-Hg-YUt"; */
+"FMl-Hg-YUt.text" = "檢查出缺勤資料";
+
+/* Class = "UILabel"; text = "Notice"; ObjectID = "PFe-go-vNd"; */
+"PFe-go-vNd.text" = "通知";
+
+/* Class = "UILabel"; text = "Daan"; ObjectID = "Xbg-g5-Lv7"; */
+"Xbg-g5-Lv7.text" = "木棉手札";
+
+/* Class = "UILabel"; text = "--NOTICE TXT--"; ObjectID = "XcM-oq-64u"; */
+"XcM-oq-64u.text" = "如果你的帳號是在2017年7月至2018年2月間建立的，你的課表資料有可能是錯的  修正: 1. 登入後，在右上角的設定中點選\"清除所有內容及設定\" 2. 使用有正確課表資料的帳號登入 3. 登入後，點選下面的\"課表\"來快取課表資料 4. 在設定中點選\"登出\"，並以你自己的帳號登入 5. 確定你的課表是正確的且快取沒有被清除  如果你有任何問題或建議，歡迎你寄Email給我 謝謝!";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "bQS-vY-Yk3"; */
+"bQS-vY-Yk3.normalTitle" = "下一步";
+
+/* Class = "UILabel"; text = "Know your upcoming class with curriculum"; ObjectID = "oO9-lm-Opy"; */
+"oO9-lm-Opy.text" = "快速查詢下一節的課程";
