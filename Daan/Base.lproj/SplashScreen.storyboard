@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbg-g5-Lv7">
-                                <rect key="frame" x="20" y="40" width="335" height="45.5"/>
+                                <rect key="frame" x="20" y="60" width="335" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -132,7 +132,7 @@
                             <constraint firstItem="bQS-vY-Yk3" firstAttribute="leading" secondItem="aP3-1T-VL5" secondAttribute="leading" constant="20" id="Jr5-hp-WHg"/>
                             <constraint firstItem="aP3-1T-VL5" firstAttribute="trailing" secondItem="Xbg-g5-Lv7" secondAttribute="trailing" constant="20" id="cMc-86-fHE"/>
                             <constraint firstAttribute="trailing" secondItem="bQS-vY-Yk3" secondAttribute="trailing" constant="20" id="dWb-Kc-hBD"/>
-                            <constraint firstItem="Xbg-g5-Lv7" firstAttribute="top" secondItem="aP3-1T-VL5" secondAttribute="top" constant="20" id="eoC-AJ-ssb"/>
+                            <constraint firstItem="Xbg-g5-Lv7" firstAttribute="top" secondItem="aP3-1T-VL5" secondAttribute="top" constant="40" id="eoC-AJ-ssb"/>
                             <constraint firstItem="aP3-1T-VL5" firstAttribute="trailing" secondItem="kLE-F0-7wX" secondAttribute="trailing" constant="20" id="fHd-xV-Lkg"/>
                             <constraint firstItem="Xbg-g5-Lv7" firstAttribute="leading" secondItem="aP3-1T-VL5" secondAttribute="leading" constant="20" id="vr4-MR-pZR"/>
                             <constraint firstItem="kLE-F0-7wX" firstAttribute="centerY" secondItem="bRP-1A-x9P" secondAttribute="centerY" id="wjQ-YQ-mh4"/>
@@ -175,13 +175,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFe-go-vNd">
-                                <rect key="frame" x="20" y="40" width="335" height="45.5"/>
+                                <rect key="frame" x="20" y="60" width="335" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcM-oq-64u">
-                                <rect key="frame" x="20" y="105" width="335" height="457"/>
+                                <rect key="frame" x="20" y="161" width="335" height="365.5"/>
                                 <mutableString key="text">If your account is created between July 2017~Feb 2018, there's a chance that your curriculum may be wrong.  To fix this: 1. After login, tap reset in settings menu on top right 2. Login with your friend's account who has the correct curriculum data 3. After login, tap curriculum on bottom to cache the data 4. Tap logout in the settings menu and login with your account 5. Verify that your curriculum data is cached and not cleared  If you have any problem or suggestion, feel free to send me an email!</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -190,24 +190,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PFe-go-vNd" firstAttribute="top" secondItem="SIy-S4-2Kr" secondAttribute="top" constant="20" id="6Ht-9O-gLx"/>
-                            <constraint firstItem="SIy-S4-2Kr" firstAttribute="trailing" secondItem="XcM-oq-64u" secondAttribute="trailing" constant="20" id="HbD-qz-CoU"/>
+                            <constraint firstItem="PFe-go-vNd" firstAttribute="top" secondItem="SIy-S4-2Kr" secondAttribute="top" constant="40" id="6Ht-9O-gLx"/>
                             <constraint firstItem="AGd-AF-z4D" firstAttribute="leading" secondItem="fGT-MC-ZHN" secondAttribute="leading" constant="20" id="Hf3-bX-4kH"/>
-                            <constraint firstItem="XcM-oq-64u" firstAttribute="top" relation="lessThanOrEqual" secondItem="PFe-go-vNd" secondAttribute="bottom" constant="40" id="Wck-2r-tLL"/>
+                            <constraint firstItem="XcM-oq-64u" firstAttribute="centerY" secondItem="fGT-MC-ZHN" secondAttribute="centerY" constant="10" id="Lab-oO-76r"/>
                             <constraint firstItem="PFe-go-vNd" firstAttribute="leading" secondItem="SIy-S4-2Kr" secondAttribute="leading" constant="20" id="Z8f-r1-zQj"/>
-                            <constraint firstItem="XcM-oq-64u" firstAttribute="leading" secondItem="SIy-S4-2Kr" secondAttribute="leading" constant="20" id="aux-JE-CdA"/>
                             <constraint firstItem="SIy-S4-2Kr" firstAttribute="trailing" secondItem="PFe-go-vNd" secondAttribute="trailing" constant="20" id="bHD-MM-csz"/>
-                            <constraint firstItem="AGd-AF-z4D" firstAttribute="top" secondItem="XcM-oq-64u" secondAttribute="bottom" constant="40" id="bLo-1u-ytY"/>
                             <constraint firstItem="SIy-S4-2Kr" firstAttribute="trailing" secondItem="AGd-AF-z4D" secondAttribute="trailing" constant="20" id="bgb-9J-D1U"/>
-                            <constraint firstItem="XcM-oq-64u" firstAttribute="centerY" secondItem="fGT-MC-ZHN" secondAttribute="centerY" id="hlJ-JN-H29"/>
+                            <constraint firstItem="XcM-oq-64u" firstAttribute="leading" secondItem="SIy-S4-2Kr" secondAttribute="leading" constant="20" id="ct1-L1-9pp"/>
                             <constraint firstItem="SIy-S4-2Kr" firstAttribute="bottom" secondItem="AGd-AF-z4D" secondAttribute="bottom" constant="20" id="kDD-vS-XbV"/>
+                            <constraint firstItem="SIy-S4-2Kr" firstAttribute="trailing" secondItem="XcM-oq-64u" secondAttribute="trailing" constant="20" id="lmd-5I-D9o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SIy-S4-2Kr"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVu-LI-6mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="161"/>
+            <point key="canvasLocation" x="1720.8" y="160.56971514242881"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B6H-5z-mMu">
