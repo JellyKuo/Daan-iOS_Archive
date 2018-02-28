@@ -1,9 +1,9 @@
 
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "49i-Ci-tS0"; */
-"49i-Ci-tS0.normalTitle" = "Login";
+"49i-Ci-tS0.normalTitle" = "登入";
 
 /* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "9ue-1x-Rmy"; */
-"9ue-1x-Rmy.normalTitle" = "SIGN UP";
+"9ue-1x-Rmy.normalTitle" = "建立新帳號";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "DSj-uT-Qtu"; */
 "DSj-uT-Qtu.placeholder" = "Email";
