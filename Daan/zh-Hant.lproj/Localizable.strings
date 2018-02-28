@@ -1,1 +1,93 @@
-/* No Localized Strings */
+/* Absent */
+"Absent" = "缺席";
+
+/* API Error */
+"ApiErr" = "API 錯誤";
+
+/* Application Reset Successful Message */
+"AppRstSuccMsg" = "重設成功";
+
+/* Authenticate Error */
+"AuthError" = "驗證錯誤";
+
+/* Bereavement Leave */
+"BereavementLeave" = "喪假";
+
+/* Connection Error */
+"ConnErr" = "連線錯誤";
+
+/* Curriculum Cache Cleared Successful Message */
+"CurrCacheClearSucc" = "課表快取清除成功";
+
+/* First */
+"First" = "第一";
+
+/* Friday */
+"Fri" = "星期五";
+
+/* Grade */
+"Grade" = "年級";
+
+/* Late */
+"Late" = "遲到";
+
+/* Logout successful message */
+"LogoutSuccMsg" = "登出成功";
+
+/* Monday */
+"Mon" = "星期一";
+
+/* Monday */
+"Monday" = "星期一";
+
+/* Next */
+"Next" = "接下來";
+
+/* Default action */
+"OK" = "好";
+
+/* Official Leave */
+"OfficialLeave" = "公假";
+
+/* One */
+"One" = "一";
+
+/* Tap curriculum below to download cache */
+"OpenCurriculumToCache" = "開啟課表";
+
+/* Personal Leave */
+"PersonalLeave" = "事假";
+
+/* Password does not match */
+"PwdNotMatch" = "密碼不符";
+
+/* Second */
+"Second" = "第二";
+
+/* Semester */
+"Semester" = "學期";
+
+/* Sick Leave */
+"SickLeave" = "病假";
+
+/* Success */
+"Success" = "成功";
+
+/* Three */
+"Three" = "三";
+
+/* Thursday */
+"Thu" = "星期四";
+
+/* Tomorrow */
+"Tomorrow" = "明天";
+
+/* Tuesday */
+"Tue" = "星期二";
+
+/* Two */
+"Two" = "二";
+
+/* Wednesday */
+"Wed" = "星期三";
+

@@ -1,6 +1,5 @@
-
 /* Class = "UINavigationItem"; title = "License"; ObjectID = "7ZA-oQ-m6p"; */
-"7ZA-oQ-m6p.title" = "License";
+"7ZA-oQ-m6p.title" = "軟體授權";
 
 /* Class = "UILabel"; text = "KeychainSwift"; ObjectID = "CpJ-U1-4yo"; */
 "CpJ-U1-4yo.text" = "KeychainSwift";
@@ -12,10 +11,10 @@
 "a2b-5m-5Td.text" = "Icons8";
 
 /* Class = "UITableViewSection"; headerTitle = "Assets"; ObjectID = "awZ-BA-VQV"; */
-"awZ-BA-VQV.headerTitle" = "Assets";
+"awZ-BA-VQV.headerTitle" = "資產";
 
 /* Class = "UITableViewSection"; headerTitle = "Libraries"; ObjectID = "mkd-Fo-hq3"; */
-"mkd-Fo-hq3.headerTitle" = "Libraries";
+"mkd-Fo-hq3.headerTitle" = "函式庫";
 
 /* Class = "UILabel"; text = "Daan-iOS"; ObjectID = "oRj-NO-5Ii"; */
 "oRj-NO-5Ii.text" = "Daan-iOS";
@@ -25,3 +24,4 @@
 
 /* Class = "UILabel"; text = "Kesshou-Android"; ObjectID = "vXS-3c-kIj"; */
 "vXS-3c-kIj.text" = "Kesshou-Android";
+

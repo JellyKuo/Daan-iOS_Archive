@@ -1,9 +1,8 @@
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "9ue-1x-Rmy"; */
+"9ue-1x-Rmy.normalTitle" = "SIGN UP";
 
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "49i-Ci-tS0"; */
 "49i-Ci-tS0.normalTitle" = "Login";
-
-/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "9ue-1x-Rmy"; */
-"9ue-1x-Rmy.normalTitle" = "SIGN UP";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "DSj-uT-Qtu"; */
 "DSj-uT-Qtu.placeholder" = "Email";
@@ -49,3 +48,4 @@
 
 /* Class = "UILabel"; text = "Login"; ObjectID = "xMh-J5-edf"; */
 "xMh-J5-edf.text" = "Login";
+

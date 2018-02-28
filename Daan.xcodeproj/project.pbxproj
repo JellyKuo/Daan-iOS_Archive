@@ -53,6 +53,8 @@
 		A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
 		A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1930A881FCEDFF1008344CA /* Welcome.storyboard */; };
+		A1984E9F2046705B00FD2A56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1984EA12046705B00FD2A56 /* InfoPlist.strings */; };
+		A1984EA42046705C00FD2A56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1984EA62046705C00FD2A56 /* Localizable.strings */; };
 		A1B0716D1FB84BDB006A291A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */; };
 		A1B0716F1FB850B6006A291A /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716E1FB850B6006A291A /* Register.swift */; };
 		A1B12B2C1FB7E16300F50F5E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B12B2B1FB7E16300F50F5E /* UserInfo.swift */; };
@@ -163,6 +165,8 @@
 		A1984E9A20466C9C00FD2A56 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		A1984E9B20466C9C00FD2A56 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A1984E9C20466C9C00FD2A56 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A1984EA02046705B00FD2A56 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A1984EA52046705C00FD2A56 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A19A54111FC5BDF10095F858 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1B0716E1FB850B6006A291A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 		A10B40DA1FEA9D990081B9E9 /* Today Curriculum */ = {
 			isa = PBXGroup;
 			children = (
+				A1984EA62046705C00FD2A56 /* Localizable.strings */,
+				A1984EA12046705B00FD2A56 /* InfoPlist.strings */,
 				A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */,
 				A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */,
 				A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */,
@@ -483,6 +489,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */,
+				A1984EA42046705C00FD2A56 /* Localizable.strings in Resources */,
+				A1984E9F2046705B00FD2A56 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,6 +786,22 @@
 				A1984E9820466C9C00FD2A56 /* zh-Hant */,
 			);
 			name = Welcome.storyboard;
+			sourceTree = "<group>";
+		};
+		A1984EA12046705B00FD2A56 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1984EA02046705B00FD2A56 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1984EA62046705C00FD2A56 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1984EA52046705C00FD2A56 /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		A1C83A7D1FBFCD30008CF088 /* SectionalExam.storyboard */ = {
