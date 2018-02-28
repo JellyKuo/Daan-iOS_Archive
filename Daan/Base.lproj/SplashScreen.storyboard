@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RAe-kb-WEh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14E-FW-N0T">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,7 +27,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -36,7 +36,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="StartBtnTap:" destination="RAe-kb-WEh" eventType="touchUpInside" id="n9m-PL-aEv"/>
+                                    <segue destination="RJp-lv-ku7" kind="show" id="0S5-fh-IqG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbg-g5-Lv7">
@@ -140,10 +140,93 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aP3-1T-VL5"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rVT-xr-Kw1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FoN-mo-8Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541.875" y="163.73239436619718"/>
+            <point key="canvasLocation" x="950" y="162"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="jfo-J5-1I7">
+            <objects>
+                <viewController id="RJp-lv-ku7" customClass="SplashViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fGT-MC-ZHN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-AF-z4D" customClass="Button" customModule="Daan" customModuleProvider="target">
+                                <rect key="frame" x="20" y="602" width="335" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fLV-r2-RXq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="StartBtnTap:" destination="RJp-lv-ku7" eventType="touchUpInside" id="bqI-MS-ykr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFe-go-vNd">
+                                <rect key="frame" x="20" y="40" width="335" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcM-oq-64u">
+                                <rect key="frame" x="20" y="105" width="335" height="457"/>
+                                <string key="text">If your account is created between 2016~2017, there's a chance that your curriculum may be wrong.  To fix this: 1. After login, tap reset in settings menu on top right 2. Login with your friend's account who has the correct curriculum data 3. After login, tap curriculum on bottom to cache the data 4. Tap logout in the settings menu and login with your account 5. Verify that your curriculum data is cached and not cleared  If you have any problem or suggestion, please email me by tapping "Send Beta Feedback" in TestFlight</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PFe-go-vNd" firstAttribute="top" secondItem="SIy-S4-2Kr" secondAttribute="top" constant="20" id="6Ht-9O-gLx"/>
+                            <constraint firstItem="SIy-S4-2Kr" firstAttribute="trailing" secondItem="XcM-oq-64u" secondAttribute="trailing" constant="20" id="HbD-qz-CoU"/>
+                            <constraint firstItem="AGd-AF-z4D" firstAttribute="leading" secondItem="fGT-MC-ZHN" secondAttribute="leading" constant="20" id="Hf3-bX-4kH"/>
+                            <constraint firstItem="XcM-oq-64u" firstAttribute="top" relation="lessThanOrEqual" secondItem="PFe-go-vNd" secondAttribute="bottom" constant="40" id="Wck-2r-tLL"/>
+                            <constraint firstItem="PFe-go-vNd" firstAttribute="leading" secondItem="SIy-S4-2Kr" secondAttribute="leading" constant="20" id="Z8f-r1-zQj"/>
+                            <constraint firstItem="XcM-oq-64u" firstAttribute="leading" secondItem="SIy-S4-2Kr" secondAttribute="leading" constant="20" id="aux-JE-CdA"/>
+                            <constraint firstItem="SIy-S4-2Kr" firstAttribute="trailing" secondItem="PFe-go-vNd" secondAttribute="trailing" constant="20" id="bHD-MM-csz"/>
+                            <constraint firstItem="AGd-AF-z4D" firstAttribute="top" secondItem="XcM-oq-64u" secondAttribute="bottom" constant="40" id="bLo-1u-ytY"/>
+                            <constraint firstItem="SIy-S4-2Kr" firstAttribute="trailing" secondItem="AGd-AF-z4D" secondAttribute="trailing" constant="20" id="bgb-9J-D1U"/>
+                            <constraint firstItem="XcM-oq-64u" firstAttribute="centerY" secondItem="fGT-MC-ZHN" secondAttribute="centerY" id="hlJ-JN-H29"/>
+                            <constraint firstItem="SIy-S4-2Kr" firstAttribute="bottom" secondItem="AGd-AF-z4D" secondAttribute="bottom" constant="20" id="kDD-vS-XbV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SIy-S4-2Kr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVu-LI-6mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="161"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B6H-5z-mMu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="14E-FW-N0T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pmi-iR-mNI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RAe-kb-WEh" kind="relationship" relationship="rootViewController" id="sda-0u-fy0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eaj-y7-4tK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="163"/>
         </scene>
     </scenes>
     <resources>

@@ -11,13 +11,18 @@ import KeychainSwift
 
 class MainViewController: UIViewController {
     
-    var token:Token?
+    var token:Token? {
+        didSet{
+            print("Did set token in MainViewController")
+            tokenDelegate?.tokenChanged(token: self.token)
+        }
+    }
     var userInfo:UserInfo?
+    weak var tokenDelegate:tokenDelegate?
     
-    @IBOutlet weak var groupLab: UILabel!
-    @IBOutlet weak var clsLab: UILabel!
-    @IBOutlet weak var nickLab: UILabel!
     @IBOutlet weak var nameLab: UILabel!
+    @IBOutlet weak var nextClassLab: UILabel!
+    @IBOutlet weak var nextClassDescLab: UILabel!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -37,6 +42,7 @@ class MainViewController: UIViewController {
         }
         
         WelcomeSplash()
+        NextClassRefresh()
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,9 +56,6 @@ class MainViewController: UIViewController {
             if let result = res {
                 self.userInfo = UserInfo(JSON: result)
                 self.nameLab.text = self.userInfo?.name
-                self.clsLab.text = self.userInfo?.cls
-                self.nickLab.text = self.userInfo?.nick
-                self.groupLab.text = self.userInfo?.group
             }
             else if let apiError = apierr{
                 if apiError.code == 103{
@@ -93,6 +96,7 @@ class MainViewController: UIViewController {
         req.request {(res,apierr,alaerr) in
             if let result = res {
                 self.token = Token(JSON: result)
+                self.tokenDelegate?.tokenChanged(token: self.token)
                 print("Got result:\(result)")
                 self.getUserInfo()
             }
@@ -131,6 +135,108 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "SplashSegue", sender: self)
     }
     
+    func NextClassRefresh() {
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
+            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
+        }
+        if let JSON = userDefaults.string(forKey: "curriculumJSON"), JSON != "" {
+            if let curr = CurriculumWeek(JSONString: JSON){
+                print("Got curriculum JSON from UserDefaults and mapped to object")
+                let currRes = getCurr(currWeek: curr)
+                nextClassLab.text = " " + currRes.subject! + " "
+            }
+        }
+        else{
+            print("curriculum JSON is empty, prompting to open curriculum")
+            nextClassLab.text = " "+NSLocalizedString("OpenCurriculumToCache", comment: "Tap curriculum below to download cache")+" "
+        }
+    
+    }
+    
+    func getCurr(currWeek:CurriculumWeek) -> Curriculum {
+        let date = Date()
+        let weekday = Calendar.current.component(.weekday, from: date)
+        let index:Int
+        let today:Bool
+        if weekday <= 6 && weekday >= 2 {
+            let hour = Calendar.current.component(.hour, from: date)
+            if hour < 16{
+                let minute = Calendar.current.component(.minute, from: date)
+                if hour == 15 && minute > 10{
+                    today = false
+                    if weekday != 6{
+                        index = weekday - 1
+                    }
+                    else{
+                        index = 0
+                        nextClassDescLab.text = NSLocalizedString("Monday", comment: "Monday")
+                        return currWeek.week1![0]
+                    }
+                }
+                else{
+                    index = weekday - 2
+                    today = true
+                }
+            }
+            else{
+                today = false
+                if weekday != 6{
+                    index = weekday - 1
+                }
+                else{
+                    index = 0
+                    nextClassDescLab.text = NSLocalizedString("Monday", comment: "Monday")
+                    return currWeek.week1![0]
+                }
+            }
+        }
+        else{
+            today = false
+            index = 0
+        }
+        
+        let res:[Curriculum]?
+        switch index {
+        case 0:
+            res = currWeek.week1
+        case 1:
+            res = currWeek.week2
+        case 2:
+            res = currWeek.week3
+        case 3:
+            res = currWeek.week4
+        case 4:
+            res = currWeek.week5
+        default:
+            fatalError("index for Monday to Friday is out of range! Date: \(date), Index: \(index)")
+        }
+        if let day = res{
+            if today{
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy/MM/dd "
+                let dateStr = dateFormatter.string(from: date)
+                dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+                
+                for cls in day{
+                    let clsTime = dateFormatter.date(from: dateStr + cls.start!)!
+                    if date < clsTime{
+                        nextClassDescLab.text = NSLocalizedString("Next", comment: "Next")
+                        return cls
+                    }
+                }
+                fatalError()
+                
+            }
+            else{
+                nextClassDescLab.text = NSLocalizedString("Tomorrow", comment: "Tomorrow")
+                return day[0]
+            }
+        }
+        else{
+            fatalError("result is NIL")
+        }
+    }
+    
     /*
      // MARK: - Navigation
      
@@ -142,41 +248,14 @@ class MainViewController: UIViewController {
      */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "AttitudeSegue" {
-            print("Preparing AttitudeSegue")
-            let destVC = segue.destination as! AttitudeTableViewController
-            destVC.token = self.token
-        }
-        else if segue.identifier == "AbsentSegue" {
-            print("Preparing AbsentSegue")
-            let destVC = segue.destination as! AbsentTableViewController
-            destVC.token = self.token
-        }
-        else if segue.identifier == "SectionalExamSegue" {
-            print("Preparing SectionalExamSegue")
-            let destVC = segue.destination as! SectionalExamViewController
-            destVC.token = self.token
-        }
-        else if segue.identifier == "HistoryScoreSegue" {
-            print("Preparing HistoryScoreSegue")
-            let destVC = segue.destination as! HistoryScoreViewController
-            destVC.token = self.token
-        }
-        else if segue.identifier == "CurriculumSegue" {
-            print("Preparing CurriculumSegue")
-            let destVC = segue.destination as! CurriculumPageViewController
-            destVC.token = self.token
-        }
-        else if segue.identifier == "SettingsSegue" {
-            print("Preparing SettingsSegue")
-            let destVC = segue.destination as! SettingsTableViewController
-            destVC.token = self.token
-        }
-        else if segue.identifier == "WelcomeSegue" {
-            print("Preparing WelcomeSegue")
-        }
-        else if segue.identifier == "SplashSegue" {
-            print("Preparing SplashSegue")
+        if segue.identifier == "EmbedTableViewSegue"{
+            print("Preparing EmbedTableViewSegue")
+            let destVC = segue.destination as! MainTableViewController
+            self.tokenDelegate = destVC
         }
     }
+}
+
+protocol tokenDelegate:class {
+    func tokenChanged(token: Token?)
 }
