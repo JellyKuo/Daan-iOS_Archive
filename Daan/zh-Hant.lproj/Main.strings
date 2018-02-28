@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Attitude"; ObjectID = "1gR-Oe-5Zj"; */
+"1gR-Oe-5Zj.text" = "出缺勤";
+
+/* Class = "UINavigationItem"; title = "Daan"; ObjectID = "7du-gH-YYz"; */
+"7du-gH-YYz.title" = "木棉手札";
+
+/* Class = "UILabel"; text = "Hello, "; ObjectID = "GU6-Vx-hZ7"; */
+"GU6-Vx-hZ7.text" = "哈囉, ";
+
+/* Class = "UILabel"; text = "Next class"; ObjectID = "Kb7-ON-7vX"; */
+"Kb7-ON-7vX.text" = "下一節";
+
+/* Class = "UILabel"; text = "Sectional Exam"; ObjectID = "SAX-8Y-TXK"; */
+"SAX-8Y-TXK.text" = "段考成績";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "X9T-KE-Yyq"; */
+"X9T-KE-Yyq.text" = "姓名";
+
+/* Class = "UILabel"; text = "Curriculum"; ObjectID = "esB-RO-1kf"; */
+"esB-RO-1kf.text" = "課表";
+
+/* Class = "UILabel"; text = "Study Room"; ObjectID = "jRD-kS-pKl"; */
+"jRD-kS-pKl.text" = "自修室";
+
+/* Class = "UILabel"; text = "Next Class"; ObjectID = "laZ-i3-9ap"; */
+"laZ-i3-9ap.text" = "下一節";
+
+/* Class = "UILabel"; text = "History Score"; ObjectID = "tgJ-GL-IVA"; */
+"tgJ-GL-IVA.text" = "歷年成績";
+
+/* Class = "UILabel"; text = "Absent"; ObjectID = "uOl-Lr-ofn"; */
+"uOl-Lr-ofn.text" = "出缺勤";
