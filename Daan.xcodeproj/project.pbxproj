@@ -52,6 +52,8 @@
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
 		A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
+		A18683F32049A2970058F94E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A18683F22049A2970058F94E /* GoogleService-Info.plist */; };
+		A18683F42049A2970058F94E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A18683F22049A2970058F94E /* GoogleService-Info.plist */; };
 		A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1930A881FCEDFF1008344CA /* Welcome.storyboard */; };
 		A1984E9F2046705B00FD2A56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1984EA12046705B00FD2A56 /* InfoPlist.strings */; };
 		A1984EA42046705C00FD2A56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1984EA62046705C00FD2A56 /* Localizable.strings */; };
@@ -147,6 +149,7 @@
 		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
+		A18683F22049A2970058F94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1930A851FCEDF4F008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A941FCEE1EE008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		A1984E8D20466C9A00FD2A56 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Settings.strings"; sourceTree = "<group>"; };
@@ -260,6 +263,7 @@
 		A11DC6E31FB33C3B00A4EC9A /* Daan */ = {
 			isa = PBXGroup;
 			children = (
+				A18683F22049A2970058F94E /* GoogleService-Info.plist */,
 				A1BD40091FD1A10100B5C079 /* Daan.entitlements */,
 				A1E904AF1FCECA38000E28AE /* Custom UI Classes */,
 				A12F03CA1FC0A51F004F739F /* InfoPlist.strings */,
@@ -488,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */,
+				A18683F42049A2970058F94E /* GoogleService-Info.plist in Resources */,
 				A1984EA42046705C00FD2A56 /* Localizable.strings in Resources */,
 				A1984E9F2046705B00FD2A56 /* InfoPlist.strings in Resources */,
 			);
@@ -508,6 +513,7 @@
 				A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */,
 				A12F03B71FC09BF0004F739F /* Curriculum.storyboard in Resources */,
 				A12B28EE202E03F3003B01D3 /* SplashScreen.storyboard in Resources */,
+				A18683F32049A2970058F94E /* GoogleService-Info.plist in Resources */,
 				A12FFC0A20464C5A004ABD9B /* License.storyboard in Resources */,
 				A1C83A801FBFCD69008CF088 /* Absent.storyboard in Resources */,
 				A1C83A8A1FBFCD86008CF088 /* HistoryScore.storyboard in Resources */,
@@ -529,14 +535,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Daan/Pods-Daan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

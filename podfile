@@ -8,6 +8,9 @@ target 'Daan' do
   pod 'Alamofire'
   pod 'ObjectMapper'
   pod 'KeychainSwift'
+
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
   # Pods for Daan
 
 end
