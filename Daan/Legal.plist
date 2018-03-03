@@ -2,11 +2,43 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Agreement</key>
+	<dict>
+		<key>Url</key>
+		<string>https://kesshou.dacsc.club/v1/static/userterm.pdf</string>
+	</dict>
+	<key>Kesshou-Server</key>
+	<dict>
+		<key>Url</key>
+		<string>https://github.com/Kesshou/Kesshou-Server</string>
+		<key>Legal</key>
+		<string>The MIT License (MIT)
+
+Copyright (c) 2016 Kesshou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</string>
+	</dict>
 	<key>Daan-iOS</key>
 	<dict>
 		<key>Url</key>
 		<string>https://github.com/JellyKuo/Daan-iOS</string>
-		<key>License</key>
+		<key>Legal</key>
 		<string>MIT License
 
 Copyright (c) 2018 JellyKuo
@@ -33,7 +65,7 @@ SOFTWARE.</string>
 	<dict>
 		<key>Url</key>
 		<string>https://github.com/Alamofire/Alamofire</string>
-		<key>License</key>
+		<key>Legal</key>
 		<string>Copyright (c) 2014-2017 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -58,7 +90,7 @@ THE SOFTWARE.</string>
 	<dict>
 		<key>Url</key>
 		<string>https://github.com/Hearst-DD/ObjectMapper</string>
-		<key>License</key>
+		<key>Legal</key>
 		<string>The MIT License (MIT)
 Copyright (c) 2014 Hearst
 
@@ -72,7 +104,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<dict>
 		<key>Url</key>
 		<string>https://github.com/Kesshou/Kesshou-Android</string>
-		<key>License</key>
+		<key>Legal</key>
 		<string>The MIT License (MIT)
 
 Copyright (c) 2016 Kesshou
@@ -99,7 +131,7 @@ SOFTWARE.</string>
 	<dict>
 		<key>Url</key>
 		<string>https://github.com/evgenyneu/keychain-swift</string>
-		<key>License</key>
+		<key>Legal</key>
 		<string>The MIT License
 
 Copyright (c) 2015 Marketplacer
@@ -126,7 +158,7 @@ THE SOFTWARE.</string>
 	<dict>
 		<key>Url</key>
 		<string>https://icons8.com</string>
-		<key>License</key>
+		<key>Legal</key>
 		<string>THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE (&quot;CCPL&quot; OR &quot;LICENSE&quot;). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
 
 BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.

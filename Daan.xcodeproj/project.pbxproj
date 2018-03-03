@@ -41,7 +41,7 @@
 		A12F03C81FC0A51F004F739F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12F03CA1FC0A51F004F739F /* InfoPlist.strings */; };
 		A12FFC0920464C4D004ABD9B /* LegalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FFC0820464C4D004ABD9B /* LegalTableViewController.swift */; };
 		A12FFC0A20464C5A004ABD9B /* Legal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12FFC0C20464C5A004ABD9B /* Legal.storyboard */; };
-		A12FFC1020464E24004ABD9B /* Licenses.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12FFC0F20464E24004ABD9B /* Licenses.plist */; };
+		A12FFC1020464E24004ABD9B /* Legal.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12FFC0F20464E24004ABD9B /* Legal.plist */; };
 		A12FFC1220464F48004ABD9B /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FFC1120464F48004ABD9B /* LegalViewController.swift */; };
 		A15444AE1FBAFF7100A5D88E /* AbsentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */; };
 		A15444B01FBAFF8400A5D88E /* AbsentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */; };
@@ -139,7 +139,7 @@
 		A12F03CC1FC0A54A004F739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A12FFC0820464C4D004ABD9B /* LegalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalTableViewController.swift; sourceTree = "<group>"; };
 		A12FFC0B20464C5A004ABD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Legal.storyboard; sourceTree = "<group>"; };
-		A12FFC0F20464E24004ABD9B /* Licenses.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Licenses.plist; sourceTree = "<group>"; };
+		A12FFC0F20464E24004ABD9B /* Legal.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Legal.plist; sourceTree = "<group>"; };
 		A12FFC1120464F48004ABD9B /* LegalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
 		A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewCell.swift; sourceTree = "<group>"; };
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 				A12FFC0C20464C5A004ABD9B /* Legal.storyboard */,
 				A12FFC0820464C4D004ABD9B /* LegalTableViewController.swift */,
 				A12FFC1120464F48004ABD9B /* LegalViewController.swift */,
-				A12FFC0F20464E24004ABD9B /* Licenses.plist */,
+				A12FFC0F20464E24004ABD9B /* Legal.plist */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -504,7 +504,7 @@
 			files = (
 				A11DC6EF1FB33C3C00A4EC9A /* LaunchScreen.storyboard in Resources */,
 				A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */,
-				A12FFC1020464E24004ABD9B /* Licenses.plist in Resources */,
+				A12FFC1020464E24004ABD9B /* Legal.plist in Resources */,
 				A12F03C81FC0A51F004F739F /* InfoPlist.strings in Resources */,
 				A115EC2F1FBFB4940027140E /* Main.storyboard in Resources */,
 				A12F03C31FC0A51E004F739F /* Localizable.strings in Resources */,

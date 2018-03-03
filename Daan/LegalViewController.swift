@@ -9,16 +9,34 @@
 import UIKit
 import SafariServices
 
-class LegalViewController: UIViewController {
+class LegalViewController: UIViewController,SFSafariViewControllerDelegate {
     
     @IBOutlet weak var txtView: UITextView!
-    var license = ""
+    var legal = ""
     var urlStr = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtView.text = license
         // Do any additional setup after loading the view.
+        
+        if legal != ""{
+            //TextView scrolling will bug on first offset
+            //Locking scroll here, unlock it in viewDidAppear
+            txtView.isScrollEnabled = false
+            txtView.text = legal
+        }
+        else {
+            //If no delay is applied, Safari View Controller will be blank
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+                self.ActionTap(self)
+            }
+        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        //Re enable scrolling
+        txtView.scrollRangeToVisible(NSRange(location: 0,length: 1))
+        txtView.isScrollEnabled = true
+        super.viewDidAppear(animated)
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,10 +46,11 @@ class LegalViewController: UIViewController {
     
     
     @IBAction func ActionTap(_ sender: Any) {
-        print("Act Tap")
-        
         guard let url = URL(string: urlStr) else {
             print("No url configured")
+            if legal == ""{
+                navigationController?.popViewController(animated: false)
+            }
             return
         }
         
@@ -50,7 +69,14 @@ class LegalViewController: UIViewController {
     func SFSafariShow(_ url:URL) {
         let config = SFSafariViewController.Configuration()
         let vc = SFSafariViewController(url: url, configuration: config)
+        vc.delegate = self
         present(vc, animated: true)
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        if legal == ""{
+            navigationController?.popViewController(animated: false)
+        }
     }
     
     /*
