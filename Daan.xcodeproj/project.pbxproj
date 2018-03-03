@@ -52,6 +52,7 @@
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
 		A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
+		A17DA6EF204A6E97005D039A /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */; };
 		A18683F32049A2970058F94E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A18683F22049A2970058F94E /* GoogleService-Info.plist */; };
 		A18683F42049A2970058F94E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A18683F22049A2970058F94E /* GoogleService-Info.plist */; };
 		A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1930A881FCEDFF1008344CA /* Welcome.storyboard */; };
@@ -149,6 +150,7 @@
 		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
+		A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		A18683F22049A2970058F94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1930A851FCEDF4F008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1930A941FCEE1EE008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				A15CD5111FE62BC50012F2D8 /* Settings.storyboard */,
+				A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */,
 				A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */,
 				A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */,
 				A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */,
@@ -668,6 +671,7 @@
 				A1EE04D61FB7F21700021DAF /* Token.swift in Sources */,
 				A1B12B2C1FB7E16300F50F5E /* UserInfo.swift in Sources */,
 				A1EE04D81FB7F92B00021DAF /* ApiError.swift in Sources */,
+				A17DA6EF204A6E97005D039A /* NotificationTableViewController.swift in Sources */,
 				A1BD40081FD19BD200B5C079 /* UIColor.swift in Sources */,
 				A12F03B21FC08311004F739F /* Curriculum.swift in Sources */,
 				A1BDF3E31FB882EF009F9F72 /* Attitude.swift in Sources */,

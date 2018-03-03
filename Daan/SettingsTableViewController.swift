@@ -31,7 +31,7 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             switch indexPath.row{
-            case 3:
+            case 4:
                 clearCurriculum(supressAlert: false)
                 break;
             default:
@@ -58,8 +58,8 @@ class SettingsTableViewController: UITableViewController {
                     fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
                 }
                 usersDefault.removeObject(forKey: "SplashDismiss")
-                break;
-            default:
+                break
+            case 1:
                 guard let usersDefault = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
                     fatalError("Cannot init userdefaults with suiteName group.com.Jelly.Daan")
                 }
@@ -70,7 +70,11 @@ class SettingsTableViewController: UITableViewController {
                     }))
                     self.present(alert,animated: true,completion: nil)
                 }
-                break;
+                break
+            case 2:
+                break
+            default:
+                break
             }
         }
     }
