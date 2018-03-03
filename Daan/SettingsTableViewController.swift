@@ -31,7 +31,7 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             switch indexPath.row{
-            case 1:
+            case 3:
                 clearCurriculum(supressAlert: false)
                 break;
             default:

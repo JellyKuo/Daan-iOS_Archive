@@ -149,15 +149,6 @@ class LegalTableViewController: UITableViewController {
         
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 3 {
-            return 40
-        }
-        else{
-            return 28
-        }
-    }
-    
     /*
      // MARK: - Navigation
      
