@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--License-->
+        <!--Legal-->
         <scene sceneID="YlF-rW-5tr">
             <objects>
-                <tableViewController id="23O-Mt-x9Y" customClass="LicenseTableViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="23O-Mt-x9Y" customClass="LegalTableViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bCh-i1-w4O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,17 +139,17 @@
                             <outlet property="delegate" destination="23O-Mt-x9Y" id="5Kh-G9-YQw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="License" id="7ZA-oQ-m6p"/>
+                    <navigationItem key="navigationItem" title="Legal" id="7ZA-oQ-m6p"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iI4-EU-yLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-74" y="54"/>
         </scene>
-        <!--License View Controller-->
+        <!--Legal View Controller-->
         <scene sceneID="WZS-UW-9up">
             <objects>
-                <viewController storyboardIdentifier="LicenseView" id="jGB-Qb-uvs" customClass="LicenseViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LicenseView" id="jGB-Qb-uvs" customClass="LegalViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ve-1Z-Iin">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

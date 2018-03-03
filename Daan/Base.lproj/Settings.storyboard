@@ -75,7 +75,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evD-yy-do8">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evD-yy-do8">
                                                     <rect key="frame" x="16" y="11" width="343" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -194,10 +194,10 @@
             </objects>
             <point key="canvasLocation" x="556" y="-141.67916041979012"/>
         </scene>
-        <!--License-->
+        <!--Legal-->
         <scene sceneID="h8L-qg-q1e">
             <objects>
-                <viewControllerPlaceholder storyboardName="License" id="JZ8-m1-mbe" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Legal" id="JZ8-m1-mbe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3p-C5-Q00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1100" y="-170"/>

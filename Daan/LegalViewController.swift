@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class LicenseViewController: UIViewController {
+class LegalViewController: UIViewController {
     
     @IBOutlet weak var txtView: UITextView!
     var license = ""

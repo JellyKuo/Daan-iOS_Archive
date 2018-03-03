@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LicenseTableViewController: UITableViewController {
+class LegalTableViewController: UITableViewController {
 
     let licenses = NSDictionary(contentsOfFile:Bundle.main.path(forResource: "Licenses", ofType: "plist")!)
     
@@ -128,7 +128,7 @@ class LicenseTableViewController: UITableViewController {
             return
         }
         let license = licenses?.object(forKey: licName) as? NSDictionary
-        let licenseViewController = storyboard?.instantiateViewController(withIdentifier: "LicenseView") as! LicenseViewController
+        let licenseViewController = storyboard?.instantiateViewController(withIdentifier: "LicenseView") as! LegalViewController
         licenseViewController.navigationItem.title = licName
         licenseViewController.license = license?.object(forKey: "License") as! String
         licenseViewController.urlStr = license?.object(forKey: "Url") as! String
