@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let token = Messaging.messaging().fcmToken
         print("FCM token: \(token ?? "nil")")
         
+        //Register for notification is now handled in splash
+        /*
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
@@ -41,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         application.registerForRemoteNotifications()
+        */
         
         return true
     }    
@@ -67,7 +70,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+    }
 }
 
 @available(iOS 10, *)
