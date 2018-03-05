@@ -126,11 +126,6 @@ class MainTableViewController: UITableViewController, tokenDelegate {
             let destVC = segue.destination as! CurriculumPageViewController
             destVC.token = self.token
         }
-        else if segue.identifier == "SettingsSegue" {
-            print("Preparing SettingsSegue")
-            let destVC = segue.destination as! SettingsTableViewController
-            destVC.token = self.token
-        }
         else if segue.identifier == "WelcomeSegue" {
             print("Preparing WelcomeSegue")
         }

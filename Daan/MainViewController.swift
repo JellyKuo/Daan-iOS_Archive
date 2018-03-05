@@ -261,6 +261,11 @@ class MainViewController: UIViewController {
             let destVC = segue.destination as! MainTableViewController
             self.tokenDelegate = destVC
         }
+        else if segue.identifier == "SettingsSegue" {
+            print("Preparing SettingsSegue")
+            let destVC = segue.destination as! SettingsTableViewController
+            destVC.token = self.token
+        }
     }
 }
 
