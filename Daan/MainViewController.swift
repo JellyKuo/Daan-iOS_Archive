@@ -43,6 +43,7 @@ class MainViewController: UIViewController {
         
         WelcomeSplash()
         NextClassRefresh()
+        getUserInfo()
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,8 +60,7 @@ class MainViewController: UIViewController {
             }
             else if let apiError = apierr{
                 if apiError.code == 103{
-                    self.autoLogin()
-                    return
+                    fatalError("Token should be valid at this point!")
                 }
                 let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
