@@ -8,6 +8,7 @@
 
 import UIKit
 import KeychainSwift
+import FirebaseMessaging  //Remove on production
 
 class SettingsTableViewController: UITableViewController {
 
@@ -51,6 +52,7 @@ class SettingsTableViewController: UITableViewController {
             }
         }
         
+        //Remove on production
         else if indexPath.section == 2 {
             switch indexPath.row{
             case 0:
@@ -72,6 +74,20 @@ class SettingsTableViewController: UITableViewController {
                 }
                 break
             case 2:
+                if let tk = token?.token{
+                    let alert = UIAlertController(title: "API Token", message: tk, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                        UIPasteboard.general.string = tk
+                    }))
+                    self.present(alert,animated: true,completion: nil)
+                }
+                break
+            case 3:
+                let alert = UIAlertController(title: "FCM Token", message: Messaging.messaging().fcmToken, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                    UIPasteboard.general.string = Messaging.messaging().fcmToken
+                }))
+                self.present(alert,animated: true,completion: nil)
                 break
             default:
                 break
