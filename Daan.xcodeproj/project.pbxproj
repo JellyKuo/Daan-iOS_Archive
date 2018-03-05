@@ -421,6 +421,7 @@
 				1F3FA917DD276C7882CA3740 /* [CP] Embed Pods Frameworks */,
 				AED7CEF420F8FBE77F2D0D18 /* [CP] Copy Pods Resources */,
 				A19494621FEA927B006EF100 /* Embed App Extensions */,
+				A1C22D2D204D8244004F12AD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -572,6 +573,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Today Curriculum/Pods-Today Curriculum-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A1C22D2D204D8244004F12AD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
 		};
 		A1ED1ABB20F7FA9C220B209A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
