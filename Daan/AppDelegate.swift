@@ -32,9 +32,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if userDefaults.bool(forKey: "crashReport"){
             #if !DEBUG
                 Fabric.with([Crashlytics.self])
+                print("Production, Crashlytics initialized")
             #else
                 print("Debug, Crashlytics not initialized")
             #endif
+        }
+        else{
+            print("User opt out Crashlytics reporting")
         }
         
         Messaging.messaging().delegate = self

@@ -14,9 +14,14 @@ import Crashlytics  //Remove on production
 class SettingsTableViewController: UITableViewController {
 
     var token:Token? = nil
+    let userDefaults:UserDefaults = UserDefaults(suiteName: "group.com.Jelly.Daan")!
+    @IBOutlet weak var mainDispSegment: UISegmentedControl!
+    @IBOutlet weak var crhRepSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        crhRepSwitch.setOn(userDefaults.bool(forKey: "crashReport"), animated: true)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,7 +38,7 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             switch indexPath.row{
-            case 4:
+            case 5:
                 clearCurriculum(supressAlert: false)
                 break;
             default:
@@ -99,6 +104,10 @@ class SettingsTableViewController: UITableViewController {
         else if indexPath.section == 3{
             Crashlytics.sharedInstance().crash()
         }
+    }
+    
+    @IBAction func crhRepToggle(_ sender: Any) {
+        userDefaults.set(crhRepSwitch.isOn, forKey: "crashReport")
     }
     
     func clearCurriculum(supressAlert:Bool){
