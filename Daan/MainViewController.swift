@@ -52,6 +52,14 @@ class MainViewController: UIViewController {
     }
     
     func getUserInfo() {
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
+            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
+        }
+        if let dispName = userDefaults.string(forKey: "dispName") {
+            print("Got dispName in userDefaults, using that")
+            self.nameLab.text = dispName
+        }
+        
         let req = ApiRequest(path: "actmanage/getUserInfo", method: .get, token: self.token)
         req.request {(res,apierr,alaerr) in
             if let result = res {
