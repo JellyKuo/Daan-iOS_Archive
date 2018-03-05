@@ -9,6 +9,7 @@
 import UIKit
 import KeychainSwift
 import FirebaseMessaging  //Remove on production
+import Crashlytics  //Remove on production
 
 class SettingsTableViewController: UITableViewController {
 
@@ -92,6 +93,11 @@ class SettingsTableViewController: UITableViewController {
             default:
                 break
             }
+        }
+            
+        //Remove on production
+        else if indexPath.section == 3{
+            Crashlytics.sharedInstance().crash()
         }
     }
     
