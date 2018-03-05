@@ -11,6 +11,9 @@ target 'Daan' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
+  pod 'Fabric'
+  pod 'Crashlytics'
+
   # Pods for Daan
 
 end
