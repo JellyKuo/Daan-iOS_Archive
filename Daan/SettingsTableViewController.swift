@@ -9,6 +9,7 @@
 import UIKit
 import KeychainSwift
 import FirebaseMessaging  //Remove on production
+import Crashlytics  //Remove on production
 
 class SettingsTableViewController: UITableViewController {
 
@@ -40,7 +41,7 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             switch indexPath.row{
-            case 4:
+            case 5:
                 clearCurriculum(supressAlert: false)
                 break;
             default:
@@ -101,6 +102,15 @@ class SettingsTableViewController: UITableViewController {
                 break
             }
         }
+            
+        //Remove on production
+        else if indexPath.section == 3{
+            Crashlytics.sharedInstance().crash()
+        }
+    }
+    
+    @IBAction func crhRepToggle(_ sender: Any) {
+        userDefaults.set(crhRepSwitch.isOn, forKey: "crashReport")
     }
     
     func clearCurriculum(supressAlert:Bool){

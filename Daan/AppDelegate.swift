@@ -8,7 +8,10 @@
 
 import UIKit
 import UserNotifications
+
 import Firebase
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +24,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Firebase configure
         FirebaseApp.configure()
+        
+        //Crashlytics initialization
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
+            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
+        }
+        if userDefaults.bool(forKey: "crashReport"){
+            #if !DEBUG
+                Fabric.with([Crashlytics.self])
+                print("Production, Crashlytics initialized")
+            #else
+                print("Debug, Crashlytics not initialized")
+            #endif
+        }
+        else{
+            print("User opt out Crashlytics reporting")
+        }
         
         Messaging.messaging().delegate = self
         let token = Messaging.messaging().fcmToken
