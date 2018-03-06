@@ -9,7 +9,7 @@
 import UIKit
 import KeychainSwift
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController,displayNameDelegate {
     
     var token:Token? {
         didSet{
@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
         }
     }
     var userInfo:UserInfo?
+    let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan")!
     weak var tokenDelegate:tokenDelegate?
     
     @IBOutlet weak var nameLab: UILabel!
@@ -43,7 +44,6 @@ class MainViewController: UIViewController {
         
         WelcomeSplash()
         NextClassRefresh()
-        getUserInfo()
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,19 +52,14 @@ class MainViewController: UIViewController {
     }
     
     func getUserInfo() {
-        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
-            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
-        }
-        if let dispName = userDefaults.string(forKey: "dispName") {
-            print("Got dispName in userDefaults, using that")
-            self.nameLab.text = dispName
-        }
         
         let req = ApiRequest(path: "actmanage/getUserInfo", method: .get, token: self.token)
         req.request {(res,apierr,alaerr) in
             if let result = res {
                 self.userInfo = UserInfo(JSON: result)
-                self.nameLab.text = self.userInfo?.name
+                self.userDefaults.set(self.userInfo?.name, forKey: "name")
+                self.userDefaults.set(self.userInfo?.nick, forKey: "nickname")
+                self.displaySwitched()
             }
             else if let apiError = apierr{
                 if apiError.code == 103{
@@ -159,6 +154,20 @@ class MainViewController: UIViewController {
             nextClassLab.text = " "+NSLocalizedString("OpenCurriculumToCache", comment: "Tap curriculum below to download cache")+" "
         }
     
+    }
+    
+    func displaySwitched() {
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
+            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
+        }
+        if userDefaults.bool(forKey: "displayNickname") {
+            print("Display nickname is true in userDefaults, using nick")
+            self.nameLab.text = userDefaults.string(forKey: "nickname")
+        }
+        else{
+            print("Display nickname is false or not set in userDefaults, using full name")
+            self.nameLab.text = userDefaults.string(forKey: "name")
+        }
     }
     
     func getCurr(currWeek:CurriculumWeek) -> Curriculum {
@@ -265,6 +274,7 @@ class MainViewController: UIViewController {
             print("Preparing SettingsSegue")
             let destVC = segue.destination as! SettingsTableViewController
             destVC.token = self.token
+            destVC.displayNameDelegate = self
         }
     }
 }

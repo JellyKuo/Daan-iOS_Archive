@@ -13,9 +13,17 @@ import FirebaseMessaging  //Remove on production
 class SettingsTableViewController: UITableViewController {
 
     var token:Token? = nil
+
+    let userDefaults:UserDefaults = UserDefaults(suiteName: "group.com.Jelly.Daan")!
+    weak var displayNameDelegate:displayNameDelegate?
+    @IBOutlet weak var mainDispSegment: UISegmentedControl!
+    @IBOutlet weak var crhRepSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //crhRepSwitch.setOn(userDefaults.bool(forKey: "crashReport"), animated: true)
+        mainDispSegment.selectedSegmentIndex = userDefaults.bool(forKey: "displayNickname") ? 0 : 1 //0:Nick, 1:Full
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -107,6 +115,11 @@ class SettingsTableViewController: UITableViewController {
             }))
             self.present(alert,animated: true,completion: nil)
         }
+    }
+    
+    @IBAction func mainDispSegmentChg(_ sender: Any) {
+        userDefaults.set(mainDispSegment.selectedSegmentIndex == 0 , forKey: "displayNickname")  //0:Nick, 1:Full
+        displayNameDelegate?.displaySwitched()
     }
     
     func logout(supressAlert:Bool) {
@@ -230,4 +243,8 @@ class SettingsTableViewController: UITableViewController {
         }
     }
 
+}
+
+protocol displayNameDelegate:class {
+    func displaySwitched()
 }
