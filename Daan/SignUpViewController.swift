@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class FirstSignUpViewController: UIViewController {
     
@@ -100,6 +101,10 @@ class SecondSignUpViewController: UIViewController {
             if let result = res {
                 self.token = Token(JSON: result)
                 print("Got result:\(result)")
+                let keychain = KeychainSwift()
+                keychain.set(self.Email, forKey: "account")
+                keychain.set(self.Password, forKey: "password")
+                print("Keychain set")
                 print("Calling performSegue ID:MainSegue")
                 self.performSegue(withIdentifier: "MainSegue", sender: self)
             }
