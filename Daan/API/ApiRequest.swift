@@ -112,7 +112,9 @@ class ApiRequest{
                                 }
                             }
                         }
-                        
+                        else{
+                            result(nil,apiError,nil)
+                        }
                     }
                     
                 case .failure(let error):
@@ -190,8 +192,9 @@ class ApiRequest{
                                 }
                             }
                         }
-                        
-                        
+                        else{
+                            result(nil,apiError,nil)
+                        }
                     }
                     else{
                         let value = val as! JSONArray
