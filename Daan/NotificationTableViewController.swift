@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class NotificationTableViewController: UITableViewController {
     
@@ -36,8 +37,35 @@ class NotificationTableViewController: UITableViewController {
             print("Unregister from remote notification, now state \(UIApplication.shared.isRegisteredForRemoteNotifications)")
         }
         else{
-            UIApplication.shared.registerForRemoteNotifications()
-            print("Registred from remote notification, now state \(UIApplication.shared.isRegisteredForRemoteNotifications)")
+            let application = UIApplication.shared
+            if #available(iOS 10.0, *) {
+                // For iOS 10 display notification (sent via APNS)
+                let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+                UNUserNotificationCenter.current().requestAuthorization(
+                    options: authOptions,
+                    completionHandler: {granted, err in
+                        if err != nil {
+                            fatalError("UNUserNotificationCenter requestAuthorization returned an error! \(String(describing: err))")
+                        }
+                        if granted{
+                            print("Notification permission granted")
+                            application.registerForRemoteNotifications()
+                            print("Registred from remote notification, now state \(UIApplication.shared.isRegisteredForRemoteNotifications)")
+                        }
+                        else{
+                            print("Notification permission denied")
+                            let alert = UIAlertController(title: NSLocalizedString("Failed", comment: "Failed"), message: NSLocalizedString("Notification permission was denied. It's ok, you can always turn it on or off in settings", comment: "NotificationPermDenied"), preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                                print("NotificationPermDenied alert dismissed!")
+                            }))
+                            self.present(alert,animated: true,completion: nil)
+                        }
+                })
+            } else {
+                let settings: UIUserNotificationSettings =
+                    UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+                application.registerUserNotificationSettings(settings)
+            }
         }
     }
     
