@@ -22,8 +22,17 @@ class AbsentTableViewController: UITableViewController {
     @IBOutlet weak var OfficialLab: UILabel!
     @IBOutlet weak var BereavementLab: UILabel!
     
+    var activityInd:UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityInd = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        activityInd.color = UIColor.gray
+        let barButton = UIBarButtonItem(customView: activityInd)
+        navigationItem.rightBarButtonItem = barButton
+        activityInd.startAnimating()
+
         GetData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -175,6 +184,7 @@ class AbsentTableViewController: UITableViewController {
                     }
                 }
                 self.tableView.reloadData()
+                self.activityInd.stopAnimating()
             }
             else if let apiError = apierr{
                 let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)

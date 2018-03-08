@@ -13,12 +13,20 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
     var token:Token? = nil
     var curriculumWeek:CurriculumWeek? = nil
     var tableVCs:[CurriculumTableViewController]? = nil
+    var activityInd:UIActivityIndicatorView!
     
     @IBOutlet weak var weekNavItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        
+        activityInd = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        activityInd.color = UIColor.gray
+        let barButton = UIBarButtonItem(customView: activityInd)
+        navigationItem.rightBarButtonItem = barButton
+        activityInd.startAnimating()
+        
         GetData()
         
         self.delegate = self
@@ -133,6 +141,8 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
         }
         SetNavTitle(week: index)
         setViewControllers([tableVCs![index]], direction: .forward, animated: false, completion: nil)
+        
+        activityInd.stopAnimating()
     }
     
     func SetNavTitle(week:Int){
