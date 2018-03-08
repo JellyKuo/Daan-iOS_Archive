@@ -49,8 +49,10 @@ class NotificationTableViewController: UITableViewController {
                         }
                         if granted{
                             print("Notification permission granted")
-                            application.registerForRemoteNotifications()
-                            print("Registred from remote notification, now state \(UIApplication.shared.isRegisteredForRemoteNotifications)")
+                            DispatchQueue.main.async {
+                                application.registerForRemoteNotifications()
+                                print("Registred from remote notification, now state \(application.isRegisteredForRemoteNotifications)")
+                            }
                         }
                         else{
                             print("Notification permission denied")
