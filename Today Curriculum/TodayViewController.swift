@@ -84,16 +84,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             let hour = Calendar.current.component(.hour, from: date)
             if hour < 16{
                 index = weekday - 2
-                descLabel.text = NSLocalizedString("Today", comment: "Today")
+                descLabel.text = NSLocalizedString("TODAY", comment: "Today")
             }
             else{
                 if weekday != 6{
                     index = weekday - 1
-                    descLabel.text = NSLocalizedString("Tomorrow", comment: "Tomorrow")
+                    descLabel.text = NSLocalizedString("TOMORROW", comment: "Tomorrow")
                 }
                 else{
                     index = 0
-                    descLabel.text = NSLocalizedString("Monday", comment: "Monday")
+                    descLabel.text = NSLocalizedString("MONDAY", comment: "Monday")
                 }
             }
         }
@@ -140,7 +140,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                     }
                     else{
                         index = 0
-                        descLabel.text = NSLocalizedString("Monday", comment: "Monday")
+                        descLabel.text = NSLocalizedString("MONDAY", comment: "Monday")
                         return currWeek.week1![0]
                     }
                 }
@@ -156,7 +156,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 }
                 else{
                     index = 0
-                    descLabel.text = NSLocalizedString("Monday", comment: "Monday")
+                    descLabel.text = NSLocalizedString("MONDAY", comment: "Monday")
                     return currWeek.week1![0]
                 }
             }
@@ -191,7 +191,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 for cls in day{
                     let clsTime = dateFormatter.date(from: dateStr + cls.start!)!
                     if date < clsTime{
-                        descLabel.text = NSLocalizedString("Next", comment: "Next")
+                        descLabel.text = NSLocalizedString("NEXT_CLASS", comment: "Next class in curriculum")
                         return cls
                     }
                 }
@@ -199,7 +199,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 
             }
             else{
-                descLabel.text = NSLocalizedString("Tomorrow", comment: "Tomorrow")
+                descLabel.text = NSLocalizedString("TOMORROW", comment: "Tomorrow")
                 return day[0]
             }
         }
@@ -252,7 +252,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         descLabel.isHidden = true
         let label = UILabel()
         label.backgroundColor = UIColor(hex: "fa9d29")
-        label.text = " " + NSLocalizedString("OpenApp", comment: "Open app")
+        label.text = " " + NSLocalizedString("OPEN_APP_PROMPT", comment: "Prompts to open app")
         label.font = UIFont.systemFont(ofSize: 24)
         label.textColor = UIColor.white
         label.layer.masksToBounds = true
