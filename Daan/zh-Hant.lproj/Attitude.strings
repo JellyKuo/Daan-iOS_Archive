@@ -11,7 +11,7 @@
 "BDK-66-msC.text" = "0";
 
 /* Class = "UILabel"; text = "Middle Cite"; ObjectID = "IHZ-Cg-zjW"; */
-"IHZ-Cg-zjW.text" = "小攻";
+"IHZ-Cg-zjW.text" = "小功";
 
 /* Class = "UILabel"; text = "0000/00/00"; ObjectID = "MAx-Ev-NLd"; */
 "MAx-Ev-NLd.text" = "0000/00/00";
@@ -38,7 +38,7 @@
 "uRa-cc-8zE.text" = "0";
 
 /* Class = "UINavigationItem"; title = "Attitude"; ObjectID = "wdp-P0-YTN"; */
-"wdp-P0-YTN.title" = "Attitude";
+"wdp-P0-YTN.title" = "獎懲紀錄";
 
 /* Class = "UILabel"; text = "Middle Fault"; ObjectID = "xei-8g-1Mh"; */
 "xei-8g-1Mh.text" = "小過";

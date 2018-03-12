@@ -32,7 +32,7 @@
 "iI5-8h-wTL.text" = "病假";
 
 /* Class = "UINavigationItem"; title = "Absent"; ObjectID = "mBP-va-9Qn"; */
-"mBP-va-9Qn.title" = "缺席";
+"mBP-va-9Qn.title" = "出缺勤";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "pGN-6h-Gbz"; */
 "pGN-6h-Gbz.text" = "0";
