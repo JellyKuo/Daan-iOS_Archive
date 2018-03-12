@@ -76,7 +76,7 @@ class SettingsTableViewController: UITableViewController {
                 }
                 if let JSON = usersDefault.string(forKey: "curriculumJSON"){
                     let alert = UIAlertController(title: "Cached curriculum", message: JSON, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                         UIPasteboard.general.string = JSON
                     }))
                     self.present(alert,animated: true,completion: nil)
@@ -85,7 +85,7 @@ class SettingsTableViewController: UITableViewController {
             case 2:
                 if let tk = token?.token{
                     let alert = UIAlertController(title: "API Token", message: tk, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                         UIPasteboard.general.string = tk
                     }))
                     self.present(alert,animated: true,completion: nil)
@@ -93,7 +93,7 @@ class SettingsTableViewController: UITableViewController {
                 break
             case 3:
                 let alert = UIAlertController(title: "FCM Token", message: Messaging.messaging().fcmToken, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     UIPasteboard.general.string = Messaging.messaging().fcmToken
                 }))
                 self.present(alert,animated: true,completion: nil)
@@ -124,8 +124,8 @@ class SettingsTableViewController: UITableViewController {
         }
         usersDefault.removeObject(forKey: "curriculumJSON")
         if(usersDefault.object(forKey: "curriculumJSON") == nil && !supressAlert){
-            let alert = UIAlertController(title: NSLocalizedString("Success", comment: "Success"), message: NSLocalizedString("CurrCacheClearSucc", comment: "Curriculum Cache Cleared Successful Message"), preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+            let alert = UIAlertController(title: NSLocalizedString("SUCCESS_TITLE", comment: "Success message on title"), message: NSLocalizedString("CLEAR_CURRICULUM_SUCCESS_MSG", comment: "Curriculum cache cleared successful message"), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                 print("Curriculum data cleared alert dismissed!")
             }))
             self.present(alert,animated: true,completion: nil)
@@ -136,8 +136,8 @@ class SettingsTableViewController: UITableViewController {
         let keychain = KeychainSwift()
         keychain.clear()
         if(keychain.get("account") == nil&&keychain.get("password") == nil && !supressAlert){
-            let alert = UIAlertController(title: NSLocalizedString("Success", comment: "Success"), message: NSLocalizedString("LogoutSuccMsg", comment: "Logout successful message"), preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+            let alert = UIAlertController(title: NSLocalizedString("SUCCESS_TITLE", comment: "Success message on title"), message: NSLocalizedString("LOGOUT_SUCCESS_MSG", comment: "Logout successful message"), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                 print("Logout success! Clearing nav stack")
                 guard let navC = self.navigationController else{
                     fatalError("Cannot get nav controller")
@@ -160,8 +160,8 @@ class SettingsTableViewController: UITableViewController {
         usersDefault.removePersistentDomain(forName: "group.com.Jelly.Daan")
         UserDefaults.standard.synchronize()
         logout(supressAlert: true)
-        let alert = UIAlertController(title: NSLocalizedString("Success", comment: "Success"), message: NSLocalizedString("AppRstSuccMsg", comment: "Application Reset Successful Message"), preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+        let alert = UIAlertController(title: NSLocalizedString("SUCCESS_TITLE", comment: "Success message on title"), message: NSLocalizedString("RESET_SUCCESS_MSG", comment: "Application reset successful message"), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
             print("Reset success! Clearing nav stack")
             guard let navC = self.navigationController else{
                 fatalError("Cannot get nav controller")
