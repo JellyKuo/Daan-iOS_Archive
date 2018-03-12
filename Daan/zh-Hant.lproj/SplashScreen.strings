@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Look up your score and performance in school"; ObjectID = "0St-3K-4dz"; */
+"0St-3K-4dz.text" = "Look up your score and performance in school";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "AGd-AF-z4D"; */
+"AGd-AF-z4D.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "Check your attendance"; ObjectID = "FMl-Hg-YUt"; */
+"FMl-Hg-YUt.text" = "Check your attendance";
+
+/* Class = "UIButton"; normalTitle = "Not now"; ObjectID = "Myx-h4-pRq"; */
+"Myx-h4-pRq.normalTitle" = "Not now";
+
+/* Class = "UILabel"; text = "Notice"; ObjectID = "PFe-go-vNd"; */
+"PFe-go-vNd.text" = "Notice";
+
+/* Class = "UILabel"; text = "Daan"; ObjectID = "Xbg-g5-Lv7"; */
+"Xbg-g5-Lv7.text" = "Daan";
+
+/* Class = "UILabel"; text = "If your account is created between July 2017~Feb 2018, there's a chance that your curriculum may be wrong.  To fix this: 1. After login, tap reset in settings menu on top right 2. Login with your friend's account who has the correct curriculum data 3. After login, tap curriculum on bottom to cache the data 4. Tap logout in the settings menu and login with your account 5. Verify that your curriculum data is cached and not cleared  If you have any problem or suggestion, feel free to send me an email!"; ObjectID = "XcM-oq-64u"; */
+"XcM-oq-64u.text" = "If your account is created between July 2017~Feb 2018, there's a chance that your curriculum may be wrong.  To fix this: 1. After login, tap reset in settings menu on top right 2. Login with your friend's account who has the correct curriculum data 3. After login, tap curriculum on bottom to cache the data 4. Tap logout in the settings menu and login with your account 5. Verify that your curriculum data is cached and not cleared  If you have any problem or suggestion, feel free to send me an email!";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "bQS-vY-Yk3"; */
+"bQS-vY-Yk3.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "bvm-dh-X9P"; */
+"bvm-dh-X9P.text" = "Notifications";
+
+/* Class = "UILabel"; text = "Tap \"Allow Push Notification\" to receive notifications You can customize this later in settings"; ObjectID = "mSx-nl-xlW"; */
+"mSx-nl-xlW.text" = "Tap \"Allow Push Notification\" to receive notifications You can customize this later in settings";
+
+/* Class = "UILabel"; text = "Know your upcoming class with curriculum"; ObjectID = "oO9-lm-Opy"; */
+"oO9-lm-Opy.text" = "Know your upcoming class with curriculum";
+
+/* Class = "UIButton"; normalTitle = "Request Permission"; ObjectID = "ynC-7a-4lH"; */
+"ynC-7a-4lH.normalTitle" = "Request Permission";

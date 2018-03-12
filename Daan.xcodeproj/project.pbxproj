@@ -164,6 +164,22 @@
 		A1CB8FFE2056CF7700B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		A1CB8FFF2056CF7800B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1CB90002056CF7800B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A1CB90012056D0A200B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		A1CB90022056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Settings.strings"; sourceTree = "<group>"; };
+		A1CB90032056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/UpdateUserData.strings"; sourceTree = "<group>"; };
+		A1CB90042056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Legal.strings"; sourceTree = "<group>"; };
+		A1CB90052056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SectionalExam.strings"; sourceTree = "<group>"; };
+		A1CB90062056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Absent.strings"; sourceTree = "<group>"; };
+		A1CB90072056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Attitude.strings"; sourceTree = "<group>"; };
+		A1CB90082056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		A1CB90092056D0A300B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SplashScreen.strings"; sourceTree = "<group>"; };
+		A1CB900A2056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HistoryScore.strings"; sourceTree = "<group>"; };
+		A1CB900B2056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Curriculum.strings"; sourceTree = "<group>"; };
+		A1CB900C2056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StudyRoom.strings"; sourceTree = "<group>"; };
+		A1CB900D2056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Welcome.strings"; sourceTree = "<group>"; };
+		A1CB900E2056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A1CB900F2056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A1CB90102056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -456,6 +472,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = A11DC6D81FB33C3B00A4EC9A;
 			productRefGroup = A11DC6E21FB33C3B00A4EC9A /* Products */;
@@ -689,6 +706,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB90002056CF7800B4A854 /* Base */,
+				A1CB90012056D0A200B4A854 /* zh-Hant */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -697,6 +715,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FF92056CF7700B4A854 /* Base */,
+				A1CB90082056D0A300B4A854 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -705,6 +724,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FFF2056CF7800B4A854 /* Base */,
+				A1CB900E2056D0A400B4A854 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -713,6 +733,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FFA2056CF7700B4A854 /* Base */,
+				A1CB90092056D0A300B4A854 /* zh-Hant */,
 			);
 			name = SplashScreen.storyboard;
 			sourceTree = "<group>";
@@ -721,6 +742,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FFC2056CF7700B4A854 /* Base */,
+				A1CB900B2056D0A400B4A854 /* zh-Hant */,
 			);
 			name = Curriculum.storyboard;
 			sourceTree = "<group>";
@@ -729,6 +751,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FEC2056C0FD00B4A854 /* en */,
+				A1CB90102056D0A400B4A854 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -737,6 +760,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FE82056C0FC00B4A854 /* en */,
+				A1CB900F2056D0A400B4A854 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -745,6 +769,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FF52056CF7600B4A854 /* Base */,
+				A1CB90042056D0A300B4A854 /* zh-Hant */,
 			);
 			name = Legal.storyboard;
 			sourceTree = "<group>";
@@ -753,6 +778,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FF32056CF7600B4A854 /* Base */,
+				A1CB90022056D0A300B4A854 /* zh-Hant */,
 			);
 			name = Settings.storyboard;
 			sourceTree = "<group>";
@@ -761,6 +787,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FF42056CF7600B4A854 /* Base */,
+				A1CB90032056D0A300B4A854 /* zh-Hant */,
 			);
 			name = UpdateUserData.storyboard;
 			sourceTree = "<group>";
@@ -769,6 +796,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FFD2056CF7700B4A854 /* Base */,
+				A1CB900C2056D0A400B4A854 /* zh-Hant */,
 			);
 			name = StudyRoom.storyboard;
 			sourceTree = "<group>";
@@ -777,6 +805,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FFE2056CF7700B4A854 /* Base */,
+				A1CB900D2056D0A400B4A854 /* zh-Hant */,
 			);
 			name = Welcome.storyboard;
 			sourceTree = "<group>";
@@ -785,6 +814,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FF62056CF7600B4A854 /* Base */,
+				A1CB90052056D0A300B4A854 /* zh-Hant */,
 			);
 			name = SectionalExam.storyboard;
 			sourceTree = "<group>";
@@ -793,6 +823,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FF72056CF7600B4A854 /* Base */,
+				A1CB90062056D0A300B4A854 /* zh-Hant */,
 			);
 			name = Absent.storyboard;
 			sourceTree = "<group>";
@@ -801,6 +832,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FF82056CF7600B4A854 /* Base */,
+				A1CB90072056D0A300B4A854 /* zh-Hant */,
 			);
 			name = Attitude.storyboard;
 			sourceTree = "<group>";
@@ -809,6 +841,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB8FFB2056CF7700B4A854 /* Base */,
+				A1CB900A2056D0A400B4A854 /* zh-Hant */,
 			);
 			name = HistoryScore.storyboard;
 			sourceTree = "<group>";

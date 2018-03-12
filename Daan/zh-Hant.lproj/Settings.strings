@@ -1,0 +1,63 @@
+
+/* Class = "UILabel"; text = "Force a Crashlytics crash"; ObjectID = "0mU-PW-27s"; */
+"0mU-PW-27s.text" = "Force a Crashlytics crash";
+
+/* Class = "UILabel"; text = "Reset and clear all content"; ObjectID = "97C-OR-5kS"; */
+"97C-OR-5kS.text" = "Reset and clear all content";
+
+/* Class = "UINavigationItem"; title = "Notification"; ObjectID = "Bet-a8-5kU"; */
+"Bet-a8-5kU.title" = "Notification";
+
+/* Class = "UILabel"; text = "Allow notification"; ObjectID = "Dwf-bs-Nxj"; */
+"Dwf-bs-Nxj.text" = "Allow notification";
+
+/* Class = "UITableViewSection"; headerTitle = "Logout"; ObjectID = "Kgt-V7-fVz"; */
+"Kgt-V7-fVz.headerTitle" = "Logout";
+
+/* Class = "UITableViewSection"; headerTitle = "DEV"; ObjectID = "PQD-0c-tR8"; */
+"PQD-0c-tR8.headerTitle" = "DEV";
+
+/* Class = "UILabel"; text = "Legal"; ObjectID = "Tpu-HH-8nQ"; */
+"Tpu-HH-8nQ.text" = "Legal";
+
+/* Class = "UITableViewSection"; headerTitle = "Crashlytics"; ObjectID = "U2R-rY-ZRe"; */
+"U2R-rY-ZRe.headerTitle" = "Crashlytics";
+
+/* Class = "UILabel"; text = "Crashlytics crash reporting"; ObjectID = "W5D-qq-ULG"; */
+"W5D-qq-ULG.text" = "Crashlytics crash reporting";
+
+/* Class = "UILabel"; text = "API Token"; ObjectID = "aFp-og-LDp"; */
+"aFp-og-LDp.text" = "API Token";
+
+/* Class = "UISegmentedControl"; fGI-vz-gYl.segmentTitles[0] = "Nickname"; ObjectID = "fGI-vz-gYl"; */
+"fGI-vz-gYl.segmentTitles[0]" = "Nickname";
+
+/* Class = "UISegmentedControl"; fGI-vz-gYl.segmentTitles[1] = "Name"; ObjectID = "fGI-vz-gYl"; */
+"fGI-vz-gYl.segmentTitles[1]" = "Name";
+
+/* Class = "UILabel"; text = "Clear cached curriculum"; ObjectID = "h2b-mR-EeW"; */
+"h2b-mR-EeW.text" = "Clear cached curriculum";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "j4e-Wh-Rgm"; */
+"j4e-Wh-Rgm.text" = "Notification";
+
+/* Class = "UILabel"; text = "Update user data"; ObjectID = "jmR-Zn-U6I"; */
+"jmR-Zn-U6I.text" = "Update user data";
+
+/* Class = "UILabel"; text = "FCM Token"; ObjectID = "lMS-YQ-nC4"; */
+"lMS-YQ-nC4.text" = "FCM Token";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "ng8-CP-lYr"; */
+"ng8-CP-lYr.text" = "Logout";
+
+/* Class = "UILabel"; text = "Cached curriculum data"; ObjectID = "sqc-r1-PJm"; */
+"sqc-r1-PJm.text" = "Cached curriculum data";
+
+/* Class = "UILabel"; text = "Reset splash dismiss status"; ObjectID = "v2g-bV-m8C"; */
+"v2g-bV-m8C.text" = "Reset splash dismiss status";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
+"vgI-PN-5VI.title" = "Settings";
+
+/* Class = "UILabel"; text = "Display"; ObjectID = "zdz-Jp-33T"; */
+"zdz-Jp-33T.text" = "Display";
