@@ -67,7 +67,6 @@
 		A1C83A851FBFCD72008CF088 /* Attitude.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C83A871FBFCD72008CF088 /* Attitude.storyboard */; };
 		A1C83A8A1FBFCD86008CF088 /* HistoryScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C83A8C1FBFCD86008CF088 /* HistoryScore.storyboard */; };
 		A1CB901E2056D72F00B4A854 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1CB90202056D72F00B4A854 /* InfoPlist.strings */; };
-		A1CB90232056D73100B4A854 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1CB90252056D73100B4A854 /* Localizable.strings */; };
 		A1CB90262056D76D00B4A854 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12F03CA1FC0A51F004F739F /* InfoPlist.strings */; };
 		A1D2018D1FDC246300FABA4D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */; };
 		A1DAE8561FB74D48008FF0E2 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */; };
@@ -184,7 +183,7 @@
 		A1CB900F2056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A1CB90102056D0A400B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A1CB901F2056D72F00B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		A1CB90242056D73100B4A854 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A1CB90272056D8B900B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -234,7 +233,6 @@
 		A10B40DA1FEA9D990081B9E9 /* Today Curriculum */ = {
 			isa = PBXGroup;
 			children = (
-				A1CB90252056D73100B4A854 /* Localizable.strings */,
 				A1CB90202056D72F00B4A854 /* InfoPlist.strings */,
 				A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */,
 				A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */,
@@ -498,7 +496,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */,
-				A1CB90232056D73100B4A854 /* Localizable.strings in Resources */,
 				A1CB901E2056D72F00B4A854 /* InfoPlist.strings in Resources */,
 				A18683F42049A2970058F94E /* GoogleService-Info.plist in Resources */,
 				A1CB90262056D76D00B4A854 /* InfoPlist.strings in Resources */,
@@ -860,16 +857,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				A1CB901F2056D72F00B4A854 /* zh-Hant */,
+				A1CB90272056D8B900B4A854 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A1CB90252056D73100B4A854 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1CB90242056D73100B4A854 /* zh-Hant */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
