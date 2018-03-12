@@ -148,22 +148,22 @@
 		A1BD40091FD1A10100B5C079 /* Daan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Daan.entitlements; sourceTree = "<group>"; };
 		A1BDF3E01FB882B4009F9F72 /* AttitudeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeTableViewController.swift; sourceTree = "<group>"; };
 		A1BDF3E21FB882EF009F9F72 /* Attitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attitude.swift; sourceTree = "<group>"; };
-		A1CB8FE32056C0FB00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A1CB8FE42056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Settings.storyboard; sourceTree = "<group>"; };
-		A1CB8FE52056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Legal.storyboard; sourceTree = "<group>"; };
-		A1CB8FE62056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SectionalExam.storyboard; sourceTree = "<group>"; };
-		A1CB8FE72056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
 		A1CB8FE82056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A1CB8FE92056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Curriculum.storyboard; sourceTree = "<group>"; };
-		A1CB8FEA2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Attitude.storyboard; sourceTree = "<group>"; };
-		A1CB8FEB2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/HistoryScore.storyboard; sourceTree = "<group>"; };
 		A1CB8FEC2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A1CB8FED2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Welcome.storyboard; sourceTree = "<group>"; };
-		A1CB8FEE2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
-		A1CB8FEF2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A1CB8FF02056C0FE00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Absent.storyboard; sourceTree = "<group>"; };
-		A1CB8FF12056C0FE00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		A1CB8FF22056C0FE00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
+		A1CB8FF32056CF7600B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		A1CB8FF42056CF7600B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
+		A1CB8FF52056CF7600B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Legal.storyboard; sourceTree = "<group>"; };
+		A1CB8FF62056CF7600B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SectionalExam.storyboard; sourceTree = "<group>"; };
+		A1CB8FF72056CF7600B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Absent.storyboard; sourceTree = "<group>"; };
+		A1CB8FF82056CF7600B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Attitude.storyboard; sourceTree = "<group>"; };
+		A1CB8FF92056CF7700B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1CB8FFA2056CF7700B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
+		A1CB8FFB2056CF7700B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HistoryScore.storyboard; sourceTree = "<group>"; };
+		A1CB8FFC2056CF7700B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Curriculum.storyboard; sourceTree = "<group>"; };
+		A1CB8FFD2056CF7700B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
+		A1CB8FFE2056CF7700B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
+		A1CB8FFF2056CF7800B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1CB90002056CF7800B4A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -455,6 +455,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A11DC6D81FB33C3B00A4EC9A;
 			productRefGroup = A11DC6E21FB33C3B00A4EC9A /* Products */;
@@ -687,7 +688,7 @@
 		A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FF12056C0FE00B4A854 /* en */,
+				A1CB90002056CF7800B4A854 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -695,7 +696,7 @@
 		A115EC311FBFB4940027140E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FE32056C0FB00B4A854 /* en */,
+				A1CB8FF92056CF7700B4A854 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -703,7 +704,7 @@
 		A11DC6ED1FB33C3C00A4EC9A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FEF2056C0FD00B4A854 /* en */,
+				A1CB8FFF2056CF7800B4A854 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -711,7 +712,7 @@
 		A12B28F0202E03F3003B01D3 /* SplashScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FE72056C0FC00B4A854 /* en */,
+				A1CB8FFA2056CF7700B4A854 /* Base */,
 			);
 			name = SplashScreen.storyboard;
 			sourceTree = "<group>";
@@ -719,7 +720,7 @@
 		A12F03B91FC09BF0004F739F /* Curriculum.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FE92056C0FC00B4A854 /* en */,
+				A1CB8FFC2056CF7700B4A854 /* Base */,
 			);
 			name = Curriculum.storyboard;
 			sourceTree = "<group>";
@@ -743,7 +744,7 @@
 		A12FFC0C20464C5A004ABD9B /* Legal.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FE52056C0FC00B4A854 /* en */,
+				A1CB8FF52056CF7600B4A854 /* Base */,
 			);
 			name = Legal.storyboard;
 			sourceTree = "<group>";
@@ -751,7 +752,7 @@
 		A15CD5111FE62BC50012F2D8 /* Settings.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FE42056C0FC00B4A854 /* en */,
+				A1CB8FF32056CF7600B4A854 /* Base */,
 			);
 			name = Settings.storyboard;
 			sourceTree = "<group>";
@@ -759,7 +760,7 @@
 		A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FF22056C0FE00B4A854 /* en */,
+				A1CB8FF42056CF7600B4A854 /* Base */,
 			);
 			name = UpdateUserData.storyboard;
 			sourceTree = "<group>";
@@ -767,7 +768,7 @@
 		A17352B31FE625450065FB48 /* StudyRoom.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FEE2056C0FD00B4A854 /* en */,
+				A1CB8FFD2056CF7700B4A854 /* Base */,
 			);
 			name = StudyRoom.storyboard;
 			sourceTree = "<group>";
@@ -775,7 +776,7 @@
 		A1930A881FCEDFF1008344CA /* Welcome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FED2056C0FD00B4A854 /* en */,
+				A1CB8FFE2056CF7700B4A854 /* Base */,
 			);
 			name = Welcome.storyboard;
 			sourceTree = "<group>";
@@ -783,7 +784,7 @@
 		A1C83A7D1FBFCD30008CF088 /* SectionalExam.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FE62056C0FC00B4A854 /* en */,
+				A1CB8FF62056CF7600B4A854 /* Base */,
 			);
 			name = SectionalExam.storyboard;
 			sourceTree = "<group>";
@@ -791,7 +792,7 @@
 		A1C83A821FBFCD69008CF088 /* Absent.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FF02056C0FE00B4A854 /* en */,
+				A1CB8FF72056CF7600B4A854 /* Base */,
 			);
 			name = Absent.storyboard;
 			sourceTree = "<group>";
@@ -799,7 +800,7 @@
 		A1C83A871FBFCD72008CF088 /* Attitude.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FEA2056C0FD00B4A854 /* en */,
+				A1CB8FF82056CF7600B4A854 /* Base */,
 			);
 			name = Attitude.storyboard;
 			sourceTree = "<group>";
@@ -807,7 +808,7 @@
 		A1C83A8C1FBFCD86008CF088 /* HistoryScore.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1CB8FEB2056C0FD00B4A854 /* en */,
+				A1CB8FFB2056CF7700B4A854 /* Base */,
 			);
 			name = HistoryScore.storyboard;
 			sourceTree = "<group>";
