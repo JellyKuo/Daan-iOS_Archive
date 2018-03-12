@@ -1,1 +1,108 @@
-/* No Localized Strings */
+/* Absent type generic absent or skip */
+"ABS_ABSENT" = "缺席";
+
+/* Absent type bereavement */
+"ABS_BEREAVEMENT" = "喪假";
+
+/* Absent type late */
+"ABS_LATE" = "遲到";
+
+/* Absent type official */
+"ABS_OFFICIAL" = "公假";
+
+/* Absent type personal */
+"ABS_PERSONAL" = "事假";
+
+/* Absent type sick */
+"ABS_SICK" = "病假";
+
+/* API Error message on title */
+"API_ERROR_TITLE" = "API 錯誤";
+
+/* Authenticate Error */
+"AuthError" = "驗證錯誤";
+
+/* Curriculum cache cleared successful message */
+"CLEAR_CURRICULUM_SUCCESS_MSG" = "課表快取清除成功";
+
+/* Connection Error message on title */
+"CONN_ERROR_TITLE" = "連線錯誤";
+
+/* Credit represent the point get when passes, text */
+"CREDIT" = "學分";
+
+/* Curriculum cache is not downloaded, tap curriculum to cache */
+"CURRICULUM_NOT_CACHED_MSG" = "點選課表下載快取";
+
+/* 2nd semester text */
+"DOWN_SEMESTER" = "下學期";
+
+/* Failed message on title */
+"FAILED_TITLE" = "失敗";
+
+/* Friday */
+"FRIDAY" = "星期五";
+
+/* Failed */
+"Failed" = "失敗";
+
+/* Unknown grade will use this string */
+"GRADE" = "年級";
+
+/* 1st grade */
+"GRADE_ONE" = "一年級";
+
+/* 3rd grade */
+"GRADE_THREE" = "三年級";
+
+/* 2nd grade */
+"GRADE_TWO" = "二年級";
+
+/* Logout successful message */
+"LOGOUT_SUCCESS_MSG" = "登出成功";
+
+/* Monday */
+"MONDAY" = "星期一";
+
+/* Next class in curriculum */
+"NEXT_CLASS" = "下一節";
+
+/* Notification permission denied message */
+"NOTI_PERM_DENIED_MSG" = "通知權限被拒絕了 不過沒關係，晚點可以再到設定修改";
+
+/* Default action */
+"OK" = "好";
+
+/* Ok action on tap */
+"OK_ACT" = "好";
+
+/* Password does not match */
+"PwdNotMatch" = "密碼不符";
+
+/* Application reset successful message */
+"RESET_SUCCESS_MSG" = "程式已清除並回復至初始";
+
+/* Subject text */
+"SUBJECT" = "科目";
+
+/* Success message on title */
+"SUCCESS_TITLE" = "成功";
+
+/* Thursday */
+"THRUSDAY" = "星期四";
+
+/* Tomorrow */
+"TOMORROW" = "明天";
+
+/* Tuesday */
+"TUESDAY" = "星期二";
+
+/* Type text */
+"TYPE" = "類型";
+
+/* 1st semester text */
+"UP_SEMESTER" = "上學期";
+
+/* Wednesday */
+"WEDNESDAY" = "星期三";
+

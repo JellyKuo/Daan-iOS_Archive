@@ -1,4 +1,3 @@
-
 /* Class = "UILabel"; text = "0"; ObjectID = "4uz-MH-Puy"; */
 "4uz-MH-Puy.text" = "0";
 
@@ -6,22 +5,22 @@
 "KzF-2Y-Zay.text" = "0";
 
 /* Class = "UILabel"; text = "Official"; ObjectID = "LQZ-bi-uuI"; */
-"LQZ-bi-uuI.text" = "Official";
+"LQZ-bi-uuI.text" = "公假";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Njx-EL-Wbu"; */
 "Njx-EL-Wbu.text" = "0";
 
 /* Class = "UILabel"; text = "Absent"; ObjectID = "PGF-9b-qX3"; */
-"PGF-9b-qX3.text" = "Absent";
+"PGF-9b-qX3.text" = "缺席";
 
 /* Class = "UILabel"; text = "Bereavement"; ObjectID = "Vbs-wB-eYQ"; */
-"Vbs-wB-eYQ.text" = "Bereavement";
+"Vbs-wB-eYQ.text" = "喪假";
 
 /* Class = "UILabel"; text = "Class"; ObjectID = "Vly-ub-HLB"; */
 "Vly-ub-HLB.text" = "Class";
 
 /* Class = "UILabel"; text = "Late"; ObjectID = "aqD-Un-1Om"; */
-"aqD-Un-1Om.text" = "Late";
+"aqD-Un-1Om.text" = "遲到";
 
 /* Class = "UILabel"; text = "0000/00/00"; ObjectID = "dtF-11-MIj"; */
 "dtF-11-MIj.text" = "0000/00/00";
@@ -30,19 +29,20 @@
 "hbv-9g-yEL.text" = "0";
 
 /* Class = "UILabel"; text = "Sick"; ObjectID = "iI5-8h-wTL"; */
-"iI5-8h-wTL.text" = "Sick";
+"iI5-8h-wTL.text" = "病假";
 
 /* Class = "UINavigationItem"; title = "Absent"; ObjectID = "mBP-va-9Qn"; */
-"mBP-va-9Qn.title" = "Absent";
+"mBP-va-9Qn.title" = "缺席";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "pGN-6h-Gbz"; */
 "pGN-6h-Gbz.text" = "0";
 
 /* Class = "UILabel"; text = "Personal"; ObjectID = "rbq-wj-9MP"; */
-"rbq-wj-9MP.text" = "Personal";
+"rbq-wj-9MP.text" = "事假";
 
 /* Class = "UILabel"; text = "Type"; ObjectID = "v85-vL-MxR"; */
 "v85-vL-MxR.text" = "Type";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "w6o-cM-hsh"; */
 "w6o-cM-hsh.text" = "0";
+
