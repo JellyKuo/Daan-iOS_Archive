@@ -77,15 +77,15 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
                 self.createPage()
             }
             else if let apiError = apierr{
-                let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                    print("Curriculum Error Api alert occured")
+                let alert = UIAlertController(title: NSLocalizedString("API_ERROR_TITLE", comment:"API Error message on title"), message: apiError.error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Api Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
             else if let alamoError = alaerr{
-                let alert = UIAlertController(title: "連線錯誤", message: alamoError.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                let alert = UIAlertController(title: NSLocalizedString("CONN_ERROR_TITLE", comment:"Connection Error message on title"), message: alamoError.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     print("Alamofire Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
@@ -95,12 +95,7 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
     
     func createPage(){
         guard let data = curriculumWeek else{
-            let alert = UIAlertController(title: "錯誤", message: "Create page is called but curriculumWeek is nil", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                print("Create page is called but curriculumWeek is nil")
-            }))
-            self.present(alert, animated: true, completion: nil)
-            return
+            fatalError("createPage called but CurriculumWeek is nil")
         }
         tableVCs = []
         let w1VC = storyboard?.instantiateViewController(withIdentifier: "CurriculumTableView") as! CurriculumTableViewController
@@ -149,15 +144,15 @@ class CurriculumPageViewController: UIPageViewController, UIPageViewControllerDa
         let weekdayStr:String
         switch week {
         case 0:
-            weekdayStr = NSLocalizedString("Mon", comment: "Monday")
+            weekdayStr = NSLocalizedString("MONDAY", comment: "Monday")
         case 1:
-            weekdayStr = NSLocalizedString("Tue", comment: "Tuesday")
+            weekdayStr = NSLocalizedString("TUESDAY", comment: "Tuesday")
         case 2:
-            weekdayStr = NSLocalizedString("Wed", comment: "Wednesday")
+            weekdayStr = NSLocalizedString("WEDNESDAY", comment: "Wednesday")
         case 3:
-            weekdayStr = NSLocalizedString("Thu", comment: "Thursday")
+            weekdayStr = NSLocalizedString("THRUSDAY", comment: "Thursday")
         case 4:
-            weekdayStr = NSLocalizedString("Fri", comment: "Friday")
+            weekdayStr = NSLocalizedString("FRIDAY", comment: "Friday")
         default:
             print("Got \(week) as week number in CurriculumTableViewController, which doesn't match 0~5")
             weekdayStr = String(week)

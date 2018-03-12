@@ -22,7 +22,7 @@ class SectionalExamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        semesterLab.text = NSLocalizedString("First", comment: "First") + NSLocalizedString("Semester", comment: "Semester")
+        semesterLab.text = NSLocalizedString("UP_SEMESTER", comment:"1st semester text")
         // Do any additional setup after loading the view.
     }
     
@@ -36,13 +36,13 @@ class SectionalExamViewController: UIViewController {
         case 1:
             if(semester>1){
                 semester -= 1
-                semesterLab.text = NSLocalizedString("First", comment: "First") + NSLocalizedString("Semester", comment: "Semester")
+                semesterLab.text = NSLocalizedString("UP_SEMESTER", comment:"1st semester text")
             }
             else {return}
         case 2:
             if(semester<2){
                 semester += 1
-                semesterLab.text = NSLocalizedString("Second", comment: "Second") + NSLocalizedString("Semester", comment: "Semester")
+                semesterLab.text = NSLocalizedString("DOWN_SEMESTER", comment:"2nd semester text")
             }
             else {return}
         default:

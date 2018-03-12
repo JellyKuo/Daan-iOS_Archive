@@ -56,11 +56,11 @@ class HistoryScoreTableViewController: UITableViewController, HistoryScoreViewCo
                 fatalError("The dequeued cell is not an instance of HistoryScoreTableViewCell")
         }
         if(indexPath.row == 0){
-            cell.subjectLab.text = "科目"
-            cell.creditLab.text = "學分"
-            cell.typeLab.text = "種類"
-            cell.upLab.text = "上"
-            cell.downLab.text = "下"
+            cell.subjectLab.text = NSLocalizedString("SUBJECT", comment:"Subject text")
+            cell.creditLab.text = NSLocalizedString("CREDIT", comment:"Credit represent the point get when passes, text")
+            cell.typeLab.text = NSLocalizedString("TYPE", comment:"Type text")
+            cell.upLab.text = NSLocalizedString("UP_SEMESTER", comment:"1st semester text")
+            cell.downLab.text = NSLocalizedString("DOWN_SEMESTER", comment:"2nd semester text")
             return cell
         }
         //TODO: Handling mismatched list
@@ -133,15 +133,15 @@ class HistoryScoreTableViewController: UITableViewController, HistoryScoreViewCo
                 //self.tableView.reloadData()
             }
             else if let apiError = apierr{
-                let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                    print("HistoryScore Error Api alert occured")
+                let alert = UIAlertController(title: NSLocalizedString("API_ERROR_TITLE", comment:"API Error message on title"), message: apiError.error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Api Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
             else if let alamoError = alaerr{
-                let alert = UIAlertController(title: "連線錯誤", message: alamoError.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                let alert = UIAlertController(title: NSLocalizedString("CONN_ERROR_TITLE", comment:"Connection Error message on title"), message: alamoError.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     print("Alamofire Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
@@ -154,15 +154,15 @@ class HistoryScoreTableViewController: UITableViewController, HistoryScoreViewCo
                 //self.tableView.reloadData()
             }
             else if let apiError = apierr{
-                let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                    print("Attitude Error Api alert occured")
+                let alert = UIAlertController(title: NSLocalizedString("API_ERROR_TITLE", comment:"API Error message on title"), message: apiError.error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Api Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
             else if let alamoError = alaerr{
-                let alert = UIAlertController(title: "連線錯誤", message: alamoError.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                let alert = UIAlertController(title: NSLocalizedString("CONN_ERROR_TITLE", comment:"Connection Error message on title"), message: alamoError.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     print("Alamofire Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
