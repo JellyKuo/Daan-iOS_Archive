@@ -108,7 +108,6 @@
 		A105F7E61FE3F2C100777DC6 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
 		A10B40D81FEA9D990081B9E9 /* Today Curriculum.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Curriculum.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		A10B40DE1FEA9D990081B9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A10B40E01FEA9D990081B9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Today Curriculum.entitlements"; sourceTree = "<group>"; };
 		A11051291FBC84B000970878 /* SectionalExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewCell.swift; sourceTree = "<group>"; };
@@ -116,42 +115,31 @@
 		A110512D1FBC877500970878 /* SectionalExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamViewController.swift; sourceTree = "<group>"; };
 		A110512F1FBC895600970878 /* SectionalExamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionalExamTableViewController.swift; sourceTree = "<group>"; };
 		A113306A1FB9D15D0057C42C /* AttitudeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeTableViewCell.swift; sourceTree = "<group>"; };
-		A115EC301FBFB4940027140E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A11DC6E11FB33C3B00A4EC9A /* Daan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11DC6E41FB33C3C00A4EC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A11DC6EB1FB33C3C00A4EC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A11DC6EE1FB33C3C00A4EC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A11DC6F01FB33C3C00A4EC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11E61751FD8F3BA00E2CA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A12535641FBF1380006CE474 /* HistoryScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreTableViewController.swift; sourceTree = "<group>"; };
 		A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreViewController.swift; sourceTree = "<group>"; };
 		A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreTableViewCell.swift; sourceTree = "<group>"; };
 		A125356A1FBF21DF006CE474 /* HistoryScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScore.swift; sourceTree = "<group>"; };
-		A12B28EF202E03F3003B01D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
 		A12B28F3202E0D6E003B01D3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A12B28F5202E1639003B01D3 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		A12F03AF1FC081C9004F739F /* CurriculumPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumPageViewController.swift; sourceTree = "<group>"; };
 		A12F03B11FC08311004F739F /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
 		A12F03B31FC0867D004F739F /* CurriculumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewController.swift; sourceTree = "<group>"; };
 		A12F03B51FC099B5004F739F /* CurriculumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableViewCell.swift; sourceTree = "<group>"; };
-		A12F03B81FC09BF0004F739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Curriculum.storyboard; sourceTree = "<group>"; };
-		A12F03CC1FC0A54A004F739F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A12FFC0820464C4D004ABD9B /* LegalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalTableViewController.swift; sourceTree = "<group>"; };
-		A12FFC0B20464C5A004ABD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Legal.storyboard; sourceTree = "<group>"; };
 		A12FFC0F20464E24004ABD9B /* Legal.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Legal.plist; sourceTree = "<group>"; };
 		A12FFC1120464F48004ABD9B /* LegalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
 		A15444AD1FBAFF7100A5D88E /* AbsentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewCell.swift; sourceTree = "<group>"; };
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
 		A154B56C2020BE3F004AF50C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		A15CD5121FE62BC80012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
-		A15CD5181FE62BDE0012F2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
-		A17352B21FE625450065FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
 		A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		A18683F22049A2970058F94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A1930A851FCEDF4F008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A1930A941FCEE1EE008344CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		A19A54111FC5BDF10095F858 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1B0716E1FB850B6006A291A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -160,10 +148,22 @@
 		A1BD40091FD1A10100B5C079 /* Daan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Daan.entitlements; sourceTree = "<group>"; };
 		A1BDF3E01FB882B4009F9F72 /* AttitudeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeTableViewController.swift; sourceTree = "<group>"; };
 		A1BDF3E21FB882EF009F9F72 /* Attitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attitude.swift; sourceTree = "<group>"; };
-		A1C83A7C1FBFCD30008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SectionalExam.storyboard; sourceTree = "<group>"; };
-		A1C83A811FBFCD69008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Absent.storyboard; sourceTree = "<group>"; };
-		A1C83A861FBFCD72008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Attitude.storyboard; sourceTree = "<group>"; };
-		A1C83A8B1FBFCD86008CF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HistoryScore.storyboard; sourceTree = "<group>"; };
+		A1CB8FE32056C0FB00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1CB8FE42056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		A1CB8FE52056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Legal.storyboard; sourceTree = "<group>"; };
+		A1CB8FE62056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SectionalExam.storyboard; sourceTree = "<group>"; };
+		A1CB8FE72056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
+		A1CB8FE82056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1CB8FE92056C0FC00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Curriculum.storyboard; sourceTree = "<group>"; };
+		A1CB8FEA2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Attitude.storyboard; sourceTree = "<group>"; };
+		A1CB8FEB2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/HistoryScore.storyboard; sourceTree = "<group>"; };
+		A1CB8FEC2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A1CB8FED2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Welcome.storyboard; sourceTree = "<group>"; };
+		A1CB8FEE2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/StudyRoom.storyboard; sourceTree = "<group>"; };
+		A1CB8FEF2056C0FD00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1CB8FF02056C0FE00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Absent.storyboard; sourceTree = "<group>"; };
+		A1CB8FF12056C0FE00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A1CB8FF22056C0FE00B4A854 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/UpdateUserData.storyboard; sourceTree = "<group>"; };
 		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -454,7 +454,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
 				en,
 			);
 			mainGroup = A11DC6D81FB33C3B00A4EC9A;
@@ -688,7 +687,7 @@
 		A10B40DD1FEA9D990081B9E9 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A10B40DE1FEA9D990081B9E9 /* Base */,
+				A1CB8FF12056C0FE00B4A854 /* en */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -696,7 +695,7 @@
 		A115EC311FBFB4940027140E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A115EC301FBFB4940027140E /* Base */,
+				A1CB8FE32056C0FB00B4A854 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -704,7 +703,7 @@
 		A11DC6ED1FB33C3C00A4EC9A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A11DC6EE1FB33C3C00A4EC9A /* Base */,
+				A1CB8FEF2056C0FD00B4A854 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -712,7 +711,7 @@
 		A12B28F0202E03F3003B01D3 /* SplashScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A12B28EF202E03F3003B01D3 /* Base */,
+				A1CB8FE72056C0FC00B4A854 /* en */,
 			);
 			name = SplashScreen.storyboard;
 			sourceTree = "<group>";
@@ -720,7 +719,7 @@
 		A12F03B91FC09BF0004F739F /* Curriculum.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A12F03B81FC09BF0004F739F /* Base */,
+				A1CB8FE92056C0FC00B4A854 /* en */,
 			);
 			name = Curriculum.storyboard;
 			sourceTree = "<group>";
@@ -728,7 +727,7 @@
 		A12F03C51FC0A51E004F739F /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A12F03CC1FC0A54A004F739F /* Base */,
+				A1CB8FEC2056C0FD00B4A854 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -736,7 +735,7 @@
 		A12F03CA1FC0A51F004F739F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1930A851FCEDF4F008344CA /* Base */,
+				A1CB8FE82056C0FC00B4A854 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -744,7 +743,7 @@
 		A12FFC0C20464C5A004ABD9B /* Legal.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A12FFC0B20464C5A004ABD9B /* Base */,
+				A1CB8FE52056C0FC00B4A854 /* en */,
 			);
 			name = Legal.storyboard;
 			sourceTree = "<group>";
@@ -752,7 +751,7 @@
 		A15CD5111FE62BC50012F2D8 /* Settings.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A15CD5121FE62BC80012F2D8 /* Base */,
+				A1CB8FE42056C0FC00B4A854 /* en */,
 			);
 			name = Settings.storyboard;
 			sourceTree = "<group>";
@@ -760,7 +759,7 @@
 		A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A15CD5181FE62BDE0012F2D8 /* Base */,
+				A1CB8FF22056C0FE00B4A854 /* en */,
 			);
 			name = UpdateUserData.storyboard;
 			sourceTree = "<group>";
@@ -768,7 +767,7 @@
 		A17352B31FE625450065FB48 /* StudyRoom.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A17352B21FE625450065FB48 /* Base */,
+				A1CB8FEE2056C0FD00B4A854 /* en */,
 			);
 			name = StudyRoom.storyboard;
 			sourceTree = "<group>";
@@ -776,7 +775,7 @@
 		A1930A881FCEDFF1008344CA /* Welcome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1930A941FCEE1EE008344CA /* Base */,
+				A1CB8FED2056C0FD00B4A854 /* en */,
 			);
 			name = Welcome.storyboard;
 			sourceTree = "<group>";
@@ -784,7 +783,7 @@
 		A1C83A7D1FBFCD30008CF088 /* SectionalExam.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1C83A7C1FBFCD30008CF088 /* Base */,
+				A1CB8FE62056C0FC00B4A854 /* en */,
 			);
 			name = SectionalExam.storyboard;
 			sourceTree = "<group>";
@@ -792,7 +791,7 @@
 		A1C83A821FBFCD69008CF088 /* Absent.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1C83A811FBFCD69008CF088 /* Base */,
+				A1CB8FF02056C0FE00B4A854 /* en */,
 			);
 			name = Absent.storyboard;
 			sourceTree = "<group>";
@@ -800,7 +799,7 @@
 		A1C83A871FBFCD72008CF088 /* Attitude.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1C83A861FBFCD72008CF088 /* Base */,
+				A1CB8FEA2056C0FD00B4A854 /* en */,
 			);
 			name = Attitude.storyboard;
 			sourceTree = "<group>";
@@ -808,7 +807,7 @@
 		A1C83A8C1FBFCD86008CF088 /* HistoryScore.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1C83A8B1FBFCD86008CF088 /* Base */,
+				A1CB8FEB2056C0FD00B4A854 /* en */,
 			);
 			name = HistoryScore.storyboard;
 			sourceTree = "<group>";
