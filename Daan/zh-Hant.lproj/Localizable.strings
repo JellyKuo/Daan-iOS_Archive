@@ -1,93 +1,108 @@
-/* Absent */
-"Absent" = "缺席";
+/* Absent type generic absent or skip */
+"ABS_ABSENT" = "缺席";
 
-/* API Error */
-"ApiErr" = "API 錯誤";
+/* Absent type bereavement */
+"ABS_BEREAVEMENT" = "喪假";
 
-/* Application Reset Successful Message */
-"AppRstSuccMsg" = "重設成功";
+/* Absent type late */
+"ABS_LATE" = "遲到";
+
+/* Absent type official */
+"ABS_OFFICIAL" = "公假";
+
+/* Absent type personal */
+"ABS_PERSONAL" = "事假";
+
+/* Absent type sick */
+"ABS_SICK" = "病假";
+
+/* API Error message on title */
+"API_ERROR_TITLE" = "API 錯誤";
 
 /* Authenticate Error */
 "AuthError" = "驗證錯誤";
 
-/* Bereavement Leave */
-"BereavementLeave" = "喪假";
+/* Curriculum cache cleared successful message */
+"CLEAR_CURRICULUM_SUCCESS_MSG" = "課表快取清除成功";
 
-/* Connection Error */
-"ConnErr" = "連線錯誤";
+/* Connection Error message on title */
+"CONN_ERROR_TITLE" = "連線錯誤";
 
-/* Curriculum Cache Cleared Successful Message */
-"CurrCacheClearSucc" = "課表快取清除成功";
+/* Credit represent the point get when passes, text */
+"CREDIT" = "學分";
 
-/* First */
-"First" = "第一";
+/* Curriculum cache is not downloaded, tap curriculum to cache */
+"CURRICULUM_NOT_CACHED_MSG" = "點選課表下載快取";
+
+/* 2nd semester text */
+"DOWN_SEMESTER" = "下學期";
+
+/* Failed message on title */
+"FAILED_TITLE" = "失敗";
 
 /* Friday */
-"Fri" = "星期五";
+"FRIDAY" = "星期五";
 
-/* Grade */
-"Grade" = "年級";
+/* Failed */
+"Failed" = "失敗";
 
-/* Late */
-"Late" = "遲到";
+/* Unknown grade will use this string */
+"GRADE" = "年級";
+
+/* 1st grade */
+"GRADE_ONE" = "一年級";
+
+/* 3rd grade */
+"GRADE_THREE" = "三年級";
+
+/* 2nd grade */
+"GRADE_TWO" = "二年級";
 
 /* Logout successful message */
-"LogoutSuccMsg" = "登出成功";
+"LOGOUT_SUCCESS_MSG" = "登出成功";
 
 /* Monday */
-"Mon" = "星期一";
+"MONDAY" = "星期一";
 
-/* Monday */
-"Monday" = "星期一";
+/* Next class in curriculum */
+"NEXT_CLASS" = "下一節";
 
-/* Next */
-"Next" = "接下來";
+/* Notification permission denied message */
+"NOTI_PERM_DENIED_MSG" = "通知權限被拒絕了 不過沒關係，晚點可以再到設定修改";
 
 /* Default action */
 "OK" = "好";
 
-/* Official Leave */
-"OfficialLeave" = "公假";
-
-/* One */
-"One" = "一";
-
-/* Tap curriculum below to download cache */
-"OpenCurriculumToCache" = "開啟課表";
-
-/* Personal Leave */
-"PersonalLeave" = "事假";
+/* Ok action on tap */
+"OK_ACT" = "好";
 
 /* Password does not match */
 "PwdNotMatch" = "密碼不符";
 
-/* Second */
-"Second" = "第二";
+/* Application reset successful message */
+"RESET_SUCCESS_MSG" = "程式已清除並回復至初始";
 
-/* Semester */
-"Semester" = "學期";
+/* Subject text */
+"SUBJECT" = "科目";
 
-/* Sick Leave */
-"SickLeave" = "病假";
-
-/* Success */
-"Success" = "成功";
-
-/* Three */
-"Three" = "三";
+/* Success message on title */
+"SUCCESS_TITLE" = "成功";
 
 /* Thursday */
-"Thu" = "星期四";
+"THRUSDAY" = "星期四";
 
 /* Tomorrow */
-"Tomorrow" = "明天";
+"TOMORROW" = "明天";
 
 /* Tuesday */
-"Tue" = "星期二";
+"TUESDAY" = "星期二";
 
-/* Two */
-"Two" = "二";
+/* Type text */
+"TYPE" = "類型";
+
+/* 1st semester text */
+"UP_SEMESTER" = "上學期";
 
 /* Wednesday */
-"Wed" = "星期三";
+"WEDNESDAY" = "星期三";
 

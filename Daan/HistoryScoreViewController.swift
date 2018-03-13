@@ -21,7 +21,7 @@ class HistoryScoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gradeLab.text = NSLocalizedString("One",comment:"One") + NSLocalizedString("Grade", comment: "Grade")
+        gradeLab.text = NSLocalizedString("GRADE_ONE", comment: "1st grade")
         // Do any additional setup after loading the view.
     }
     
@@ -47,14 +47,14 @@ class HistoryScoreViewController: UIViewController {
         
         switch grade {
         case 1:
-            gradeLab.text = NSLocalizedString("One", comment: "One") + NSLocalizedString("Grade", comment: "Grade")
+            gradeLab.text = NSLocalizedString("GRADE_ONE", comment: "1st grade")
         case 2:
-            gradeLab.text = NSLocalizedString("Two", comment: "Two") + NSLocalizedString("Grade", comment: "Grade")
+            gradeLab.text = NSLocalizedString("GRADE_TWO", comment: "2nd grade")
         case 3:
-            gradeLab.text = NSLocalizedString("Three", comment: "Three") + NSLocalizedString("Grade", comment: "Grade")
+            gradeLab.text = NSLocalizedString("GRADE_THREE", comment: "3rd grade")
         default:
             print("Grade is not 0, 1, 2. I can't localize it!")
-            gradeLab.text = String(grade) + NSLocalizedString("Grade", comment: "Grade")
+            gradeLab.text = String(grade) + NSLocalizedString("GRADE", comment: "Unknown grade will use this string")
         }
         
         delegate?.changeGrade(self.grade)

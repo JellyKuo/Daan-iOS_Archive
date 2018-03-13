@@ -1,8 +1,11 @@
-/* Class = "UINavigationItem"; title = "License"; ObjectID = "7ZA-oQ-m6p"; */
-"7ZA-oQ-m6p.title" = "軟體授權";
+/* Class = "UINavigationItem"; title = "Legal"; ObjectID = "7ZA-oQ-m6p"; */
+"7ZA-oQ-m6p.title" = "法律資訊";
 
 /* Class = "UILabel"; text = "KeychainSwift"; ObjectID = "CpJ-U1-4yo"; */
 "CpJ-U1-4yo.text" = "KeychainSwift";
+
+/* Class = "UILabel"; text = "Kesshou-Server"; ObjectID = "Fth-oR-MYs"; */
+"Fth-oR-MYs.text" = "Kesshou-Server";
 
 /* Class = "UILabel"; text = "ObjectMapper"; ObjectID = "Z32-oe-D4Q"; */
 "Z32-oe-D4Q.text" = "ObjectMapper";
@@ -11,17 +14,23 @@
 "a2b-5m-5Td.text" = "Icons8";
 
 /* Class = "UITableViewSection"; headerTitle = "Assets"; ObjectID = "awZ-BA-VQV"; */
-"awZ-BA-VQV.headerTitle" = "資產";
+"awZ-BA-VQV.headerTitle" = "Assets";
 
 /* Class = "UITableViewSection"; headerTitle = "Libraries"; ObjectID = "mkd-Fo-hq3"; */
-"mkd-Fo-hq3.headerTitle" = "函式庫";
+"mkd-Fo-hq3.headerTitle" = "Libraries";
 
 /* Class = "UILabel"; text = "Daan-iOS"; ObjectID = "oRj-NO-5Ii"; */
 "oRj-NO-5Ii.text" = "Daan-iOS";
+
+/* Class = "UITableViewSection"; headerTitle = "Softwares"; ObjectID = "pp3-jE-cKu"; */
+"pp3-jE-cKu.headerTitle" = "Softwares";
 
 /* Class = "UILabel"; text = "Alamofire"; ObjectID = "shn-U2-Tip"; */
 "shn-U2-Tip.text" = "Alamofire";
 
 /* Class = "UILabel"; text = "Kesshou-Android"; ObjectID = "vXS-3c-kIj"; */
 "vXS-3c-kIj.text" = "Kesshou-Android";
+
+/* Class = "UILabel"; text = "User Agreement"; ObjectID = "xQH-Ad-hP2"; */
+"xQH-Ad-hP2.text" = "使用者條款";
 

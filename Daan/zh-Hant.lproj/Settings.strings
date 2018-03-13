@@ -1,30 +1,63 @@
+/* Class = "UILabel"; text = "Force a Crashlytics crash"; ObjectID = "0mU-PW-27s"; */
+"0mU-PW-27s.text" = "Force a Crashlytics crash";
+
+/* Class = "UILabel"; text = "Reset and clear all content"; ObjectID = "97C-OR-5kS"; */
+"97C-OR-5kS.text" = "清除所有內容和設定";
+
+/* Class = "UINavigationItem"; title = "Notification"; ObjectID = "Bet-a8-5kU"; */
+"Bet-a8-5kU.title" = "通知";
+
+/* Class = "UILabel"; text = "Allow notification"; ObjectID = "Dwf-bs-Nxj"; */
+"Dwf-bs-Nxj.text" = "允許通知";
+
 /* Class = "UITableViewSection"; headerTitle = "Logout"; ObjectID = "Kgt-V7-fVz"; */
 "Kgt-V7-fVz.headerTitle" = "登出";
 
 /* Class = "UITableViewSection"; headerTitle = "DEV"; ObjectID = "PQD-0c-tR8"; */
-"PQD-0c-tR8.headerTitle" = "開發";
+"PQD-0c-tR8.headerTitle" = "DEV";
 
-/* Class = "UILabel"; text = "Logout"; ObjectID = "cSk-4h-XuK"; */
-"cSk-4h-XuK.text" = "登出";
+/* Class = "UILabel"; text = "Legal"; ObjectID = "Tpu-HH-8nQ"; */
+"Tpu-HH-8nQ.text" = "法律資訊";
 
-/* Class = "UILabel"; text = "License"; ObjectID = "evD-yy-do8"; */
-"evD-yy-do8.text" = "軟體授權";
+/* Class = "UITableViewSection"; headerTitle = "Crashlytics"; ObjectID = "U2R-rY-ZRe"; */
+"U2R-rY-ZRe.headerTitle" = "Crashlytics";
 
-/* Class = "UILabel"; text = "Clear cached curriculum"; ObjectID = "gZz-xd-tQG"; */
-"gZz-xd-tQG.text" = "清除課表快取";
+/* Class = "UILabel"; text = "Crashlytics crash reporting"; ObjectID = "W5D-qq-ULG"; */
+"W5D-qq-ULG.text" = "Crashlytics 當機回報";
 
-/* Class = "UILabel"; text = "Reset and clear all content"; ObjectID = "kYb-Bn-5n3"; */
-"kYb-Bn-5n3.text" = "清除所有內容和設定";
+/* Class = "UILabel"; text = "API Token"; ObjectID = "aFp-og-LDp"; */
+"aFp-og-LDp.text" = "API Token";
 
-/* Class = "UILabel"; text = "Update User Data"; ObjectID = "rhe-W5-pAS"; */
-"rhe-W5-pAS.text" = "更新用戶資料";
+/* Class = "UISegmentedControl"; fGI-vz-gYl.segmentTitles[0] = "Nickname"; ObjectID = "fGI-vz-gYl"; */
+"fGI-vz-gYl.segmentTitles[0]" = "暱稱";
+
+/* Class = "UISegmentedControl"; fGI-vz-gYl.segmentTitles[1] = "Name"; ObjectID = "fGI-vz-gYl"; */
+"fGI-vz-gYl.segmentTitles[1]" = "姓名";
+
+/* Class = "UILabel"; text = "Clear cached curriculum"; ObjectID = "h2b-mR-EeW"; */
+"h2b-mR-EeW.text" = "清除課表快取";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "j4e-Wh-Rgm"; */
+"j4e-Wh-Rgm.text" = "通知";
+
+/* Class = "UILabel"; text = "Update user data"; ObjectID = "jmR-Zn-U6I"; */
+"jmR-Zn-U6I.text" = "修改用戶資料";
+
+/* Class = "UILabel"; text = "FCM Token"; ObjectID = "lMS-YQ-nC4"; */
+"lMS-YQ-nC4.text" = "FCM Token";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "ng8-CP-lYr"; */
+"ng8-CP-lYr.text" = "登出";
 
 /* Class = "UILabel"; text = "Cached curriculum data"; ObjectID = "sqc-r1-PJm"; */
-"sqc-r1-PJm.text" = "課表快取資料";
+"sqc-r1-PJm.text" = "Cached curriculum data";
 
 /* Class = "UILabel"; text = "Reset splash dismiss status"; ObjectID = "v2g-bV-m8C"; */
-"v2g-bV-m8C.text" = "重置開始畫面";
+"v2g-bV-m8C.text" = "Reset splash dismiss status";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
 "vgI-PN-5VI.title" = "設定";
+
+/* Class = "UILabel"; text = "Display"; ObjectID = "zdz-Jp-33T"; */
+"zdz-Jp-33T.text" = "主頁面顯示";
 

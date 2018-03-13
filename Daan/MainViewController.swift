@@ -62,18 +62,15 @@ class MainViewController: UIViewController,displayNameDelegate {
                 self.displaySwitched()
             }
             else if let apiError = apierr{
-                if apiError.code == 103{
-                    fatalError("Token should be valid at this point!")
-                }
-                let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                    print("Ｍain Error Api alert occured")
+                let alert = UIAlertController(title: NSLocalizedString("API_ERROR_TITLE", comment:"API Error message on title"), message: apiError.error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Api Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
             else if let alamoError = alaerr{
-                let alert = UIAlertController(title: "連線錯誤", message: alamoError.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                let alert = UIAlertController(title: NSLocalizedString("CONN_ERROR_TITLE", comment:"Connection Error message on title"), message: alamoError.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     print("Alamofire Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
@@ -104,9 +101,9 @@ class MainViewController: UIViewController,displayNameDelegate {
                 self.getUserInfo()
             }
             else if let apiError = apierr{
-                let alert = UIAlertController(title: "登入錯誤", message: apiError.error, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                    print("Login Error Api alert occured")
+                let alert = UIAlertController(title: NSLocalizedString("API_ERROR_TITLE", comment:"API Error message on title"), message: apiError.error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Api Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
                 keychain.clear()
@@ -116,8 +113,8 @@ class MainViewController: UIViewController,displayNameDelegate {
                 }
             }
             else if let alamoError = alaerr{
-                let alert = UIAlertController(title: "連線錯誤", message: alamoError.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                let alert = UIAlertController(title: NSLocalizedString("CONN_ERROR_TITLE", comment:"Connection Error message on title"), message: alamoError.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     print("Alamofire Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
@@ -151,7 +148,7 @@ class MainViewController: UIViewController,displayNameDelegate {
         }
         else{
             print("curriculum JSON is empty, prompting to open curriculum")
-            nextClassLab.text = " "+NSLocalizedString("OpenCurriculumToCache", comment: "Tap curriculum below to download cache")+" "
+            nextClassLab.text = " "+NSLocalizedString("CURRICULUM_NOT_CACHED_MSG", comment: "Curriculum cache is not downloaded, tap curriculum to cache")+" "
         }
     
     }
@@ -186,7 +183,7 @@ class MainViewController: UIViewController,displayNameDelegate {
                     }
                     else{
                         index = 0
-                        nextClassDescLab.text = NSLocalizedString("Monday", comment: "Monday")
+                        nextClassDescLab.text = NSLocalizedString("MONDAY", comment: "Monday")
                         return currWeek.week1![0]
                     }
                 }
@@ -202,7 +199,7 @@ class MainViewController: UIViewController,displayNameDelegate {
                 }
                 else{
                     index = 0
-                    nextClassDescLab.text = NSLocalizedString("Monday", comment: "Monday")
+                    nextClassDescLab.text = NSLocalizedString("MONDAY", comment: "Monday")
                     return currWeek.week1![0]
                 }
             }
@@ -237,7 +234,7 @@ class MainViewController: UIViewController,displayNameDelegate {
                 for cls in day{
                     let clsTime = dateFormatter.date(from: dateStr + cls.start!)!
                     if date < clsTime{
-                        nextClassDescLab.text = NSLocalizedString("Next", comment: "Next")
+                        nextClassDescLab.text = NSLocalizedString("NEXT_CLASS", comment: "Next class in curriculum")
                         return cls
                     }
                 }
@@ -245,7 +242,7 @@ class MainViewController: UIViewController,displayNameDelegate {
                 
             }
             else{
-                nextClassDescLab.text = NSLocalizedString("Tomorrow", comment: "Tomorrow")
+                nextClassDescLab.text = NSLocalizedString("TOMORROW", comment: "Tomorrow")
                 return day[0]
             }
         }

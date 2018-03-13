@@ -118,14 +118,15 @@ class UpdatedDataViewController: UIViewController {
                 
             }
             else if let apiError = apierr{
-                let alert = UIAlertController(title: NSLocalizedString("ApiErr", comment: "API Error"), message: apiError.error, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                    print("Update User Data alert occured")
+                let alert = UIAlertController(title: NSLocalizedString("API_ERROR_TITLE", comment:"API Error message on title"), message: apiError.error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Api Error alert occured")
                 }))
+                self.present(alert, animated: true, completion: nil)
             }
             else if let alamoError = alaerr{
-                let alert = UIAlertController(title: NSLocalizedString("ConnErr", comment: "Connection Error"), message: alamoError.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                let alert = UIAlertController(title: NSLocalizedString("CONN_ERROR_TITLE", comment:"Connection Error message on title"), message: alamoError.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     print("Alamofire Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)

@@ -17,7 +17,7 @@
 "Vbs-wB-eYQ.text" = "喪假";
 
 /* Class = "UILabel"; text = "Class"; ObjectID = "Vly-ub-HLB"; */
-"Vly-ub-HLB.text" = "課";
+"Vly-ub-HLB.text" = "Class";
 
 /* Class = "UILabel"; text = "Late"; ObjectID = "aqD-Un-1Om"; */
 "aqD-Un-1Om.text" = "遲到";
@@ -41,7 +41,7 @@
 "rbq-wj-9MP.text" = "事假";
 
 /* Class = "UILabel"; text = "Type"; ObjectID = "v85-vL-MxR"; */
-"v85-vL-MxR.text" = "類型";
+"v85-vL-MxR.text" = "Type";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "w6o-cM-hsh"; */
 "w6o-cM-hsh.text" = "0";

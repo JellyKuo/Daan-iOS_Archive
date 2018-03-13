@@ -56,9 +56,9 @@ class NotificationTableViewController: UITableViewController {
                         }
                         else{
                             print("Notification permission denied")
-                            let alert = UIAlertController(title: NSLocalizedString("Failed", comment: "Failed"), message: NSLocalizedString("Notification permission was denied. It's ok, you can always turn it on or off in settings", comment: "NotificationPermDenied"), preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                                print("NotificationPermDenied alert dismissed!")
+                            let alert = UIAlertController(title: NSLocalizedString("Failed", comment: "Failed"), message: NSLocalizedString("NOTI_PERM_DENIED_MSG", comment: "Notification permission denied message"), preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                                print("Notification Permission Denied alert dismissed!")
                             }))
                             self.present(alert,animated: true,completion: nil)
                         }

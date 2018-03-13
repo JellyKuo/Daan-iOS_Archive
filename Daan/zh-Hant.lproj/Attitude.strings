@@ -17,13 +17,13 @@
 "MAx-Ev-NLd.text" = "0000/00/00";
 
 /* Class = "UILabel"; text = "AttitudeStatus"; ObjectID = "SSb-Zc-8KC"; */
-"SSb-Zc-8KC.text" = "獎懲";
+"SSb-Zc-8KC.text" = "獎懲紀錄";
 
 /* Class = "UILabel"; text = "Description"; ObjectID = "UOY-A0-JhY"; */
-"UOY-A0-JhY.text" = "說明";
+"UOY-A0-JhY.text" = "Description";
 
 /* Class = "UILabel"; text = "Small Fault"; ObjectID = "WzW-h3-eXX"; */
-"WzW-h3-eXX.text" = "警告";
+"WzW-h3-eXX.text" = "小過";
 
 /* Class = "UILabel"; text = "Small Cite"; ObjectID = "bby-QO-wo4"; */
 "bby-QO-wo4.text" = "嘉獎";

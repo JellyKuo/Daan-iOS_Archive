@@ -1,24 +1,36 @@
-
 /* Class = "UILabel"; text = "Look up your score and performance in school"; ObjectID = "0St-3K-4dz"; */
-"0St-3K-4dz.text" = "查詢在學校的表現及成績";
+"0St-3K-4dz.text" = "查詢在學校中的成績及各項表現";
 
 /* Class = "UIButton"; normalTitle = "Start"; ObjectID = "AGd-AF-z4D"; */
 "AGd-AF-z4D.normalTitle" = "開始";
 
 /* Class = "UILabel"; text = "Check your attendance"; ObjectID = "FMl-Hg-YUt"; */
-"FMl-Hg-YUt.text" = "檢查出缺勤資料";
+"FMl-Hg-YUt.text" = "檢查出缺勤狀況";
+
+/* Class = "UIButton"; normalTitle = "Not now"; ObjectID = "Myx-h4-pRq"; */
+"Myx-h4-pRq.normalTitle" = "不是現在";
 
 /* Class = "UILabel"; text = "Notice"; ObjectID = "PFe-go-vNd"; */
-"PFe-go-vNd.text" = "通知";
+"PFe-go-vNd.text" = "提醒";
 
 /* Class = "UILabel"; text = "Daan"; ObjectID = "Xbg-g5-Lv7"; */
 "Xbg-g5-Lv7.text" = "木棉手札";
 
-/* Class = "UILabel"; text = "--NOTICE TXT--"; ObjectID = "XcM-oq-64u"; */
-"XcM-oq-64u.text" = "如果你的帳號是在2017年7月至2018年2月間建立的，你的課表資料有可能是錯的  修正: 1. 登入後，在右上角的設定中點選\"清除所有內容及設定\" 2. 使用有正確課表資料的帳號登入 3. 登入後，點選下面的\"課表\"來快取課表資料 4. 在設定中點選\"登出\"，並以你自己的帳號登入 5. 確定你的課表是正確的且快取沒有被清除  如果你有任何問題或建議，歡迎你寄Email給我 謝謝!";
+/* Class = "UILabel"; text = "If your account is created between July 2017~Feb 2018, there's a chance that your curriculum may be wrong.  To fix this: 1. After login, tap reset in settings menu on top right 2. Login with your friend's account who has the correct curriculum data 3. After login, tap curriculum on bottom to cache the data 4. Tap logout in the settings menu and login with your account 5. Verify that your curriculum data is cached and not cleared  If you have any problem or suggestion, feel free to send me an email!"; ObjectID = "XcM-oq-64u"; */
+"XcM-oq-64u.text" = "如果你的帳號是在2017/7~2018/2間辦的，有可能你的課表資料會是錯誤的．  解決方法: 1. 登入後，在右上方設定中點選清除所有內容和設定 2. 找個有正確課表資料的帳戶登入 3. 登入後，點選下方的課表來下載快取 4. 在設定中點選登出並用你自己的帳號登入 5. 檢查課表資料有成功快取且沒被清除  如果你有任何問題或建議，歡迎直接寄封Email給我 :)";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "bQS-vY-Yk3"; */
 "bQS-vY-Yk3.normalTitle" = "下一步";
 
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "bvm-dh-X9P"; */
+"bvm-dh-X9P.text" = "通知";
+
+/* Class = "UILabel"; text = "Tap \"Allow Push Notification\" to receive notifications You can customize this later in settings"; ObjectID = "mSx-nl-xlW"; */
+"mSx-nl-xlW.text" = "點選 \"允許\" 來接收最新的動態及內容通知 你待會可以在設定中更改這個選項";
+
 /* Class = "UILabel"; text = "Know your upcoming class with curriculum"; ObjectID = "oO9-lm-Opy"; */
-"oO9-lm-Opy.text" = "快速查詢下一節的課程";
+"oO9-lm-Opy.text" = "用課表快速查詢下一節課";
+
+/* Class = "UIButton"; normalTitle = "Request Permission"; ObjectID = "ynC-7a-4lH"; */
+"ynC-7a-4lH.normalTitle" = "請求權限";
+

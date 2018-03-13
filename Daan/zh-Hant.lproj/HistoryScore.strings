@@ -14,7 +14,7 @@
 "SlY-85-Vhu.text" = "Cr";
 
 /* Class = "UILabel"; text = " Grade"; ObjectID = "TX9-xA-20X"; */
-"TX9-xA-20X.text" = " Grade";
+"TX9-xA-20X.text" = "年級";
 
 /* Class = "UILabel"; text = "Subject"; ObjectID = "UFP-dd-A9V"; */
 "UFP-dd-A9V.text" = "Subject";

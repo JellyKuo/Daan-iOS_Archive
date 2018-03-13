@@ -76,28 +76,28 @@ class AbsentTableViewController: UITableViewController {
         {
             if(type.range(of: "遲") != nil){
                 cell.typeLab.textColor = UIColor(hex:"cc9933")
-                cell.typeLab.text = NSLocalizedString("Late", comment: "Late")
+                cell.typeLab.text = NSLocalizedString("ABS_LATE", comment: "Absent type late")
                 
             }
             else if(type.range(of: "病") != nil){
                 cell.typeLab.textColor = UIColor(hex:"3333cc")
-                cell.typeLab.text = NSLocalizedString("SickLeave", comment: "Sick Leave")
+                cell.typeLab.text = NSLocalizedString("ABS_SICK", comment: "Absent type sick")
             }
             else if(type.range(of: "事") != nil){
-                cell.typeLab.text = NSLocalizedString("PersonalLeave", comment: "Personal Leave")
+                cell.typeLab.text = NSLocalizedString("ABS_PERSONAL", comment: "Absent type personal")
             }
             else if(type.range(of: "曠") != nil ||
                 type.range(of: "缺") != nil ){
                 cell.typeLab.textColor = UIColor.red
-                cell.typeLab.text = NSLocalizedString("Absent", comment: "Absent")
+                cell.typeLab.text = NSLocalizedString("ABS_ABSENT", comment: "Absent type generic absent or skip")
             }
             else if(type.range(of: "公") != nil){
                 cell.typeLab.textColor = UIColor.blue
-                cell.typeLab.text = NSLocalizedString("OfficialLeave", comment: "Official Leave")
+                cell.typeLab.text = NSLocalizedString("ABS_OFFICIAL", comment: "Absent type official")
             }
             else if(type.range(of: "喪") != nil){
                 cell.typeLab.textColor = UIColor.green
-                cell.typeLab.text = NSLocalizedString("BereavementLeave", comment: "Bereavement Leave")
+                cell.typeLab.text = NSLocalizedString("ABS_BEREAVEMENT", comment: "Absent type bereavement")
             }
             else{
                 cell.typeLab.text = state.type
@@ -187,15 +187,15 @@ class AbsentTableViewController: UITableViewController {
                 self.activityInd.stopAnimating()
             }
             else if let apiError = apierr{
-                let alert = UIAlertController(title: "錯誤", message: apiError.error, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
-                    print("Absent Error Api alert occured")
+                let alert = UIAlertController(title: NSLocalizedString("API_ERROR_TITLE", comment:"API Error message on title"), message: apiError.error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Api Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
             else if let alamoError = alaerr{
-                let alert = UIAlertController(title: "連線錯誤", message: alamoError.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                let alert = UIAlertController(title: NSLocalizedString("CONN_ERROR_TITLE", comment:"Connection Error message on title"), message: alamoError.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
                     print("Alamofire Error alert occured")
                 }))
                 self.present(alert, animated: true, completion: nil)

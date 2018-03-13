@@ -1,5 +1,5 @@
 /* Class = "UIButton"; normalTitle = "Update"; ObjectID = "Bgb-j3-d9o"; */
-"Bgb-j3-d9o.normalTitle" = "更新";
+"Bgb-j3-d9o.normalTitle" = "修改";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "ERH-hZ-jAH"; */
 "ERH-hZ-jAH.placeholder" = "Email";
@@ -23,5 +23,5 @@
 "pW7-Wy-fRV.text" = "認證";
 
 /* Class = "UILabel"; text = "Updated Data"; ObjectID = "yk1-Dg-7wp"; */
-"yk1-Dg-7wp.text" = "更新資料";
+"yk1-Dg-7wp.text" = "修改資料";
 

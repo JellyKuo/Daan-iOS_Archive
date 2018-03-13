@@ -1,4 +1,3 @@
-
 /* Class = "UILabel"; text = "Attitude"; ObjectID = "1gR-Oe-5Zj"; */
 "1gR-Oe-5Zj.text" = "獎懲紀錄";
 
@@ -21,7 +20,7 @@
 "esB-RO-1kf.text" = "課表";
 
 /* Class = "UILabel"; text = "Study Room"; ObjectID = "jRD-kS-pKl"; */
-"jRD-kS-pKl.text" = "自修室";
+"jRD-kS-pKl.text" = "自修室座位";
 
 /* Class = "UILabel"; text = "Next Class"; ObjectID = "laZ-i3-9ap"; */
 "laZ-i3-9ap.text" = "下一節";
@@ -31,3 +30,4 @@
 
 /* Class = "UILabel"; text = "Absent"; ObjectID = "uOl-Lr-ofn"; */
 "uOl-Lr-ofn.text" = "出缺勤";
+
