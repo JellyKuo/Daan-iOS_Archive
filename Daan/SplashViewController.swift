@@ -23,6 +23,8 @@ class SplashViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var crsReportSwitch: UISwitch!
+    
     @IBAction func notiReqPermTap(_ sender: Any) {
         let application = UIApplication.shared
         if #available(iOS 10.0, *) {
@@ -65,6 +67,13 @@ class SplashViewController: UIViewController {
         userDefaults.set(true, forKey: "SplashDismiss")
         
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func crsReportTap(_ sender: Any) {
+        guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
+            fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
+        }
+        userDefaults.set(crsReportSwitch.isOn, forKey: "crashReport")
     }
     
     /*
