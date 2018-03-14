@@ -321,7 +321,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="crsReportTap:" destination="RtX-da-3WO" eventType="touchUpInside" id="rty-0t-dEl"/>
-                                    <action selector="notiReqPermTap:" destination="RtX-da-3WO" eventType="touchUpInside" id="Lf2-P4-rfU"/>
                                     <segue destination="RJp-lv-ku7" kind="show" id="Z0Y-wX-gGu"/>
                                 </connections>
                             </button>

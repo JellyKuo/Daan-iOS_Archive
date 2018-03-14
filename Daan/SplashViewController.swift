@@ -55,7 +55,7 @@ class SplashViewController: UIViewController {
         }
         
         application.registerForRemoteNotifications()
-        performSegue(withIdentifier: "AfterNotiSegue", sender: self)
+        performSegue(withIdentifier: "afterNotiSegue", sender: self)
     }
     
     
@@ -74,6 +74,7 @@ class SplashViewController: UIViewController {
             fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
         }
         userDefaults.set(crsReportSwitch.isOn, forKey: "crashReport")
+        print("Setting userDefault key crashReport to \(crsReportSwitch.isOn)")
     }
     
     /*
