@@ -2,12 +2,10 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "GraduationCap@24px.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "GraduationCap@48px.png",
       "scale" : "2x"
     },
     {
