@@ -58,6 +58,6 @@
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vgI-PN-5VI"; */
 "vgI-PN-5VI.title" = "設定";
 
-/* Class = "UILabel"; text = "Display"; ObjectID = "zdz-Jp-33T"; */
+/* Class = "UILabel"; text = "Main screen display"; ObjectID = "zdz-Jp-33T"; */
 "zdz-Jp-33T.text" = "主頁面顯示";
 

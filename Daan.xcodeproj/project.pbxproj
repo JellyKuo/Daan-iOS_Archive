@@ -59,6 +59,7 @@
 		A1B0716D1FB84BDB006A291A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */; };
 		A1B0716F1FB850B6006A291A /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0716E1FB850B6006A291A /* Register.swift */; };
 		A1B12B2C1FB7E16300F50F5E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B12B2B1FB7E16300F50F5E /* UserInfo.swift */; };
+		A1BB45132059745A00298C25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1BB45152059745A00298C25 /* Localizable.strings */; };
 		A1BD40081FD19BD200B5C079 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A1BDF3E11FB882B4009F9F72 /* AttitudeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDF3E01FB882B4009F9F72 /* AttitudeTableViewController.swift */; };
 		A1BDF3E31FB882EF009F9F72 /* Attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDF3E21FB882EF009F9F72 /* Attitude.swift */; };
@@ -146,6 +147,7 @@
 		A1B0716C1FB84BDB006A291A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1B0716E1FB850B6006A291A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		A1B12B2B1FB7E16300F50F5E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A1BB45142059745A00298C25 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A1BD40071FD19BD200B5C079 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A1BD40091FD1A10100B5C079 /* Daan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Daan.entitlements; sourceTree = "<group>"; };
 		A1BDF3E01FB882B4009F9F72 /* AttitudeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeTableViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		A10B40DA1FEA9D990081B9E9 /* Today Curriculum */ = {
 			isa = PBXGroup;
 			children = (
+				A1BB45152059745A00298C25 /* Localizable.strings */,
 				A1CB90202056D72F00B4A854 /* InfoPlist.strings */,
 				A10B40E71FEA9DC50081B9E9 /* Today Curriculum.entitlements */,
 				A10B40DB1FEA9D990081B9E9 /* TodayViewController.swift */,
@@ -495,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BB45132059745A00298C25 /* Localizable.strings in Resources */,
 				A10B40DF1FEA9D990081B9E9 /* MainInterface.storyboard in Resources */,
 				A1CB901E2056D72F00B4A854 /* InfoPlist.strings in Resources */,
 				A18683F42049A2970058F94E /* GoogleService-Info.plist in Resources */,
@@ -815,6 +819,14 @@
 				A1CB900D2056D0A400B4A854 /* zh-Hant */,
 			);
 			name = Welcome.storyboard;
+			sourceTree = "<group>";
+		};
+		A1BB45152059745A00298C25 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1BB45142059745A00298C25 /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		A1C83A7D1FBFCD30008CF088 /* SectionalExam.storyboard */ = {

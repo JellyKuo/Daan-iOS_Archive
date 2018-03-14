@@ -1,0 +1,15 @@
+/* Monday */
+"MONDAY" = "星期一";
+
+/* Next class in curriculum */
+"NEXT_CLASS" = "下一節";
+
+/* Prompts to open app */
+"OPEN_APP_PROMPT" = "開啟App下載資料";
+
+/* Today */
+"TODAY" = "今天";
+
+/* Tomorrow */
+"TOMORROW" = "明天";
+

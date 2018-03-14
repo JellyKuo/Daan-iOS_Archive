@@ -25,11 +25,20 @@
 /* Class = "UILabel"; text = "Notifications"; ObjectID = "bvm-dh-X9P"; */
 "bvm-dh-X9P.text" = "通知";
 
+/* Class = "UILabel"; text = "Allow me to collect data dump in the event of a crash. This can help me a lot in figuring out what went wrong in the process.  If you can, turn iOS Settings -> Privacy -> Analytics -> Share data with app developer on as well."; ObjectID = "dgD-8a-Uka"; */
+"dgD-8a-Uka.text" = "允許在當機時將報告傳給我 這些報告對我解決問題非常有幫助  如果可以的話，也把 iOS 設定 -> 隱私權 -> 分析 -> 與App開發者共享 打開";
+
 /* Class = "UILabel"; text = "Tap \"Allow Push Notification\" to receive notifications You can customize this later in settings"; ObjectID = "mSx-nl-xlW"; */
 "mSx-nl-xlW.text" = "點選 \"允許\" 來接收最新的動態及內容通知 你待會可以在設定中更改這個選項";
 
+/* Class = "UILabel"; text = "Crash Report"; ObjectID = "nVD-2P-EVr"; */
+"nVD-2P-EVr.text" = "當機報告";
+
 /* Class = "UILabel"; text = "Know your upcoming class with curriculum"; ObjectID = "oO9-lm-Opy"; */
 "oO9-lm-Opy.text" = "用課表快速查詢下一節課";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "w97-em-p2Z"; */
+"w97-em-p2Z.normalTitle" = "下一步";
 
 /* Class = "UIButton"; normalTitle = "Request Permission"; ObjectID = "ynC-7a-4lH"; */
 "ynC-7a-4lH.normalTitle" = "請求權限";
