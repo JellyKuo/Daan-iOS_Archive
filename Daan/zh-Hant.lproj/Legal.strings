@@ -14,16 +14,16 @@
 "a2b-5m-5Td.text" = "Icons8";
 
 /* Class = "UITableViewSection"; headerTitle = "Assets"; ObjectID = "awZ-BA-VQV"; */
-"awZ-BA-VQV.headerTitle" = "Assets";
+"awZ-BA-VQV.headerTitle" = "資產";
 
 /* Class = "UITableViewSection"; headerTitle = "Libraries"; ObjectID = "mkd-Fo-hq3"; */
-"mkd-Fo-hq3.headerTitle" = "Libraries";
+"mkd-Fo-hq3.headerTitle" = "資源庫";
 
 /* Class = "UILabel"; text = "Daan-iOS"; ObjectID = "oRj-NO-5Ii"; */
 "oRj-NO-5Ii.text" = "Daan-iOS";
 
 /* Class = "UITableViewSection"; headerTitle = "Softwares"; ObjectID = "pp3-jE-cKu"; */
-"pp3-jE-cKu.headerTitle" = "Softwares";
+"pp3-jE-cKu.headerTitle" = "軟體";
 
 /* Class = "UILabel"; text = "Alamofire"; ObjectID = "shn-U2-Tip"; */
 "shn-U2-Tip.text" = "Alamofire";
