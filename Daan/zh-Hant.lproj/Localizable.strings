@@ -100,6 +100,9 @@
 /* Type text */
 "TYPE" = "類型";
 
+/* Prompts user that update user data is currently broken */
+"UPDATE_USER_DATA_NOT_AVAILABLE_MSG" = "因為木棉手札API Bug, 修改用戶資料只會回傳伺服器錯誤 待伺服器修正後這功能會再度打開";
+
 /* 1st semester text */
 "UP_SEMESTER" = "上學期";
 
