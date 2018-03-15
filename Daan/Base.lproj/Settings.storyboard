@@ -37,9 +37,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="MEh-rS-dYA" kind="presentation" identifier="UpdateUserDataSegue" modalPresentationStyle="formSheet" id="A3H-x8-xKG"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="j4e-Wh-Rgm" style="IBUITableViewCellStyleDefault" id="HuW-UU-ut9">
                                         <rect key="frame" x="0.0" y="85" width="414" height="50"/>
@@ -128,7 +125,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAx-5e-GfU">
-                                                    <rect key="frame" x="531" y="9" width="51" height="31"/>
+                                                    <rect key="frame" x="345" y="9" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="crhRepToggle:" destination="BQi-ku-cQw" eventType="valueChanged" id="MXJ-Pl-Gva"/>
                                                     </connections>
@@ -304,6 +301,7 @@
                     <connections>
                         <outlet property="crhRepSwitch" destination="oAx-5e-GfU" id="oVb-EI-g1V"/>
                         <outlet property="mainDispSegment" destination="fGI-vz-gYl" id="2on-Kv-Ave"/>
+                        <segue destination="MEh-rS-dYA" kind="presentation" identifier="UpdateUserDataSegue" id="FrX-4A-mZl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1v-Vb-wri" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -351,7 +349,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUm-tn-ipg">
-                                                    <rect key="frame" x="531" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="345" y="6" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="togAllowNoti:" destination="H8l-J2-iLY" eventType="valueChanged" id="WKo-05-gt9"/>
                                                     </connections>

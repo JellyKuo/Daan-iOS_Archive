@@ -41,6 +41,14 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             switch indexPath.row{
+            case 0:
+                let alert = UIAlertController(title: NSLocalizedString("FAILED_TITLE", comment: "Failed message on title"), message: NSLocalizedString("UPDATE_USER_DATA_NOT_AVAILABLE_MSG", comment: "Prompts user that update user data is currently broken"), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK_ACT", comment:"Ok action on tap"), style: .`default`, handler: { _ in
+                    print("Update user data broken alert occured")
+                }))
+                self.present(alert, animated: true, completion: nil)
+                performSegue(withIdentifier: "UpdateUserDataSegue", sender: self)
+                break
             case 5:
                 clearCurriculum(supressAlert: false)
                 break;
