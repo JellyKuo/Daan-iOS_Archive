@@ -8,10 +8,11 @@
 
 import UIKit
 import KeychainSwift
+import MessageUI
 import FirebaseMessaging  //Remove on production
 import Crashlytics  //Remove on production
 
-class SettingsTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController,MFMailComposeViewControllerDelegate {
 
     var token:Token? = nil
 
@@ -48,6 +49,20 @@ class SettingsTableViewController: UITableViewController {
                 }))
                 self.present(alert, animated: true, completion: nil)
                 performSegue(withIdentifier: "UpdateUserDataSegue", sender: self)
+                break
+            case 3:
+                if MFMailComposeViewController.canSendMail() {
+                    let composeVC = MFMailComposeViewController()
+                    composeVC.mailComposeDelegate = self
+                    
+                    // Configure the fields of the interface.
+                    composeVC.setToRecipients(["jellykuo1234@gmail.com"])
+                    // Present the view controller modally.
+                    present(composeVC, animated: true, completion: nil)
+                }
+                else{
+                    print("Mail services are not available")
+                }
                 break
             case 5:
                 clearCurriculum(supressAlert: false)
@@ -180,6 +195,10 @@ class SettingsTableViewController: UITableViewController {
             }
         }))
         self.present(alert,animated: true,completion:nil)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Table view data source
