@@ -9,10 +9,11 @@
 import UIKit
 import KeychainSwift
 import MessageUI
+import SafariServices
 import FirebaseMessaging  //Remove on production
 import Crashlytics  //Remove on production
 
-class SettingsTableViewController: UITableViewController,MFMailComposeViewControllerDelegate {
+class SettingsTableViewController: UITableViewController,MFMailComposeViewControllerDelegate, SFSafariViewControllerDelegate {
     
     var token:Token? = nil
     
@@ -78,7 +79,22 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
                     }
                 }
                 break
-            case 5:
+            case 4:
+                let url = URL(string:"https://status.dacsc.club")!
+                if #available(iOS 11.0, *) {
+                    print("iOS 11, SFSafariView here we go")
+                    SFSafariShow(url)
+                }
+                else if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(url)
+                    print("iOS 10, UIApp shared open")
+                }
+                else{
+                    print("Nah, openURL it is")
+                    UIApplication.shared.openURL(url)
+                }
+                break
+            case 7:
                 clearCurriculum(supressAlert: false)
                 break;
             default:
@@ -142,7 +158,9 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
             
             //Remove on production
         else if indexPath.section == 3{
+            #if DEBUG
             Crashlytics.sharedInstance().crash()
+            #endif
         }
     }
     
@@ -209,6 +227,14 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
             }
         }))
         self.present(alert,animated: true,completion:nil)
+    }
+    
+    @available(iOS 11.0, *)
+    func SFSafariShow(_ url:URL) {
+        let config = SFSafariViewController.Configuration()
+        let vc = SFSafariViewController(url: url, configuration: config)
+        vc.delegate = self
+        present(vc, animated: true)
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
