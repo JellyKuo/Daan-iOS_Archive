@@ -61,7 +61,14 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
                     present(composeVC, animated: true, completion: nil)
                 }
                 else{
-                    print("Mail services are not available")
+                    print("Mail services are not available, using mailto")
+                    if let url = URL(string: "mailto:jellykuo1234@gmail.com") {
+                        if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(url)
+                        } else {
+                            UIApplication.shared.openURL(url)
+                        }
+                    }
                 }
                 break
             case 5:
