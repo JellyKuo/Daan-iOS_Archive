@@ -164,6 +164,14 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
         }
     }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        #if DEBUG
+        return 4
+        #else
+        return 2
+        #endif
+    }
+    
     @IBAction func mainDispSegmentChg(_ sender: Any) {
         userDefaults.set(mainDispSegment.selectedSegmentIndex == 0 , forKey: "displayNickname")  //0:Nick, 1:Full
         displayNameDelegate?.displaySwitched()
