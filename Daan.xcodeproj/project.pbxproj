@@ -72,10 +72,10 @@
 		A1D2018D1FDC246300FABA4D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */; };
 		A1DAE8561FB74D48008FF0E2 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */; };
 		A1E10CFA1FB34EDA003C7A30 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */; };
-		A1E11D28207FAE1F008AABF6 /* Carnival.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E11D27207FAE1F008AABF6 /* Carnival.storyboard */; };
 		A1E11D2A207FAE68008AABF6 /* CarnivalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E11D29207FAE68008AABF6 /* CarnivalViewController.swift */; };
 		A1E11D2C207FB8D8008AABF6 /* CarnivalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E11D2B207FB8D8008AABF6 /* CarnivalTableViewController.swift */; };
 		A1E11D31207FB9DF008AABF6 /* CarnivalStall.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1E11D30207FB9DF008AABF6 /* CarnivalStall.plist */; };
+		A1E11D32207FC998008AABF6 /* Carnival.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E11D34207FC998008AABF6 /* Carnival.storyboard */; };
 		A1E904AC1FCEC1BC000E28AE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E904AB1FCEC1BC000E28AE /* Button.swift */; };
 		A1E904AE1FCEC7D9000E28AE /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E904AD1FCEC7D9000E28AE /* TextField.swift */; };
 		A1EE04D61FB7F21700021DAF /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE04D51FB7F21700021DAF /* Token.swift */; };
@@ -193,10 +193,11 @@
 		A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A1DAE8551FB74D48008FF0E2 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		A1E10CF91FB34EDA003C7A30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		A1E11D27207FAE1F008AABF6 /* Carnival.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Carnival.storyboard; sourceTree = "<group>"; };
 		A1E11D29207FAE68008AABF6 /* CarnivalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarnivalViewController.swift; sourceTree = "<group>"; };
 		A1E11D2B207FB8D8008AABF6 /* CarnivalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarnivalTableViewController.swift; sourceTree = "<group>"; };
 		A1E11D30207FB9DF008AABF6 /* CarnivalStall.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CarnivalStall.plist; sourceTree = "<group>"; };
+		A1E11D33207FC998008AABF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Carnival.storyboard; sourceTree = "<group>"; };
+		A1E11D36207FC99B008AABF6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Carnival.strings"; sourceTree = "<group>"; };
 		A1E904AB1FCEC1BC000E28AE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		A1E904AD1FCEC7D9000E28AE /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		A1EE04D51FB7F21700021DAF /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -365,7 +366,7 @@
 		A1E11D2D207FB91D008AABF6 /* Carnival */ = {
 			isa = PBXGroup;
 			children = (
-				A1E11D27207FAE1F008AABF6 /* Carnival.storyboard */,
+				A1E11D34207FC998008AABF6 /* Carnival.storyboard */,
 				A1E11D2B207FB8D8008AABF6 /* CarnivalTableViewController.swift */,
 				A1E11D29207FAE68008AABF6 /* CarnivalViewController.swift */,
 				A1E11D30207FB9DF008AABF6 /* CarnivalStall.plist */,
@@ -540,7 +541,7 @@
 				A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */,
 				A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */,
 				A12F03B71FC09BF0004F739F /* Curriculum.storyboard in Resources */,
-				A1E11D28207FAE1F008AABF6 /* Carnival.storyboard in Resources */,
+				A1E11D32207FC998008AABF6 /* Carnival.storyboard in Resources */,
 				A12B28EE202E03F3003B01D3 /* SplashScreen.storyboard in Resources */,
 				A18683F32049A2970058F94E /* GoogleService-Info.plist in Resources */,
 				A12FFC0A20464C5A004ABD9B /* Legal.storyboard in Resources */,
@@ -896,6 +897,15 @@
 				A1CB90272056D8B900B4A854 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1E11D34207FC998008AABF6 /* Carnival.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1E11D33207FC998008AABF6 /* Base */,
+				A1E11D36207FC99B008AABF6 /* zh-Hant */,
+			);
+			name = Carnival.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

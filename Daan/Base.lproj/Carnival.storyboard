@@ -93,13 +93,16 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7D-t9-UCS">
-                                            <rect key="frame" x="16" y="35" width="65.5" height="29"/>
+                                            <rect key="frame" x="16" y="35" width="343" height="29"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiB-rv-0hV">
                                             <rect key="frame" x="343" y="11" width="16" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="dlJ-hj-h6O"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -109,7 +112,9 @@
                                         <constraint firstItem="w7D-t9-UCS" firstAttribute="bottom" secondItem="bN0-8f-Kin" secondAttribute="bottomMargin" id="E92-4A-yO3"/>
                                         <constraint firstItem="jiB-rv-0hV" firstAttribute="top" secondItem="bN0-8f-Kin" secondAttribute="topMargin" id="KVC-xL-vH9"/>
                                         <constraint firstItem="w7D-t9-UCS" firstAttribute="leading" secondItem="bN0-8f-Kin" secondAttribute="leadingMargin" id="MYF-Gp-ADw"/>
+                                        <constraint firstItem="jiB-rv-0hV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nV3-nD-EO8" secondAttribute="trailing" id="P6z-6P-fw6"/>
                                         <constraint firstItem="nV3-nD-EO8" firstAttribute="top" secondItem="bN0-8f-Kin" secondAttribute="topMargin" id="Xc2-Vh-66h"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="w7D-t9-UCS" secondAttribute="trailing" id="rc7-Qu-EMj"/>
                                         <constraint firstItem="nV3-nD-EO8" firstAttribute="leading" secondItem="bN0-8f-Kin" secondAttribute="leadingMargin" id="wVq-bW-ho3"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="jiB-rv-0hV" secondAttribute="trailing" id="yWe-q4-KKt"/>
                                     </constraints>
