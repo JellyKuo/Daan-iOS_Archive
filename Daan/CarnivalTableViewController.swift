@@ -16,7 +16,6 @@ class CarnivalTableViewController: UITableViewController {
         super.viewDidLoad()
         
         stalls = NSArray(contentsOfFile:Bundle.main.path(forResource: "CarnivalStall", ofType: "plist")!) as! [NSDictionary]
-        print(stalls.count)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
