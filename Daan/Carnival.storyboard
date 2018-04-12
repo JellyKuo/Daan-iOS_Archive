@@ -23,7 +23,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="Faa-kJ-zes">
                                 <rect key="frame" x="0.0" y="64" width="375" height="262"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carnival" translatesAutoresizingMaskIntoConstraints="NO" id="hkn-Wq-Srs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carnival" translatesAutoresizingMaskIntoConstraints="NO" id="hkn-Wq-Srs">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
                                     </imageView>
                                 </subviews>
