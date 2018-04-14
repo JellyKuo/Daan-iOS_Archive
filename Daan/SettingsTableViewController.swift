@@ -70,33 +70,17 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
                 }
                 else{
                     print("Mail services are not available, using mailto")
-                    if let url = URL(string: "mailto:jellykuo1234@gmail.com") {
-                        if #available(iOS 10.0, *) {
-                            UIApplication.shared.open(url)
-                        } else {
-                            UIApplication.shared.openURL(url)
-                        }
-                    }
+                    openUrl("mailto:jellykuo1234@gmail.com", useSFShow: false)
                 }
                 break
             case 4:
-                let url = URL(string:"https://status.dacsc.club")!
-                if #available(iOS 11.0, *) {
-                    print("iOS 11, SFSafariView here we go")
-                    SFSafariShow(url)
-                }
-                else if #available(iOS 10.0, *) {
-                    UIApplication.shared.open(url)
-                    print("iOS 10, UIApp shared open")
-                }
-                else{
-                    print("Nah, openURL it is")
-                    UIApplication.shared.openURL(url)
-                }
+                openUrl("https://status.dacsc.club",useSFShow: true)
                 break
             case 7:
                 clearCurriculum(supressAlert: false)
                 break;
+            case 8:
+                openUrl("itms-apps://itunes.apple.com/app/id1316911750", useSFShow: false)
             default:
                 break;
             }
@@ -237,12 +221,20 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
         self.present(alert,animated: true,completion:nil)
     }
     
-    @available(iOS 11.0, *)
-    func SFSafariShow(_ url:URL) {
-        let config = SFSafariViewController.Configuration()
-        let vc = SFSafariViewController(url: url, configuration: config)
-        vc.delegate = self
-        present(vc, animated: true)
+    private func openUrl(_ urlString:String, useSFShow:Bool) {
+        let url = URL(string: urlString)!
+        if #available(iOS 11.0, *), useSFShow {
+            print("iOS 11, SFSafariView here we go")
+            let config = SFSafariViewController.Configuration()
+            let vc = SFSafariViewController(url: url, configuration: config)
+            vc.delegate = self
+            present(vc, animated: true)
+        }
+        else if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
