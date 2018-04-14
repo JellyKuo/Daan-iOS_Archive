@@ -49,6 +49,7 @@
 		A154B56D2020BE3F004AF50C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154B56C2020BE3F004AF50C /* SplashViewController.swift */; };
 		A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5111FE62BC50012F2D8 /* Settings.storyboard */; };
 		A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */; };
+		A15CEFB820820A4000A101AD /* Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CEFB720820A4000A101AD /* Theme.storyboard */; };
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
 		A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
@@ -140,6 +141,7 @@
 		A15444AF1FBAFF8400A5D88E /* AbsentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentTableViewController.swift; sourceTree = "<group>"; };
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
 		A154B56C2020BE3F004AF50C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A15CEFB720820A4000A101AD /* Theme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Theme.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		A18683F22049A2970058F94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				A12FFC0820464C4D004ABD9B /* LegalTableViewController.swift */,
 				A12FFC1120464F48004ABD9B /* LegalViewController.swift */,
 				A12FFC0F20464E24004ABD9B /* Legal.plist */,
+				A15CEFB720820A4000A101AD /* Theme.storyboard */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */,
 				A1930A861FCEDFF1008344CA /* Welcome.storyboard in Resources */,
 				A12F03B71FC09BF0004F739F /* Curriculum.storyboard in Resources */,
+				A15CEFB820820A4000A101AD /* Theme.storyboard in Resources */,
 				A12B28EE202E03F3003B01D3 /* SplashScreen.storyboard in Resources */,
 				A18683F32049A2970058F94E /* GoogleService-Info.plist in Resources */,
 				A12FFC0A20464C5A004ABD9B /* Legal.storyboard in Resources */,
