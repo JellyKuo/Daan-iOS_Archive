@@ -127,11 +127,21 @@ class MainViewController: UIViewController,displayNameDelegate {
         guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
             fatalError("Cannot init new UserDefaults with suiteName")
         }
-        if userDefaults.bool(forKey: "SplashDismiss"){
-            print("SplashDismiss is true, skipping WelcomeSplash")
-            return
+        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
+            fatalError("Cannot get CFBundleVersion and convert to string")
         }
-        print("Splash hasn't displayed before, displaying...")
+        if let lastVersion = userDefaults.string(forKey: "lastVersion"){
+            if lastVersion == bundleVersion{
+                print("App version: \(bundleVersion), not updated")
+                return
+            }
+            else{
+                print("App version: \(bundleVersion), updated")
+            }
+        }
+        else{
+            print("App version: \(bundleVersion), new launch")
+        }
         performSegue(withIdentifier: "SplashSegue", sender: self)
     }
     

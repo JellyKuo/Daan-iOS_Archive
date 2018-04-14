@@ -63,8 +63,11 @@ class SplashViewController: UIViewController {
         guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
             fatalError("Cannot init new UserDefaults with suiteName")
         }
-        print("Set SplashDismiss to true")
-        userDefaults.set(true, forKey: "SplashDismiss")
+        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
+            fatalError("Cannot get CFBundleVersion and convert to string")
+        }
+        print("Set lastVersion to \(bundleVersion)")
+        userDefaults.set(bundleVersion, forKey: "lastVersion")
         
         self.dismiss(animated: true, completion: nil)
     }

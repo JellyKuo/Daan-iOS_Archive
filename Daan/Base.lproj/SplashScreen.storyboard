@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14E-FW-N0T">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14E-FW-N0T">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,11 +16,11 @@
             <objects>
                 <viewController storyboardIdentifier="SplashViewController" id="RAe-kb-WEh" customClass="SplashViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bRP-1A-x9P">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQS-vY-Yk3" customClass="Button" customModule="Daan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="503" width="280" height="45"/>
+                                <rect key="frame" x="20" y="602" width="335" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="KHN-sg-FPh"/>
@@ -40,16 +40,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbg-g5-Lv7">
-                                <rect key="frame" x="20" y="60" width="280" height="45.5"/>
+                                <rect key="frame" x="20" y="60" width="335" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-F0-7wX">
-                                <rect key="frame" x="20" y="146.5" width="280" height="275"/>
+                                <rect key="frame" x="20" y="196" width="335" height="275"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OUM-gC-auw">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="75"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GraduationCap" translatesAutoresizingMaskIntoConstraints="NO" id="bjZ-GW-Uva">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
@@ -58,7 +58,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look up your score and performance in school" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0St-3K-4dz">
-                                                <rect key="frame" x="95" y="0.0" width="185" height="75"/>
+                                                <rect key="frame" x="95" y="0.0" width="240" height="75"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tKD-lJ-x7g">
-                                        <rect key="frame" x="0.0" y="100" width="280" height="75"/>
+                                        <rect key="frame" x="0.0" y="100" width="335" height="75"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Attendance" translatesAutoresizingMaskIntoConstraints="NO" id="xaO-ld-VvV">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
@@ -81,7 +81,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your attendance" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMl-Hg-YUt">
-                                                <rect key="frame" x="95" y="0.0" width="185" height="75"/>
+                                                <rect key="frame" x="95" y="0.0" width="240" height="75"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -95,7 +95,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fhJ-wW-jQg">
-                                        <rect key="frame" x="0.0" y="200" width="280" height="75"/>
+                                        <rect key="frame" x="0.0" y="200" width="335" height="75"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Class" translatesAutoresizingMaskIntoConstraints="NO" id="ICr-9Y-vvP">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
@@ -104,7 +104,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know your upcoming class with curriculum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oO9-lm-Opy">
-                                                <rect key="frame" x="95" y="0.0" width="185" height="75"/>
+                                                <rect key="frame" x="95" y="0.0" width="240" height="75"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -151,11 +151,11 @@
             <objects>
                 <viewController id="r8X-AB-wlZ" customClass="SplashViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nIW-u8-naT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynC-7a-4lH" customClass="Button" customModule="Daan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="503" width="280" height="45"/>
+                                <rect key="frame" x="20" y="602" width="335" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="cHi-ZG-ttw"/>
@@ -175,20 +175,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-dh-X9P">
-                                <rect key="frame" x="20" y="60" width="280" height="46"/>
+                                <rect key="frame" x="20" y="60" width="335" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myx-h4-pRq">
-                                <rect key="frame" x="131.5" y="463" width="57" height="30"/>
+                                <rect key="frame" x="159" y="562" width="57" height="30"/>
                                 <state key="normal" title="Not now"/>
                                 <connections>
                                     <segue destination="RtX-da-3WO" kind="show" identifier="afterNotiSegue" id="kgJ-Uy-qCB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap &quot;Allow Push Notification&quot; to receive notifications You can customize this later in settings" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSx-nl-xlW">
-                                <rect key="frame" x="20" y="253.5" width="280" height="81.5"/>
+                                <rect key="frame" x="20" y="313" width="335" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -220,11 +220,11 @@
             <objects>
                 <viewController id="RJp-lv-ku7" customClass="SplashViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fGT-MC-ZHN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-AF-z4D" customClass="Button" customModule="Daan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="503" width="280" height="45"/>
+                                <rect key="frame" x="20" y="602" width="335" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="fLV-r2-RXq"/>
@@ -244,13 +244,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFe-go-vNd">
-                                <rect key="frame" x="20" y="60" width="280" height="45.5"/>
+                                <rect key="frame" x="20" y="60" width="335" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcM-oq-64u">
-                                <rect key="frame" x="20" y="91" width="280" height="406"/>
+                                <rect key="frame" x="20" y="161" width="335" height="365.5"/>
                                 <string key="text">If your account is created between July 2017~Feb 2018, there's a chance that your curriculum may be wrong.  To fix this: 1. After login, tap reset in settings menu on top right 2. Login with your friend's account who has the correct curriculum data 3. After login, tap curriculum on bottom to cache the data 4. Tap logout in the settings menu and login with your account 5. Verify that your curriculum data is cached and not cleared  If you have any problem or suggestion, feel free to send me an email!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -300,11 +300,11 @@
             <objects>
                 <viewController id="RtX-da-3WO" customClass="SplashViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNp-td-fhh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w97-em-p2Z" customClass="Button" customModule="Daan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="503" width="280" height="45"/>
+                                <rect key="frame" x="20" y="602" width="335" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="upF-eF-7Nd"/>
@@ -325,16 +325,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crash Report" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVD-2P-EVr">
-                                <rect key="frame" x="20" y="60" width="280" height="46"/>
+                                <rect key="frame" x="20" y="60" width="335" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSJ-Wk-Us4">
-                                <rect key="frame" x="135.5" y="412" width="51" height="31"/>
+                                <rect key="frame" x="163" y="511" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgD-8a-Uka">
-                                <rect key="frame" x="20" y="126" width="280" height="250"/>
+                                <rect key="frame" x="20" y="126" width="335" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="IR5-00-1kj"/>
                                 </constraints>
