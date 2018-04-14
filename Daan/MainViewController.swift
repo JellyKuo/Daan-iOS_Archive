@@ -127,7 +127,7 @@ class MainViewController: UIViewController,displayNameDelegate {
         guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
             fatalError("Cannot init new UserDefaults with suiteName")
         }
-        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
+        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
             fatalError("Cannot get CFBundleVersion and convert to string")
         }
         if let lastVersion = userDefaults.string(forKey: "lastVersion"){

@@ -63,8 +63,8 @@ class SplashViewController: UIViewController {
         guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
             fatalError("Cannot init new UserDefaults with suiteName")
         }
-        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
-            fatalError("Cannot get CFBundleVersion and convert to string")
+        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
+            fatalError("Cannot get CFBundleShortVersionString and convert to string")
         }
         print("Set lastVersion to \(bundleVersion)")
         userDefaults.set(bundleVersion, forKey: "lastVersion")
