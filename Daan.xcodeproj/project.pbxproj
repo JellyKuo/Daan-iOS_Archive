@@ -50,6 +50,7 @@
 		A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5111FE62BC50012F2D8 /* Settings.storyboard */; };
 		A15CD5151FE62BD80012F2D8 /* UpdateUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */; };
 		A15CEFB820820A4000A101AD /* Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CEFB720820A4000A101AD /* Theme.storyboard */; };
+		A15CEFBA208222C800A101AD /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CEFB9208222C800A101AD /* Notification.storyboard */; };
 		A16BB1541FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */; };
 		A1702CC81FEAB9D70064945A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD40071FD19BD200B5C079 /* UIColor.swift */; };
 		A17352B11FE625450065FB48 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17352B31FE625450065FB48 /* StudyRoom.storyboard */; };
@@ -142,6 +143,7 @@
 		A15444B11FBB026900A5D88E /* AbsentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsentState.swift; sourceTree = "<group>"; };
 		A154B56C2020BE3F004AF50C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A15CEFB720820A4000A101AD /* Theme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Theme.storyboard; sourceTree = "<group>"; };
+		A15CEFB9208222C800A101AD /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataViewController.swift; sourceTree = "<group>"; };
 		A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		A18683F22049A2970058F94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -291,7 +293,6 @@
 			isa = PBXGroup;
 			children = (
 				A15CD5111FE62BC50012F2D8 /* Settings.storyboard */,
-				A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */,
 				A1D2018C1FDC246300FABA4D /* SettingsTableViewController.swift */,
 				A15CD5171FE62BD80012F2D8 /* UpdateUserData.storyboard */,
 				A16BB1531FE16A0A00E7ABE4 /* UpdateUserDataViewController.swift */,
@@ -299,6 +300,8 @@
 				A12FFC0820464C4D004ABD9B /* LegalTableViewController.swift */,
 				A12FFC1120464F48004ABD9B /* LegalViewController.swift */,
 				A12FFC0F20464E24004ABD9B /* Legal.plist */,
+				A15CEFB9208222C800A101AD /* Notification.storyboard */,
+				A17DA6EE204A6E97005D039A /* NotificationTableViewController.swift */,
 				A15CEFB720820A4000A101AD /* Theme.storyboard */,
 			);
 			name = Settings;
@@ -533,6 +536,7 @@
 				A11DC6EC1FB33C3C00A4EC9A /* Assets.xcassets in Resources */,
 				A15CD50F1FE62BC50012F2D8 /* Settings.storyboard in Resources */,
 				A1C83A7B1FBFCD30008CF088 /* SectionalExam.storyboard in Resources */,
+				A15CEFBA208222C800A101AD /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

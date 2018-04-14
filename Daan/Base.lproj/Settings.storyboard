@@ -55,7 +55,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="H8l-J2-iLY" kind="show" id="o4h-od-nqt"/>
+                                            <segue destination="N4y-K4-G1f" kind="show" id="SMR-c9-h6B"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Vua-V8-FrH" style="IBUITableViewCellStyleDefault" id="pAR-BE-lJb">
@@ -382,7 +382,7 @@
                 <viewControllerPlaceholder storyboardName="Legal" id="JZ8-m1-mbe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3p-C5-Q00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1102" y="-188"/>
+            <point key="canvasLocation" x="1114" y="-99"/>
         </scene>
         <!--UpdateUserData-->
         <scene sceneID="LAF-Ay-zhr">
@@ -390,64 +390,15 @@
                 <viewControllerPlaceholder storyboardName="UpdateUserData" id="MEh-rS-dYA" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N45-EA-liF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156" y="-105"/>
+            <point key="canvasLocation" x="1150" y="-204"/>
         </scene>
         <!--Notification-->
-        <scene sceneID="qPK-j5-FB1">
+        <scene sceneID="hfx-MG-mgY">
             <objects>
-                <tableViewController id="H8l-J2-iLY" customClass="NotificationTableViewController" customModule="Daan" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="G6u-Y6-L0G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <sections>
-                            <tableViewSection id="qoa-XL-2q4">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="ro0-4e-ZEL">
-                                        <rect key="frame" x="0.0" y="35" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ro0-4e-ZEL" id="kUi-QL-7Wn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwf-bs-Nxj">
-                                                    <rect key="frame" x="20" y="11" width="131" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUm-tn-ipg">
-                                                    <rect key="frame" x="345" y="6" width="51" height="31"/>
-                                                    <connections>
-                                                        <action selector="togAllowNoti:" destination="H8l-J2-iLY" eventType="valueChanged" id="WKo-05-gt9"/>
-                                                    </connections>
-                                                </switch>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Dwf-bs-Nxj" firstAttribute="leading" secondItem="kUi-QL-7Wn" secondAttribute="leadingMargin" id="CTz-Dd-dPG"/>
-                                                <constraint firstItem="kUm-tn-ipg" firstAttribute="trailing" secondItem="kUi-QL-7Wn" secondAttribute="trailingMargin" id="fVZ-5A-rLd"/>
-                                                <constraint firstItem="kUm-tn-ipg" firstAttribute="centerY" secondItem="kUi-QL-7Wn" secondAttribute="centerY" id="ifY-am-THt"/>
-                                                <constraint firstItem="Dwf-bs-Nxj" firstAttribute="centerY" secondItem="kUi-QL-7Wn" secondAttribute="centerY" id="qlz-wn-DCU"/>
-                                                <constraint firstItem="kUm-tn-ipg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dwf-bs-Nxj" secondAttribute="trailing" constant="5" id="yi7-PM-43Z"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="H8l-J2-iLY" id="328-Gf-rAt"/>
-                            <outlet property="delegate" destination="H8l-J2-iLY" id="F8Y-wy-Ea9"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Notification" id="Bet-a8-5kU"/>
-                    <connections>
-                        <outlet property="allowNoti" destination="kUm-tn-ipg" id="nLg-XW-bac"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NNP-n8-kjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Notification" id="N4y-K4-G1f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4t-3p-CUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="-142"/>
+            <point key="canvasLocation" x="1128" y="-150"/>
         </scene>
     </scenes>
 </document>
