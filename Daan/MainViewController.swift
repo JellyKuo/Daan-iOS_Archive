@@ -151,12 +151,33 @@ class MainViewController: UIViewController,displayNameDelegate {
                         notiTopic["iOSBeta"] = true
                         Messaging.messaging().subscribe(toTopic: "iOSBeta")
                     }
+                    else{
+                        notiTopic["iOSBeta"] = false
+                    }
                     userDefaults.set(notiTopic, forKey: "notiTopics")
                 }
             }
         }
         else{
             print("App version: \(bundleVersion), new launch")
+            
+            //TODO: CHANGE THIS
+            //THIS IS ONLY FOR A SINGLE VERSION UPDATE, SHOULD NOT BE ON PRODUCTION
+            
+            if userDefaults.object(forKey: "notiTopics") == nil{
+                var notiTopic = [String:Bool]()
+                notiTopic["General"] = true
+                Messaging.messaging().subscribe(toTopic: "General")
+                notiTopic["Promo"] = false
+                if appType.build == .TestFlight{
+                    notiTopic["iOSBeta"] = true
+                    Messaging.messaging().subscribe(toTopic: "iOSBeta")
+                }
+                else{
+                    notiTopic["iOSBeta"] = false
+                }
+                userDefaults.set(notiTopic, forKey: "notiTopics")
+            }
         }
         performSegue(withIdentifier: "SplashSegue", sender: self)
     }
@@ -185,11 +206,20 @@ class MainViewController: UIViewController,displayNameDelegate {
         }
         if userDefaults.bool(forKey: "displayNickname") {
             print("Display nickname is true in userDefaults, using nick")
-            self.nameLab.text = userDefaults.string(forKey: "nickname")
+            if let nick = userDefaults.string(forKey: "nickname"){
+                if self.nameLab != nil{
+                    self.nameLab.text = nick
+                }
+            }
         }
         else{
             print("Display nickname is false or not set in userDefaults, using full name")
-            self.nameLab.text = userDefaults.string(forKey: "name")
+            if let name = userDefaults.string(forKey: "name"){
+                if self.nameLab != nil{
+                    self.nameLab.text = name
+                }
+            }
+            
         }
     }
     
