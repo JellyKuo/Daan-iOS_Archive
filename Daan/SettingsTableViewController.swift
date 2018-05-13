@@ -25,7 +25,16 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        crhRepSwitch.setOn(userDefaults.bool(forKey: "crashReport"), animated: true)
+        if appType.build == .TestFlight {
+            //Lock it up to prevent user turn off crash reporting in TestFlight
+            //In AppDelegate, TF users are forced to join crash reporting no matter what
+            crhRepSwitch.isEnabled = false
+            crhRepSwitch.setOn(true, animated: false)
+        }
+        else{
+            crhRepSwitch.setOn(userDefaults.bool(forKey: "crashReport"), animated: true)
+        }
+        
         mainDispSegment.selectedSegmentIndex = userDefaults.bool(forKey: "displayNickname") ? 0 : 1 //0:Nick, 1:Full
         
         // Uncomment the following line to preserve selection between presentations
