@@ -25,6 +25,7 @@
 		A11DC6EC1FB33C3C00A4EC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11DC6EB1FB33C3C00A4EC9A /* Assets.xcassets */; };
 		A11DC6EF1FB33C3C00A4EC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11DC6ED1FB33C3C00A4EC9A /* LaunchScreen.storyboard */; };
 		A11E61761FD8F3BA00E2CA4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11E61751FD8F3BA00E2CA4F /* ViewController.swift */; };
+		A121B21020A85A5500ED8F1F /* BuildType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B20F20A85A5500ED8F1F /* BuildType.swift */; };
 		A12535651FBF1380006CE474 /* HistoryScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535641FBF1380006CE474 /* HistoryScoreTableViewController.swift */; };
 		A12535671FBF13AC006CE474 /* HistoryScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */; };
 		A12535691FBF13BF006CE474 /* HistoryScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */; };
@@ -125,6 +126,7 @@
 		A11DC6EB1FB33C3C00A4EC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11DC6F01FB33C3C00A4EC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11E61751FD8F3BA00E2CA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A121B20F20A85A5500ED8F1F /* BuildType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildType.swift; sourceTree = "<group>"; };
 		A12535641FBF1380006CE474 /* HistoryScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreTableViewController.swift; sourceTree = "<group>"; };
 		A12535661FBF13AC006CE474 /* HistoryScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreViewController.swift; sourceTree = "<group>"; };
 		A12535681FBF13BF006CE474 /* HistoryScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				A11DC6EB1FB33C3C00A4EC9A /* Assets.xcassets */,
 				A11DC6ED1FB33C3C00A4EC9A /* LaunchScreen.storyboard */,
 				A11DC6F01FB33C3C00A4EC9A /* Info.plist */,
+				A121B20F20A85A5500ED8F1F /* BuildType.swift */,
 			);
 			path = Daan;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F8BE101FB3447400B26D86 /* LoginViewController.swift in Sources */,
+				A121B21020A85A5500ED8F1F /* BuildType.swift in Sources */,
 				A12535651FBF1380006CE474 /* HistoryScoreTableViewController.swift in Sources */,
 				A110512C1FBC85F000970878 /* SectionalScore.swift in Sources */,
 				A113306B1FB9D15D0057C42C /* AttitudeTableViewCell.swift in Sources */,

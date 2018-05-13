@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let build = appType.build
+        print("Build Type: \(build)")
+        
         //Firebase configure
         FirebaseApp.configure()
         
@@ -29,16 +32,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else {
             fatalError("Cannot init UserDefaults with suiteName group.com.Jelly.Daan")
         }
-        if userDefaults.bool(forKey: "crashReport"){
-            #if !DEBUG
+        
+        switch build {
+        case .AppStore:
+            if userDefaults.bool(forKey: "crashReport"){
                 Fabric.with([Crashlytics.self])
                 print("Production, Crashlytics initialized")
-            #else
-                print("Debug, Crashlytics not initialized")
-            #endif
-        }
-        else{
-            print("User opt out Crashlytics reporting")
+            }
+            else{
+                print("User opt out Crashlytics reporting")
+            }
+            break
+        case .Debug:
+            print("Debug, Crashlytics not initialized")
+            break
+        case .TestFlight:
+            print("TF, Crashlytics initialized")
+            Fabric.with([Crashlytics.self])
+            break
         }
         
         Messaging.messaging().delegate = self
