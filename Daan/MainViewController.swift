@@ -127,7 +127,7 @@ class MainViewController: UIViewController,displayNameDelegate {
         guard let userDefaults = UserDefaults.init(suiteName: "group.com.Jelly.Daan") else{
             fatalError("Cannot init new UserDefaults with suiteName")
         }
-        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
+        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
             fatalError("Cannot get CFBundleVersion and convert to string")
         }
         if let lastVersion = userDefaults.string(forKey: "lastVersion"){
@@ -137,6 +137,19 @@ class MainViewController: UIViewController,displayNameDelegate {
             }
             else{
                 print("App version: \(bundleVersion), updated")
+                //TODO: CHANGE THIS
+                //THIS IS ONLY FOR A SINGLE VERSION UPDATE, SHOULD NOT BE ON PRODUCTION
+                var notiTopic = [String:Bool]()
+                if let usrnotiTopic = userDefaults.dictionary(forKey: "notiTopics"){
+                    notiTopic = usrnotiTopic as! [String:Bool]
+                }
+                else{
+                    notiTopic["General"] = true
+                    notiTopic["Promo"] = true
+                    if appType.build == .TestFlight{
+                        notiTopic["iOSBeta"] = true
+                    }
+                }
             }
         }
         else{
