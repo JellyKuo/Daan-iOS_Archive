@@ -8,6 +8,7 @@
 
 import UIKit
 import KeychainSwift
+import FirebaseMessaging
 
 class MainViewController: UIViewController,displayNameDelegate {
     
@@ -137,18 +138,20 @@ class MainViewController: UIViewController,displayNameDelegate {
             }
             else{
                 print("App version: \(bundleVersion), updated")
+                
                 //TODO: CHANGE THIS
                 //THIS IS ONLY FOR A SINGLE VERSION UPDATE, SHOULD NOT BE ON PRODUCTION
-                var notiTopic = [String:Bool]()
-                if let usrnotiTopic = userDefaults.dictionary(forKey: "notiTopics"){
-                    notiTopic = usrnotiTopic as! [String:Bool]
-                }
-                else{
+                
+                if userDefaults.object(forKey: "notiTopics") == nil{
+                    var notiTopic = [String:Bool]()
                     notiTopic["General"] = true
-                    notiTopic["Promo"] = true
+                    Messaging.messaging().subscribe(toTopic: "General")
+                    notiTopic["Promo"] = false
                     if appType.build == .TestFlight{
                         notiTopic["iOSBeta"] = true
+                        Messaging.messaging().subscribe(toTopic: "iOSBeta")
                     }
+                    userDefaults.set(notiTopic, forKey: "notiTopics")
                 }
             }
         }
@@ -173,7 +176,7 @@ class MainViewController: UIViewController,displayNameDelegate {
             print("curriculum JSON is empty, prompting to open curriculum")
             nextClassLab.text = " "+NSLocalizedString("CURRICULUM_NOT_CACHED_MSG", comment: "Curriculum cache is not downloaded, tap curriculum to cache")+" "
         }
-    
+        
     }
     
     func displaySwitched() {
