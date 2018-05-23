@@ -67,10 +67,10 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
                 present(alert, animated: true, completion: nil)
                 //performSegue(withIdentifier: "UpdateUserDataSegue", sender: self)
                 break
-            case 3:
+            case 2:
                 openUrl("https://status.dacsc.club",useSFShow: true)
                 break
-            case 4:
+            case 3:
                 if MFMailComposeViewController.canSendMail() {
                     let composeVC = MFMailComposeViewController()
                     composeVC.mailComposeDelegate = self
@@ -86,10 +86,10 @@ class SettingsTableViewController: UITableViewController,MFMailComposeViewContro
                 }
                 break
 
-            case 8:
+            case 7:
                 clearCurriculum(supressAlert: false)
                 break;
-            case 9:
+            case 8:
                 openUrl("itms-apps://itunes.apple.com/app/id1316911750", useSFShow: false)
             default:
                 break;
